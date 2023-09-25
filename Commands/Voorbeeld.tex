@@ -1,0 +1,23 @@
+\newcounter{ex}[section]\setcounter{ex}{0}
+\renewcommand{\theex}{\arabic{section}.\arabic{ex}}
+\newenvironment{ex}[2][]{%
+\refstepcounter{ex}%
+\ifstrempty{#1}%
+{\mdfsetup{%
+frametitle={%
+\tikz[baseline=(current bounding box.east),outer sep=0pt]
+\node[anchor=east,rectangle,fill=purple!20]
+{\strut Voorbeeld~\theex};}}
+}%
+{\mdfsetup{%
+frametitle={%
+\tikz[baseline=(current bounding box.east),outer sep=0pt]
+\node[anchor=east,rectangle,fill=purple!20]
+{\strut Voorbeeld~\theex:~#1};}}%
+}%
+\mdfsetup{innertopmargin=10pt,linecolor=purple!20,%
+linewidth=2pt,topline=true,%
+frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+}
+\begin{mdframed}[]\relax%
+\label{#2}}{\vspace{0.25cm}\end{mdframed}}

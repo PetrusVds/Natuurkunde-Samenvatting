@@ -1,0 +1,239 @@
+\documentclass{exam}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{titling}
+\usepackage{caption}
+\usepackage{dsfont}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage[dutch]{babel}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+\newcommand{\RomanNumeralCaps}[1]{\MakeUppercase{\romannumeral #1}}
+\counterwithin*{equation}{section}% Reset equation at \section
+\counterwithin*{equation}{subsection}% Reset equation at \subsection
+\counterwithin*{equation}{subsubsection}% Reset equation at \subsubsection
+
+\input{Commands/Setup}
+
+\title{Natuurkunde voor Informatici}
+\author{Pieter Vanderschueren}
+\date{Academiejaar 2022-2023}
+
+\begin{document}
+
+\begin{titlingpage}
+\maketitle
+\end{titlingpage}
+
+
+\newpage
+
+\vspace*{\fill}
+\begin{center}
+    
+\section*{Introductie}
+\end{center}
+
+\noindent Deze samenvatting is gemaakt voor het vak 'Natuurkunde voor Informatici \RomanNumeralCaps{1}: mechanica en elektriciteit' en 'Natuurkunde  voor Informatici \RomanNumeralCaps{2}: magnetisme' gedoceerd door André Vantomme. Ik volg zo veel mogelijk de volgorde van de slides om het makkelijk te maken te volgen, maar ik gebruik de Giancoli voor praktisch alle informatie. Ook, deze samenvatting is eerder theoretisch. Voor voorbeelden, zie de slides of Giancoli.
+
+
+\vspace*{\fill}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\vspace*{\fill}
+\begin{center}
+    
+\section*{Inleiding}
+\end{center}
+
+\vspace*{\fill}
+
+\newpage
+
+\section{Vectoren}
+
+\vspace{0.5cm}
+
+\input{Chapters/Inleiding/Vectoren.tex}
+
+\newpage
+
+\vspace*{\fill}
+\begin{center}
+    
+\section*{Kinematica}
+\end{center}
+
+\vspace*{\fill}
+
+\newpage
+
+\section{Vectoriële kinematica}
+
+\vspace{0.5cm}
+
+\input{Chapters/Kinematica/Vectorieel.tex}
+
+\newpage
+
+\vspace*{\fill}
+\begin{center}
+    
+\section*{Dynamica}
+\end{center}
+
+\vspace*{\fill}
+
+\newpage
+
+\section{Newton's bewegingswetten}
+
+\vspace{0.5cm}
+
+\input{Chapters/Dynamica/Newton's bewegingswetten.tex}
+
+\newpage
+
+\section{De wetten van Newton: wrijving, cirkelbeweging, weerstandskrachten}
+
+\vspace{0.5cm}
+
+\input{Chapters/Dynamica/De wetten van Newton: wrijving, cirkelbeweging, weerstandskrachten.tex}
+
+\newpage
+
+\section{De zwaartekracht en de synthese van Newton}
+
+\vspace{0.5cm}
+
+\input{Chapters/Dynamica/De zwaartekracht en de synthese van Newton.tex}
+
+\newpage
+
+\section{Arbeid en energie}
+
+\vspace{0.5cm}
+
+\input{Chapters/Dynamica/Arbeid en Energie.tex}
+
+\newpage
+
+\section{Behoud van energie}
+
+\vspace{0.5cm}
+
+\input{Chapters/Dynamica/Behoud van Energie.tex}
+
+\newpage
+
+\section{Impuls}
+
+\vspace{0.5cm}
+
+\input{Chapters/Dynamica/Impuls.tex}
+
+\newpage
+
+\section{Rotatie - Krachtmoment - Impulsmoment}
+
+\vspace{0.5cm}
+
+\input{Chapters/Dynamica/Rotatie.tex}
+
+\newpage
+
+% \section{Impulsmoment}
+
+% \vspace{0.5cm}
+
+% \input{Chapters/Dynamica/Impulsmoment.tex}
+
+% \newpage
+
+\vspace*{\fill}
+\begin{center}
+    
+\section*{Elektriciteit}
+\end{center}
+
+\vspace*{\fill}
+
+\newpage
+
+\section{Elektrische velden}
+
+\vspace{0.5cm}
+
+\input{Chapters/Elektriciteit/Coulomb.tex}
+
+\newpage
+
+\section{De wet van Gauss}
+
+\vspace{0.5cm}
+
+\input{Chapters/Elektriciteit/Gauss.tex}
+
+\newpage
+
+\section{Elektrische potentiaal}
+
+\vspace{0.5cm}
+
+\input{Chapters/Elektriciteit/Potentiaal.tex}
+
+\newpage
+
+\section{Condensatoren en diëlektrica}
+
+\vspace{0.5cm}
+
+\input{Chapters/Elektriciteit/Condensatoren en diëlektrica.tex}
+
+\newpage
+
+\newpage
+
+\section{Elektrische stroom en weerstand}
+
+\vspace{0.5cm}
+
+\input{Chapters/Elektriciteit/Stroom en weerstand.tex}
+
+\newpage
+
+\section{Gelijkstroomschakelingen}
+
+\vspace{0.5cm}
+
+\input{Chapters/Elektriciteit/Gelijkstroomschakelingen.tex}
+
+\newpage
+
+\vspace*{\fill}
+\begin{center}
+    
+\section*{Magnetisme}
+\end{center}
+
+\vspace*{\fill}
+
+\newpage
+
+\end{document}
