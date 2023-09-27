@@ -1,6 +1,6 @@
 \begin{theo}[Magnetische velden]{Magnetische velden}
     Net zoals we rondom een elektrische lading een elektrisch veld hebben gedefinieerd, kunnen we rond een magneet een magnetisch veld
-    definiëren. Magnetische veldlijnen op tekeningen hebben dusdanig ook dezelfde eigenschappen als elektrische veldlijnen, namelijk
+    $\Vec{B}$ definiëren. Magnetische veldlijnen op tekeningen hebben dusdanig ook dezelfde eigenschappen als elektrische veldlijnen, namelijk
 
     \begin{minipage}{.7\textwidth}
         \begin{itemize}
@@ -27,5 +27,72 @@
     \begin{minipage}{.16\textwidth}
         \includegraphics[scale = 0.2]{Images/Magnetisme/Rechterhandregel}
     \end{minipage}
+\end{app}
 
+\begin{theo}[Magnetische kracht]{Magnetische kracht}
+    De relatie tussen de magnetische kracht $\Vec{F}$ van een draad met stroom $I$ en het magnetisch veld $\Vec{B}$ kan geschreven worden als een vector product
+    \begin{equation*}
+        d\Vec{F}= Id\Vec{\ell} \times \Vec{B}
+    \end{equation*}
+    waarbij $d\Vec{F}$ een infinitesimale kracht op een infinitesimale lengte $d\Vec{\ell}$ van de draad in het magnetische veld.
+    \begin{center}
+        \includegraphics[scale = 0.4]{Images/Magnetisme/MagnetischeKracht}
+    \end{center}
+\end{theo}
+
+\newpage
+
+\begin{app}[Magnetische kracht in een homogeen veld]{Magnetische kracht in een homogeen veld}
+    \vspace{-0.5cm}
+    \begin{minipage}{.75\textwidth}
+        Als het veld homogeen is, dan zal elk infinitesimaal deeltje $d\Vec{\ell}$ dezelfde hoek maken met het magnetische veld $\Vec{B}$.
+        Hieruit volgt dan de formule:
+        \begin{equation*}
+            \Vec{F} = I\Vec{\ell} \times \Vec{B}
+        \end{equation*}
+    \end{minipage}
+    \begin{minipage}{.21\textwidth}
+        \includegraphics[scale = 0.25]{Images/Magnetisme/DraadHomogeenVeld}
+    \end{minipage}
+\end{app}
+
+%\begin{ex}[Willekeurige stroomvoerende geleider in een homogeen magnetisch veld]{Willekeurige stroomvoerende geleider in een homogeen magnetisch veld}
+%    \begin{minipage}{.6\textwidth}
+%        \vspace{-0.5cm}
+%        \begin{align*}
+%            \Vec{F} &= I\int_a^{b}d\Vec{l} \times \Vec{B} \\
+%            &= I(\int_a^{b}d\Vec{l} \times \Vec{B}) \quad \text{(B is homogeen)} \\
+%            &= I(\Vec{L} \times \Vec{B})
+%        \end{align*}
+%    \end{minipage}
+%    \begin{minipage}{.36\textwidth}
+%        \includegraphics[scale = 0.35]{Images/Magnetisme/StroomvoerendeGeleiderHomogeenMagnetischVeld}
+%    \end{minipage}
+%\end{ex}
+
+\begin{theo}[Magnetische kracht op een bewegende lading]{Magnetische kracht op een bewegende lading}
+    Elektrische stroom is een verzameling van N bewegende ladingen, we kunnen de definitie van magnetische kracht dus ook anders schrijven:
+    \begin{equation*}
+        \Vec{F} = I\Vec{\ell} \times \Vec{B} = Nq\Vec{v} \times \Vec{B}
+    \end{equation*}
+    sinds $I = \tfrac{Nq}{t}$ en $\Vec{\ell} = \Vec{v}t$.
+\end{theo}
+
+\begin{app}[Bewegende lading in een vlak loodrecht op magnetisch veld]{Bewegende lading in een vlak loodrecht op magnetisch veld}
+    \begin{minipage}{.67\textwidth}
+        Het pad van een bewegende lading in een vlak loodrecht op het magnetisch veld is cirkelvormig.
+        De kracht zal altijd loodrecht zijn op de snelheid, dus de lading zal cirkelvormig bewegen met
+        centripetale versnelling:
+        \begin{equation*}
+            a = \dfrac{v^2}{r}.
+        \end{equation*}
+        De periode heeft de volgende formule:
+        \begin{equation*}
+            T = \dfrac{2\pi r}{v} = \dfrac{2\pi m}{qB} = \dfrac{1}{f}
+        \end{equation*}
+        sinds $r = \tfrac{mv}{qB}$.
+    \end{minipage}
+    \begin{minipage}{.29\textwidth}
+        \includegraphics[scale = 0.35]{Images/Magnetisme/CirkelvormigeBewegingMagentischVeld}
+    \end{minipage}
 \end{app}
