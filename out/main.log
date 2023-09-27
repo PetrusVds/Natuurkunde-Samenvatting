@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  27 SEP 2023 12:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  27 SEP 2023 17:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -845,6 +845,11 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 (./Commands/Toepassing.tex
 \c@app=\count363
+) (./Commands/Samenvatting.tex
+\c@summ=\count364
+)
+(./Commands/Vergelijking.tex
+\c@vrg=\count365
 ))
 (/Users/pietervds/Homework/Bach3Sem1/Nat2/Samenvatting/out/main.aux)
 \openout1 = `main.aux'.
@@ -870,16 +875,16 @@ LaTeX Font Info:    ... okay on input line 33.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count364
+\scratchcounter=\count366
 \scratchdimen=\dimen274
 \scratchbox=\box71
-\nofMPsegments=\count365
-\nofMParguments=\count366
+\nofMPsegments=\count367
+\nofMParguments=\count368
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count367
+\MPscratchCnt=\count369
 \MPscratchDim=\dimen275
-\MPnumerator=\count368
-\makeMPintoPDFobject=\count369
+\MPnumerator=\count370
+\makeMPintoPDFobject=\count371
 \everyMPtoPDFconversion=\toks47
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -978,6 +983,14 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 42.
+
+./Chapters/Kinematica/Vectorieel.tex:44: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.44 ...p}[Projectielbeweging]{Projectielbeweging}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
@@ -990,8 +1003,8 @@ t line 64.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 93.
-) [7 <./Images/Kinematica/Projectielbeweging.png>] [8] (./Chapters/Dynamica/New
-ton's bewegingswetten.tex
+) [7 <./Images/Kinematica/Projectielbeweging.png>] [8]
+(./Chapters/Dynamica/Newton's bewegingswetten.tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1.
@@ -1016,8 +1029,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 49.
-
-[9]
+ [9]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 53.
@@ -1107,6 +1119,14 @@ Overfull \hbox (0.84688pt too wide) in paragraph at lines 21--22
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 27.
+./Chapters/Dynamica/De zwaartekracht en de synthese van Newton.tex:29: Extra \f
+i.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.29 \begin{app}[Satellieten]{Satellieten}
+                                          
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 29.
@@ -1133,6 +1153,14 @@ on input line 14.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 23.
+
+./Chapters/Dynamica/Arbeid en Energie.tex:25: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.25 ...efveren]{Terugroepkracht van schroefveren}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 25.
@@ -1211,12 +1239,27 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 25.
+
+./Chapters/Dynamica/Impuls.tex:27: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.27 ...p}[Elastische botsing]{Elastische botsing}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 27.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 72.
+./Chapters/Dynamica/Impuls.tex:74: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.74 ...nelastische botsing]{Inelastische botsing}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 74.
@@ -1224,9 +1267,16 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 82.
 Package mdframed Info: Not enough space on this page on input line 82.
- [18]
+[18]
 Package mdframed Info: Not enough space on this page on input line 82.
 ) [19] (./Chapters/Dynamica/Rotatie.tex
+./Chapters/Dynamica/Rotatie.tex:24: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.24 ...rotationele vs translationele versnelling}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 24.
@@ -1239,6 +1289,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 56.
+./Chapters/Dynamica/Rotatie.tex:58: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.58 ...j rotatie]{Arbeid en Vermogen bij rotatie}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 58.
@@ -1251,8 +1308,14 @@ ne 75.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 77.
-
 [20 <./Images/Dynamica/ArbeidBijRotatie.png>]
+./Chapters/Dynamica/Rotatie.tex:81: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.81 ...j rotatie]{Kinetische energie bij rotatie}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 81.
@@ -1278,6 +1341,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 115.
+./Chapters/Dynamica/Rotatie.tex:117: Extra \fi.
+\\vrg ...\strut Vergelijking~\thevrg :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.117 ...t]{Vergelijking: impuls – impulsmoment}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 117.
@@ -1303,6 +1373,14 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 10.
+
+./Chapters/Elektriciteit/Coulomb.tex:12: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.12 ...he lading in het atoom  isolator geleider}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 12.
@@ -1321,7 +1399,14 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 59.
- [23]
+[23]
+./Chapters/Elektriciteit/Coulomb.tex:63: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.63 ...een lading in een uniform elektrisch veld}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 63.
@@ -1346,6 +1431,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 92.
+./Chapters/Elektriciteit/Coulomb.tex:94: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.94 ...keningen voor continue ladingsverdelingen}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 94.
@@ -1371,6 +1463,13 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 137.
 Package mdframed Info: Not enough space on this page on input line 137.
+./Chapters/Elektriciteit/Coulomb.tex:139: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.139 ...uniform veld]{Dipool in een uniform veld}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 139.
@@ -1434,6 +1533,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 55.
+./Chapters/Elektriciteit/Potentiaal.tex:57: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.57 ...trische potentiaal tegenover puntladingen}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 57.
@@ -1442,6 +1548,14 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 96.
 [27]
 Package mdframed Info: Not enough space on this page on input line 96.
+
+./Chapters/Elektriciteit/Potentiaal.tex:98: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.98 ...ol]{Elektrische potentiaal bij een dipool}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 98.
@@ -1454,7 +1568,14 @@ ut line 124.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 133.
- [28 <./Images/Elektriciteit/DipoolPotentiaal.png>]
+[28 <./Images/Elektriciteit/DipoolPotentiaal.png>]
+./Chapters/Elektriciteit/Potentiaal.tex:137: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.137 ...al bij een geladen geleider in evenwicht}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 137.
@@ -1497,6 +1618,14 @@ ne 6.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 14.
+
+./Chapters/Elektriciteit/Condensatoren en diëlektrica.tex:16: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.16 ...tcondensator]{Parallelle plaatcondensator}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 16.
@@ -1583,6 +1712,13 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 136.
 [32 <./Images/Elektriciteit/OpladenGrafieken.jpg>]
+./Chapters/Elektriciteit/Condensatoren en diëlektrica.tex:140: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.140 ...oleculaire beschrijving van diëlektrica}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 140.
@@ -1598,6 +1734,13 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 164.
 Package mdframed Info: Not enough space on this page on input line 164.
+./Chapters/Elektriciteit/Condensatoren en diëlektrica.tex:166: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.166 ...e plaatcondensator met een diëlektricum}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 166.
@@ -1618,6 +1761,14 @@ Package pdftex.def Info: Images/Elektriciteit/Stroomzin.png  used on input line
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 18.
+
+./Chapters/Elektriciteit/Stroom en weerstand.tex:20: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.20 ...icroscopisch model van elektrische stroom}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 20.
@@ -1636,8 +1787,8 @@ line 38.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 49.
- [34 <./Images/Elektriciteit/Stroomzin.png> <./Images/Elektriciteit/Microscopis
-chStroom.png>]
+[34 <./Images/Elektriciteit/Stroomzin.png> <./Images/Elektriciteit/Microscopisc
+hStroom.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 51.
@@ -1665,8 +1816,8 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 107.
-) [36 <./Images/Elektriciteit/GrafiekOhmseMaterialen.png>] (./Chapters/Elektric
-iteit/Gelijkstroomschakelingen.tex
+) [36 <./Images/Elektriciteit/GrafiekOhmseMaterialen.png>]
+(./Chapters/Elektriciteit/Gelijkstroomschakelingen.tex
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1.
@@ -1705,6 +1856,13 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 65.
  [37 <./Images/Elektriciteit/Source.png> <./Images/Elektriciteit/EMFgrafiek.png
 >]
+./Chapters/Elektriciteit/Gelijkstroomschakelingen.tex:69: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.69 \begin{app}[RC-kringen]{RC-kringen}
+                                        
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 69.
@@ -1734,76 +1892,119 @@ File: Images/Magnetisme/HomogeenMagnetischVeld.png Graphic file (type png)
 <use Images/Magnetisme/HomogeenMagnetischVeld.png>
 Package pdftex.def Info: Images/Magnetisme/HomogeenMagnetischVeld.png  used on 
 input line 13.
-(pdftex.def)             Requested size: 97.3635pt x 94.85414pt.
+(pdftex.def)             Requested size: 101.25887pt x 98.64911pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 17.
+(mdframed)              on input line 27.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 19.
-<Images/Magnetisme/Rechterhandregel.png, id=429, 261.97874pt x 455.7025pt>
-File: Images/Magnetisme/Rechterhandregel.png Graphic file (type png)
-<use Images/Magnetisme/Rechterhandregel.png>
-Package pdftex.def Info: Images/Magnetisme/Rechterhandregel.png  used on input 
-line 28.
-(pdftex.def)             Requested size: 52.39482pt x 91.13887pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 30.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 32.
-<Images/Magnetisme/MagnetischeKracht.png, id=430, 557.08125pt x 199.74625pt>
+(mdframed)              on input line 42.
+<Images/Magnetisme/MagnetischeKracht.png, id=429, 557.08125pt x 199.74625pt>
 File: Images/Magnetisme/MagnetischeKracht.png Graphic file (type png)
 <use Images/Magnetisme/MagnetischeKracht.png>
 Package pdftex.def Info: Images/Magnetisme/MagnetischeKracht.png  used on input
- line 39.
-(pdftex.def)             Requested size: 222.82855pt x 79.89708pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 41.
- [40 <./Images/Magnetisme/HomogeenMagnetischVeld.png> <./Images/Magnetisme/Rech
-terhandregel.png> <./Images/Magnetisme/MagnetischeKracht.png>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 45.
-<Images/Magnetisme/DraadHomogeenVeld.png, id=441, 417.56pt x 327.2225pt>
+ line 49.
+(pdftex.def)             Requested size: 250.68425pt x 89.88498pt.
+<Images/Magnetisme/DraadHomogeenVeld.png, id=430, 417.56pt x 327.2225pt>
 File: Images/Magnetisme/DraadHomogeenVeld.png Graphic file (type png)
 <use Images/Magnetisme/DraadHomogeenVeld.png>
 Package pdftex.def Info: Images/Magnetisme/DraadHomogeenVeld.png  used on input
- line 55.
+ line 59.
 (pdftex.def)             Requested size: 104.38974pt x 81.80542pt.
 
-Overfull \hbox (10.7782pt too wide) in paragraph at lines 55--56
+Overfull \hbox (10.7782pt too wide) in paragraph at lines 59--60
 [][] 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 57.
-Package mdframed Info: Not enough space on this page on input line 57.
+(mdframed)              on input line 61.
+[40 <./Images/Magnetisme/HomogeenMagnetischVeld.png> <./Images/Magnetisme/Magne
+tischeKracht.png> <./Images/Magnetisme/DraadHomogeenVeld.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 73.
+(mdframed)              on input line 94.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 79.
+(mdframed)              on input line 100.
+Package mdframed Info: Not enough space on this page on input line 100.
+
+./Chapters/Magnetisme/Magnetisme.tex:102: Extra \fi.
+\\vrg ...\strut Vergelijking~\thevrg :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.102 ...tussen elektrische en magnetische kracht}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 81.
-<Images/Magnetisme/CirkelvormigeBewegingMagentischVeld.png, id=442, 367.3725pt 
+(mdframed)              on input line 102.
+
+Overfull \hbox (8.80048pt too wide) in paragraph at lines 105--112
+[]  []
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 112.
+./Chapters/Magnetisme/Magnetisme.tex:114: Extra \fi.
+\\app ... {\strut Toepassing~\theapp :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.114 ...in een vlak loodrecht op magnetisch veld}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 114.
+<Images/Magnetisme/CirkelvormigeBewegingMagentischVeld.png, id=440, 367.3725pt 
 x 382.42876pt>
 File: Images/Magnetisme/CirkelvormigeBewegingMagentischVeld.png Graphic file (t
 ype png)
 <use Images/Magnetisme/CirkelvormigeBewegingMagentischVeld.png>
 Package pdftex.def Info: Images/Magnetisme/CirkelvormigeBewegingMagentischVeld.
-png  used on input line 96.
+png  used on input line 129.
 (pdftex.def)             Requested size: 128.58229pt x 133.85207pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 98.
-) [41 <./Images/Magnetisme/DraadHomogeenVeld.png> <./Images/Magnetisme/Cirkelvo
-rmigeBewegingMagentischVeld.png>]
+(mdframed)              on input line 131.
+[41 <./Images/Magnetisme/CirkelvormigeBewegingMagentischVeld.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 135.
+<Images/Magnetisme/MagnetischDipoolMoment.png, id=449, 302.12875pt x 749.80125p
+t>
+File: Images/Magnetisme/MagnetischDipoolMoment.png Graphic file (type png)
+<use Images/Magnetisme/MagnetischDipoolMoment.png>
+Package pdftex.def Info: Images/Magnetisme/MagnetischDipoolMoment.png  used on 
+input line 144.
+(pdftex.def)             Requested size: 105.74664pt x 262.43437pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 146.
+Package mdframed Info: Not enough space on this page on input line 146.
+
+./Chapters/Magnetisme/Magnetisme.tex:148: Extra \fi.
+\\summ ...trut Samenvatting~\thesumm :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.148 ...mm}[Rechterhandregels]{Rechterhandregels}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 148.
+<Images/Magnetisme/RechterhandRegels.png, id=450, 964.60374pt x 520.94624pt>
+File: Images/Magnetisme/RechterhandRegels.png Graphic file (type png)
+<use Images/Magnetisme/RechterhandRegels.png>
+Package pdftex.def Info: Images/Magnetisme/RechterhandRegels.png  used on input
+ line 150.
+(pdftex.def)             Requested size: 434.06767pt x 234.42365pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 151.
+) [42 <./Images/Magnetisme/MagnetischDipoolMoment.png> <./Images/Magnetisme/Rec
+hterhandRegels.png>]
 This exam contains 0 questions with 0 parts, 0 subparts, and 0 subsubparts.
 (/Users/pietervds/Homework/Bach3Sem1/Nat2/Samenvatting/out/main.aux)
  ***********
@@ -1818,10 +2019,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 3D343924EDFEE2EDCA231AD9E781232B;2744.
  ) 
 Here is how much of TeX's memory you used:
- 25359 strings out of 475189
- 483807 string characters out of 5763832
+ 25416 strings out of 475189
+ 485210 string characters out of 5763832
  1940254 words of memory out of 5000000
- 46011 multiletter control sequences out of 15000+600000
+ 46060 multiletter control sequences out of 15000+600000
  566579 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,16n,114p,758b,1019s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1840,10 +2041,10 @@ e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
 023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
 Output written on /Users/pietervds/Homework/Bach3Sem1/Nat2/Samenvatting/out/mai
-n.pdf (42 pages, 4223674 bytes).
+n.pdf (43 pages, 4193313 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
- 408 compressed objects within 5 object streams
- 165 named destinations out of 1000 (max. 500000)
- 311 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 560 PDF objects out of 1000 (max. 8388607)
+ 413 compressed objects within 5 object streams
+ 167 named destinations out of 1000 (max. 500000)
+ 316 words of extra memory for PDF output out of 10000 (max. 10000000)
 
