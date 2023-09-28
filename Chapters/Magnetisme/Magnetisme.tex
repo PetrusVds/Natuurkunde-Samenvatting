@@ -96,7 +96,10 @@
     \begin{equation*}
         \Vec{F} = I\Vec{\ell} \times \Vec{B} = Nq\Vec{v} \times \Vec{B}
     \end{equation*}
-    sinds $I = \tfrac{Nq}{t}$ en $\Vec{\ell} = \Vec{v}t$.
+    sinds $I = \tfrac{Nq}{t}$ en $\Vec{\ell} = \Vec{v}t$. De bijlage hieronder toont de magnetische kracht op bewegende ladingen:
+    \begin{center}
+        \includegraphics[scale=0.25]{Images/Magnetisme/MagnetischeKrachtOpBewgendeLading}
+    \end{center}
 \end{theo}
 
 \begin{vrg}[Verschillen tussen elektrische en magnetische kracht]{Verschillen tussen elektrische en magnetische kracht}
@@ -136,26 +139,27 @@
     Wanneer een lading stroom door een gesloten kring in een extern magnetisch veld, dan kan de magnetische kracht torsie veroorzaken.
     Stroom vloeit door de rechthoekige kring (zie figuur a), waarvan we aannemen dat het parrallel is met het veld $\Vec{B}$.
     Het veld oefent noch een kracht, noch een krachtmoment uit op de horizontale delen; hier is $\sin(\theta) = 0$. Het veld oefent wel een kracht uit op de verticale delen
-    (hiervan geeft figuur b een bovenaanzicht), we noemen deze krachten $\Vec{F_1}$ en $\Vec{F_2}$. Deze krachten zorgen voor een netto krachtmoment:
-    \begin{equation*}
-        \tau = IaB\dfrac{b}{2} + IaB\dfrac{b}{2} = IabB = IAB
-    \end{equation*}
-    waarbij $A = ab$ de oppervlakte van de spoel.
+    (hiervan geeft figuur b een bovenaanzicht), we noemen deze krachten $\Vec{F_1}$ en $\Vec{F_2}$.
 
 %    \newpage
 
-    \hspace{-0.5cm}\begin{minipage}{0.76\textwidth}
+    \vspace{0.1cm}\hspace{-0.5cm}\begin{minipage}{0.76\textwidth}
+        Deze krachten zorgen voor een netto krachtmoment:
+        \begin{equation*}
+            \tau = IaB\dfrac{b}{2} + IaB\dfrac{b}{2} = IabB = IAB
+        \end{equation*}
+        waarbij $A = ab$ de oppervlakte van de spoel.
         Als de spoel $N$ kringen heeft en een hoek $\theta$ maakt met het magnetisch veld (zie figuur c),
         dan is de stroom $NI$ en volgt:
-        \begin{equation}\label{eq:1}
+        \begin{equation*}
             \tau = NIAB\sin(\theta)
-        \end{equation}
+        \end{equation*}
         want de krachten blijven gelijk, maar de krachtarmen verkleint.
         Het \textbf{magnetisch dipool moment} $\Vec{\mu}$ wordt als volgt gedefinieerd"
         \begin{equation*}
             \Vec{\mu} = NI\Vec{A}
         \end{equation*}
-        waarbij de ricthing van $\Vec{A}$ loodrecht is op het vlak van de spoel. Hiermee kunnen we (\ref{eq:1}) vectorieel schrijven:
+        waarbij de ricthing van $\Vec{A}$ loodrecht is op het vlak van de spoel. Hiermee kunnen we de formule vectorieel schrijven:
         \begin{equation*}
             \Vec{\tau} = NI\Vec{A} \times \Vec{B} = \Vec{\mu} \times \Vec{B}
         \end{equation*}
@@ -163,12 +167,12 @@
         \begin{equation*}
             U = \int_0^{\tfrac{\pi}{2}} \tau d\theta = \int_0^{\tfrac{\pi}{2}} NIAB\sin(\theta) d\theta = -\mu B\cos(\theta) = -\Vec{\mu} \cdot \Vec{B}
         \end{equation*}
-        wat ook logisch is sinds we dit kunnen vergelijkigen met het elektrisch dipool moment (zie vergelijking 16.2).
     \end{minipage}
     \begin{minipage}{.2\textwidth}
         \includegraphics[scale = 0.35]{Images/Magnetisme/MagnetischDipoolMoment}
     \end{minipage}
-    \vspace{0.2cm}
+    \vspace{0.2cm} \\
+    wat ook logisch is sinds we dit kunnen vergelijkigen met het elektrisch dipool moment (zie vergelijking 16.2).
 \end{theo}
 
 \begin{vrg}[Verschillen tussen het magnetisch en elektrisch dipoolmoment]{Verschillen tussen het magnetisch en elektrisch dipoolmoment}
