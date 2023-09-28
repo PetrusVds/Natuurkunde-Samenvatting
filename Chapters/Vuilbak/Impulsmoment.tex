@@ -1,0 +1,68 @@
+\begin{theo}[Impulsmoment]{Impulsmoment}
+     Het \textbf{Impulsmoment} is de rotationele variant van het translatonele impuls, net zoals krachtmoment rotationele variant is van de translationele kracht. Het wordt gegeven door de volgende formule:
+    
+     \begin{equation*}
+         \Vec{L} = \Vec{r} \times \Vec{p}
+     \end{equation*}
+
+     \noindent De grootte van het impulsmoment kunnen we als volgt berekenen:
+     \begin{equation*}
+         L = prsin(\phi) = mvrsin(\phi) = m(\omega r)rsin(\phi) = I\omega
+     \end{equation*}
+     \vspace{-0.5cm}
+\end{theo}
+
+\begin{app}[Verband tussen impulsmoment en krachtmoment]{Verband tussen impulsmoment en krachtmoment}
+
+    Net zoals kracht zorgt voor de verandering van impuls van een voorwerp, zorgt krachtmoment voor de verandering van impulsmoments van een voorwerp: dit is het voornaamste verband. Als we de tweede wet van newton bekijken bij rotatie, dan krijgen we de volgende formule die het verband aantoont:
+    
+    \begin{equation*}
+        \sum \Vec{\tau} = I\Vec{\alpha} = I(\dfrac{d\Vec{\omega}}{dt}) = \dfrac{d(I\Vec{\omega})}{dt} = \dfrac{d\Vec{L}}{dt}
+    \end{equation*}
+
+    \noindent Omgekeerd kan ook als we een \textbf{puntmassa} bekijken:
+    \begin{equation*}
+        \dfrac{d\Vec{L}}{dt} = \dfrac{d(\Vec{r} \times \Vec{p})}{dt} = \dfrac{d\Vec{r}}{dt} \times \Vec{p} + \Vec{r} \times \dfrac{d\Vec{p}}{dt} = \Vec{v} \times \Vec{p} + \Vec{r} \times \Vec{F}
+    \end{equation*}
+    \noindent Het eerste lid van de som, namelijk $ \Vec{v} \times \Vec{p} $, wordt simpelweg 0, $ \Vec{v} $ is een lineaire combinatie van $ \Vec{p} $. Nu hebben we:
+    \begin{equation*}
+        \dfrac{d\Vec{L}}{dt} = \Vec{r} \times \Vec{F}
+    \end{equation*}
+    \noindent Als we nu $ \sum \Vec{F} $ pakken als de netto kracht, dan is bij een inertiaalreferentiestelsel:
+    \begin{equation*}
+       \dfrac{d\Vec{L}}{dt} = \Vec{r} \times \sum \Vec{F} = \sum \tau
+    \end{equation*}
+    \vspace{-0.5cm}
+\end{app}
+
+\begin{app}[Vergelijking: impuls – impulsmoment]{Vergelijking: impuls – impulsmoment}
+    \begin{minipage}{.4\textwidth}
+        \begin{center}
+            
+            \underline{Algemeen}: \\
+            \vspace{0.25cm}
+            \def\arraystretch{2.5}
+            \begin{tabular}{c|c}
+                impuls & impulsmoment \\ \hline
+                $ \Vec{p} $ & $ \Vec{L} = \Vec{r} \times \Vec{p} $ \\ 
+                $ \Vec{F} = \dfrac{d\Vec{p}}{dt} $ &  $ \Vec{\tau} = \dfrac{d\Vec{L}}{dt} $
+            \end{tabular}
+    
+        \end{center}
+    \end{minipage} 
+    \begin{minipage}{.6\textwidth}
+        \begin{center}
+                
+            \underline{Enkel bij een geïsoleerd systeem}: \\
+            \vspace{0.25cm}
+            \def\arraystretch{2.5}
+            \begin{tabular}{c|c}
+                impuls & impulsmoment \\ \hline
+                behoud van impuls & behoud van impulsmoment \\ 
+                $ F_{net} = \sum \Vec{F}_{ext} = 0 $ & $ \tau_{net} = \sum \Vec{\tau}_{ext} = 0 $
+            \end{tabular}
+        
+        \end{center}
+    \end{minipage}
+\end{app}
+
