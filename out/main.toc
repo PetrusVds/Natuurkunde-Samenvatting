@@ -15,3 +15,4 @@
 \contentsline {section}{\numberline {14}Elektrische stroom en weerstand}{34}{section.14}%
 \contentsline {section}{\numberline {15}Gelijkstroomschakelingen}{37}{section.15}%
 \contentsline {section}{\numberline {16}Magnetisme}{40}{section.16}%
+\contentsline {section}{\numberline {17}Bronnen van magnetische velden}{44}{section.17}%

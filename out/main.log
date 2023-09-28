@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  28 SEP 2023 13:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.8.30)  28 SEP 2023 13:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -940,7 +940,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 10.
-<Images/Inleiding/Vectorcomponenten.png, id=111, 396.48125pt x 234.8775pt>
+<Images/Inleiding/Vectorcomponenten.png, id=116, 396.48125pt x 234.8775pt>
 File: Images/Inleiding/Vectorcomponenten.png Graphic file (type png)
 <use Images/Inleiding/Vectorcomponenten.png>
 Package pdftex.def Info: Images/Inleiding/Vectorcomponenten.png  used on input 
@@ -994,7 +994,7 @@ I'm ignoring this; it doesn't match any \if.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 44.
-<Images/Kinematica/Projectielbeweging.png, id=141, 597.23125pt x 637.38126pt>
+<Images/Kinematica/Projectielbeweging.png, id=146, 597.23125pt x 637.38126pt>
 File: Images/Kinematica/Projectielbeweging.png Graphic file (type png)
 <use Images/Kinematica/Projectielbeweging.png>
 Package pdftex.def Info: Images/Kinematica/Projectielbeweging.png  used on inpu
@@ -1040,13 +1040,13 @@ Package mdframed Info: Not enough space on this page on input line 62.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 64.
-<Images/Dynamica/Doos in rust.png, id=170, 209.78375pt x 188.705pt>
+<Images/Dynamica/Doos in rust.png, id=175, 209.78375pt x 188.705pt>
 File: Images/Dynamica/Doos in rust.png Graphic file (type png)
 <use Images/Dynamica/Doos in rust.png>
 Package pdftex.def Info: Images/Dynamica/Doos in rust.png  used on input line 7
 4.
 (pdftex.def)             Requested size: 146.84761pt x 132.09259pt.
-<Images/Dynamica/Glijdende doos.png, id=171, 529.98pt x 316.18124pt>
+<Images/Dynamica/Glijdende doos.png, id=176, 529.98pt x 316.18124pt>
 File: Images/Dynamica/Glijdende doos.png Graphic file (type png)
 <use Images/Dynamica/Glijdende doos.png>
 Package pdftex.def Info: Images/Dynamica/Glijdende doos.png  used on input line
@@ -1068,7 +1068,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 26.
-<Images/Dynamica/Kinematica van de Cirkelbeweging.png, id=180, 437.635pt x 495.
+<Images/Dynamica/Kinematica van de Cirkelbeweging.png, id=185, 437.635pt x 495.
 8525pt>
 File: Images/Dynamica/Kinematica van de Cirkelbeweging.png Graphic file (type p
 ng)
@@ -1092,7 +1092,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 89.
-<Images/Dynamica/Niet-Eenparige Cirkelbeweging.png, id=190, 1076.02pt x 480.796
+<Images/Dynamica/Niet-Eenparige Cirkelbeweging.png, id=195, 1076.02pt x 480.796
 25pt>
 File: Images/Dynamica/Niet-Eenparige Cirkelbeweging.png Graphic file (type png)
 
@@ -1143,7 +1143,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1.
-<Images/Dynamica/Arbeid bij constante kracht.png, id=206, 1513.655pt x 746.79pt
+<Images/Dynamica/Arbeid bij constante kracht.png, id=211, 1513.655pt x 746.79pt
 >
 File: Images/Dynamica/Arbeid bij constante kracht.png Graphic file (type png)
 <use Images/Dynamica/Arbeid bij constante kracht.png>
@@ -1169,7 +1169,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
-<Images/Dynamica/Schroefveer.png, id=207, 381.425pt x 486.81876pt>
+<Images/Dynamica/Schroefveer.png, id=212, 381.425pt x 486.81876pt>
 File: Images/Dynamica/Schroefveer.png Graphic file (type png)
 <use Images/Dynamica/Schroefveer.png>
 Package pdftex.def Info: Images/Dynamica/Schroefveer.png  used on input line 55
@@ -1299,7 +1299,7 @@ I'm ignoring this; it doesn't match any \if.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 58.
-<Images/Dynamica/ArbeidBijRotatie.png, id=253, 520.94624pt x 456.70625pt>
+<Images/Dynamica/ArbeidBijRotatie.png, id=258, 520.94624pt x 456.70625pt>
 File: Images/Dynamica/ArbeidBijRotatie.png Graphic file (type png)
 <use Images/Dynamica/ArbeidBijRotatie.png>
 Package pdftex.def Info: Images/Dynamica/ArbeidBijRotatie.png  used on input li
@@ -1319,7 +1319,7 @@ I'm ignoring this; it doesn't match any \if.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 81.
-<Images/Dynamica/SnelhedenOpRotatie.png, id=262, 549.05125pt x 517.935pt>
+<Images/Dynamica/SnelhedenOpRotatie.png, id=267, 549.05125pt x 517.935pt>
 File: Images/Dynamica/SnelhedenOpRotatie.png Graphic file (type png)
 <use Images/Dynamica/SnelhedenOpRotatie.png>
 Package pdftex.def Info: Images/Dynamica/SnelhedenOpRotatie.png  used on input 
@@ -1410,7 +1410,7 @@ I'm ignoring this; it doesn't match any \if.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 63.
-<Images/Elektriciteit/UniformE.png, id=286, 313.17pt x 537.00626pt>
+<Images/Elektriciteit/UniformE.png, id=291, 313.17pt x 537.00626pt>
 File: Images/Elektriciteit/UniformE.png Graphic file (type png)
 <use Images/Elektriciteit/UniformE.png>
 Package pdftex.def Info: Images/Elektriciteit/UniformE.png  used on input line 
@@ -1453,7 +1453,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-<Images/Elektriciteit/Dipool.png, id=299, 363.3575pt x 121.45375pt>
+<Images/Elektriciteit/Dipool.png, id=304, 363.3575pt x 121.45375pt>
 File: Images/Elektriciteit/Dipool.png Graphic file (type png)
 <use Images/Elektriciteit/Dipool.png>
 Package pdftex.def Info: Images/Elektriciteit/Dipool.png  used on input line 13
@@ -1473,7 +1473,7 @@ I'm ignoring this; it doesn't match any \if.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 139.
-<Images/Elektriciteit/UniformDipool.png, id=300, 539.01375pt x 489.83pt>
+<Images/Elektriciteit/UniformDipool.png, id=305, 539.01375pt x 489.83pt>
 File: Images/Elektriciteit/UniformDipool.png Graphic file (type png)
 <use Images/Elektriciteit/UniformDipool.png>
 Package pdftex.def Info: Images/Elektriciteit/UniformDipool.png  used on input 
@@ -1492,7 +1492,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1.
-<Images/Elektriciteit/OppervlakteGeenLading.png, id=309, 406.51875pt x 283.0575
+<Images/Elektriciteit/OppervlakteGeenLading.png, id=314, 406.51875pt x 283.0575
 pt>
 File: Images/Elektriciteit/OppervlakteGeenLading.png Graphic file (type png)
 <use Images/Elektriciteit/OppervlakteGeenLading.png>
@@ -1559,7 +1559,7 @@ I'm ignoring this; it doesn't match any \if.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 98.
-<Images/Elektriciteit/DipoolPotentiaal.png, id=326, 278.03876pt x 436.63126pt>
+<Images/Elektriciteit/DipoolPotentiaal.png, id=331, 278.03876pt x 436.63126pt>
 File: Images/Elektriciteit/DipoolPotentiaal.png Graphic file (type png)
 <use Images/Elektriciteit/DipoolPotentiaal.png>
 Package pdftex.def Info: Images/Elektriciteit/DipoolPotentiaal.png  used on inp
@@ -1584,7 +1584,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
 
-<Images/Elektriciteit/Caviteit.png, id=333, 773.89125pt x 561.09625pt>
+<Images/Elektriciteit/Caviteit.png, id=338, 773.89125pt x 561.09625pt>
 File: Images/Elektriciteit/Caviteit.png Graphic file (type png)
 <use Images/Elektriciteit/Caviteit.png>
 Package pdftex.def Info: Images/Elektriciteit/Caviteit.png  used on input line 
@@ -1609,7 +1609,7 @@ Package mdframed Info: Not enough space on this page on input line 181.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1.
-<Images/Elektriciteit/Condensator.png, id=340, 963.6pt x 770.88pt>
+<Images/Elektriciteit/Condensator.png, id=345, 963.6pt x 770.88pt>
 File: Images/Elektriciteit/Condensator.png Graphic file (type png)
 <use Images/Elektriciteit/Condensator.png>
 Package pdftex.def Info: Images/Elektriciteit/Condensator.png  used on input li
@@ -1629,7 +1629,7 @@ I'm ignoring this; it doesn't match any \if.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 16.
-<Images/Elektriciteit/ParallellePlatenCapaciteit.png, id=341, 261.97874pt x 444
+<Images/Elektriciteit/ParallellePlatenCapaciteit.png, id=346, 261.97874pt x 444
 .66125pt>
 File: Images/Elektriciteit/ParallellePlatenCapaciteit.png Graphic file (type pn
 g)
@@ -1650,7 +1650,7 @@ PlatenCapaciteit.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 56.
-<Images/Elektriciteit/Parallelleschakeling.png, id=351, 282.05376pt x 319.1925p
+<Images/Elektriciteit/Parallelleschakeling.png, id=356, 282.05376pt x 319.1925p
 t>
 File: Images/Elektriciteit/Parallelleschakeling.png Graphic file (type png)
 <use Images/Elektriciteit/Parallelleschakeling.png>
@@ -1670,7 +1670,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 71.
-<Images/Elektriciteit/Serieschakeling.png, id=352, 335.2525pt x 239.89626pt>
+<Images/Elektriciteit/Serieschakeling.png, id=357, 335.2525pt x 239.89626pt>
 File: Images/Elektriciteit/Serieschakeling.png Graphic file (type png)
 <use Images/Elektriciteit/Serieschakeling.png>
 Package pdftex.def Info: Images/Elektriciteit/Serieschakeling.png  used on inpu
@@ -1690,7 +1690,7 @@ Serieschakeling.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 93.
-<Images/Elektriciteit/OpladenGrafieken.jpg, id=363, 1027.84pt x 340.27126pt>
+<Images/Elektriciteit/OpladenGrafieken.jpg, id=368, 1027.84pt x 340.27126pt>
 File: Images/Elektriciteit/OpladenGrafieken.jpg Graphic file (type jpg)
 <use Images/Elektriciteit/OpladenGrafieken.jpg>
 Package pdftex.def Info: Images/Elektriciteit/OpladenGrafieken.jpg  used on inp
@@ -1722,7 +1722,7 @@ I'm ignoring this; it doesn't match any \if.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 140.
-<Images/Elektriciteit/MoleculaireBeschrijvingVanDielektrica.png, id=370, 179.67
+<Images/Elektriciteit/MoleculaireBeschrijvingVanDielektrica.png, id=375, 179.67
 125pt x 820.06375pt>
 File: Images/Elektriciteit/MoleculaireBeschrijvingVanDielektrica.png Graphic fi
 le (type png)
@@ -1752,7 +1752,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1.
-<Images/Elektriciteit/Stroomzin.png, id=378, 413.545pt x 329.23pt>
+<Images/Elektriciteit/Stroomzin.png, id=383, 413.545pt x 329.23pt>
 File: Images/Elektriciteit/Stroomzin.png Graphic file (type png)
 <use Images/Elektriciteit/Stroomzin.png>
 Package pdftex.def Info: Images/Elektriciteit/Stroomzin.png  used on input line
@@ -1772,13 +1772,13 @@ I'm ignoring this; it doesn't match any \if.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 20.
-<Images/Elektriciteit/MicroscopischStroom.png, id=379, 321.2pt x 112.42pt>
+<Images/Elektriciteit/MicroscopischStroom.png, id=384, 321.2pt x 112.42pt>
 File: Images/Elektriciteit/MicroscopischStroom.png Graphic file (type png)
 <use Images/Elektriciteit/MicroscopischStroom.png>
 Package pdftex.def Info: Images/Elektriciteit/MicroscopischStroom.png  used on 
 input line 34.
 (pdftex.def)             Requested size: 160.59961pt x 56.20985pt.
-<Images/Elektriciteit/Driftsnelheid.png, id=380, 326.21875pt x 107.40125pt>
+<Images/Elektriciteit/Driftsnelheid.png, id=385, 326.21875pt x 107.40125pt>
 File: Images/Elektriciteit/Driftsnelheid.png Graphic file (type png)
 <use Images/Elektriciteit/Driftsnelheid.png>
 Package pdftex.def Info: Images/Elektriciteit/Driftsnelheid.png  used on input 
@@ -1799,7 +1799,7 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 73.
-<Images/Elektriciteit/GrafiekOhmseMaterialen.png, id=395, 1035.87pt x 409.53pt>
+<Images/Elektriciteit/GrafiekOhmseMaterialen.png, id=400, 1035.87pt x 409.53pt>
 
 File: Images/Elektriciteit/GrafiekOhmseMaterialen.png Graphic file (type png)
 <use Images/Elektriciteit/GrafiekOhmseMaterialen.png>
@@ -1821,13 +1821,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1.
-<Images/Elektriciteit/Source.png, id=404, 289.08pt x 211.79124pt>
+<Images/Elektriciteit/Source.png, id=409, 289.08pt x 211.79124pt>
 File: Images/Elektriciteit/Source.png Graphic file (type png)
 <use Images/Elektriciteit/Source.png>
 Package pdftex.def Info: Images/Elektriciteit/Source.png  used on input line 11
 .
 (pdftex.def)             Requested size: 130.0848pt x 95.30518pt.
-<Images/Elektriciteit/EMFgrafiek.png, id=405, 367.3725pt x 316.18124pt>
+<Images/Elektriciteit/EMFgrafiek.png, id=410, 367.3725pt x 316.18124pt>
 File: Images/Elektriciteit/EMFgrafiek.png Graphic file (type png)
 <use Images/Elektriciteit/EMFgrafiek.png>
 Package pdftex.def Info: Images/Elektriciteit/EMFgrafiek.png  used on input lin
@@ -1866,7 +1866,7 @@ I'm ignoring this; it doesn't match any \if.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 69.
-<Images/Elektriciteit/RC-kring.png, id=416, 673.51625pt x 289.08pt>
+<Images/Elektriciteit/RC-kring.png, id=421, 673.51625pt x 289.08pt>
 File: Images/Elektriciteit/RC-kring.png Graphic file (type png)
 <use Images/Elektriciteit/RC-kring.png>
 Package pdftex.def Info: Images/Elektriciteit/RC-kring.png  used on input line 
@@ -1886,7 +1886,7 @@ Package mdframed Info: Not enough space on this page on input line 124.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 1.
-<Images/Magnetisme/HomogeenMagnetischVeld.png, id=428, 194.7275pt x 189.70876pt
+<Images/Magnetisme/HomogeenMagnetischVeld.png, id=433, 194.7275pt x 189.70876pt
 >
 File: Images/Magnetisme/HomogeenMagnetischVeld.png Graphic file (type png)
 <use Images/Magnetisme/HomogeenMagnetischVeld.png>
@@ -1899,13 +1899,13 @@ Package mdframed Info: mdframed detected package amsthm
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 42.
-<Images/Magnetisme/MagnetischeKracht.png, id=429, 557.08125pt x 199.74625pt>
+<Images/Magnetisme/MagnetischeKracht.png, id=434, 557.08125pt x 199.74625pt>
 File: Images/Magnetisme/MagnetischeKracht.png Graphic file (type png)
 <use Images/Magnetisme/MagnetischeKracht.png>
 Package pdftex.def Info: Images/Magnetisme/MagnetischeKracht.png  used on input
  line 49.
 (pdftex.def)             Requested size: 250.68425pt x 89.88498pt.
-<Images/Magnetisme/DraadHomogeenVeld.png, id=430, 417.56pt x 327.2225pt>
+<Images/Magnetisme/DraadHomogeenVeld.png, id=435, 417.56pt x 327.2225pt>
 File: Images/Magnetisme/DraadHomogeenVeld.png Graphic file (type png)
 <use Images/Magnetisme/DraadHomogeenVeld.png>
 Package pdftex.def Info: Images/Magnetisme/DraadHomogeenVeld.png  used on input
@@ -1957,7 +1957,7 @@ I'm ignoring this; it doesn't match any \if.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 114.
-<Images/Magnetisme/CirkelvormigeBewegingMagentischVeld.png, id=440, 367.3725pt 
+<Images/Magnetisme/CirkelvormigeBewegingMagentischVeld.png, id=445, 367.3725pt 
 x 382.42876pt>
 File: Images/Magnetisme/CirkelvormigeBewegingMagentischVeld.png Graphic file (t
 ype png)
@@ -1968,78 +1968,79 @@ png  used on input line 129.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 131.
+[41 <./Images/Magnetisme/CirkelvormigeBewegingMagentischVeld.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 133.
-<Images/Magnetisme/MagnetischDipoolMoment.png, id=442, 302.12875pt x 749.80125p
+(mdframed)              on input line 135.
+<Images/Magnetisme/MagnetischDipoolMoment.png, id=456, 302.12875pt x 749.80125p
 t>
 File: Images/Magnetisme/MagnetischDipoolMoment.png Graphic file (type png)
 <use Images/Magnetisme/MagnetischDipoolMoment.png>
 Package pdftex.def Info: Images/Magnetisme/MagnetischDipoolMoment.png  used on 
-input line 167.
+input line 169.
 (pdftex.def)             Requested size: 105.74664pt x 262.43437pt.
 
-Overfull \hbox (16.59702pt too wide) in paragraph at lines 167--168
+Overfull \hbox (16.59702pt too wide) in paragraph at lines 169--170
 [][] 
  []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 170.
-[41 <./Images/Magnetisme/CirkelvormigeBewegingMagentischVeld.png>]
-./Chapters/Magnetisme/Magnetisme.tex:172: Extra \fi.
-\\vrg ...\strut Vergelijking~\thevrg :~#1};}}}\fi 
-                                                  \mdfsetup {innertopmargin=...
-l.172 ...et magnetisch en elektrisch dipoolmoment}
-                                                  
-I'm ignoring this; it doesn't match any \if.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 172.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 181.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 183.
-<Images/Magnetisme/HallEffect.png, id=452, 344.28625pt x 442.65375pt>
-File: Images/Magnetisme/HallEffect.png Graphic file (type png)
-<use Images/Magnetisme/HallEffect.png>
-Package pdftex.def Info: Images/Magnetisme/HallEffect.png  used on input line 2
-01.
-(pdftex.def)             Requested size: 103.28667pt x 132.79713pt.
-
-Overfull \hbox (23.05403pt too wide) in paragraph at lines 201--202
-[][] 
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 205.
-[42 <./Images/Magnetisme/MagnetischDipoolMoment.png> <./Images/Magnetisme/HallE
-ffect.png>]
-./Chapters/Magnetisme/Magnetisme.tex:210: Extra \fi.
-\\summ ...trut Samenvatting~\thesumm :~#1};}}}\fi 
+Package mdframed Info: Not enough space on this page on input line 172.
+./Chapters/Magnetisme/Magnetisme.tex:174: Extra \fi.
+\\vrg ...\strut Vergelijking~\thevrg :~#1};}}}\fi 
                                                   \mdfsetup {innertopmargin=...
-l.210 ...mm}[Rechterhandregels]{Rechterhandregels}
+l.174 ...et magnetisch en elektrisch dipoolmoment}
                                                   
 I'm ignoring this; it doesn't match any \if.
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 210.
-<Images/Magnetisme/RechterhandRegels.png, id=464, 964.60374pt x 520.94624pt>
+(mdframed)              on input line 174.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 183.
+[42 <./Images/Magnetisme/MagnetischDipoolMoment.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 187.
+<Images/Magnetisme/HallEffect.png, id=466, 344.28625pt x 442.65375pt>
+File: Images/Magnetisme/HallEffect.png Graphic file (type png)
+<use Images/Magnetisme/HallEffect.png>
+Package pdftex.def Info: Images/Magnetisme/HallEffect.png  used on input line 2
+05.
+(pdftex.def)             Requested size: 103.28667pt x 132.79713pt.
+
+Overfull \hbox (23.05403pt too wide) in paragraph at lines 205--206
+[][] 
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 209.
+Package mdframed Info: Not enough space on this page on input line 209.
+./Chapters/Magnetisme/Magnetisme.tex:211: Extra \fi.
+\\summ ...trut Samenvatting~\thesumm :~#1};}}}\fi 
+                                                  \mdfsetup {innertopmargin=...
+l.211 ...mm}[Rechterhandregels]{Rechterhandregels}
+                                                  
+I'm ignoring this; it doesn't match any \if.
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 211.
+<Images/Magnetisme/RechterhandRegels.png, id=467, 964.60374pt x 520.94624pt>
 File: Images/Magnetisme/RechterhandRegels.png Graphic file (type png)
 <use Images/Magnetisme/RechterhandRegels.png>
 Package pdftex.def Info: Images/Magnetisme/RechterhandRegels.png  used on input
- line 212.
+ line 213.
 (pdftex.def)             Requested size: 434.06767pt x 234.42365pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 213.
-Package mdframed Info: Not enough space on this page on input line 213.
-) [43 <./Images/Magnetisme/RechterhandRegels.png>]
+(mdframed)              on input line 214.
+) [43 <./Images/Magnetisme/HallEffect.png> <./Images/Magnetisme/RechterhandRege
+ls.png>] (./Chapters/Magnetisme/Bronnen van magnetische velden.tex) [44]
 This exam contains 0 questions with 0 parts, 0 subparts, and 0 subsubparts.
 (/Users/pietervds/Homework/Bach3Sem1/Nat2/Samenvatting/out/main.aux)
  ***********
@@ -2051,13 +2052,13 @@ L3 programming layer <2023-08-11>
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3D343924EDFEE2EDCA231AD9E781232B;2744.
+(rerunfilecheck)             Checksum: F3523C864C24724A87865488F5B5602F;2948.
  ) 
 Here is how much of TeX's memory you used:
- 25449 strings out of 475189
- 486089 string characters out of 5763832
- 1945254 words of memory out of 5000000
- 46089 multiletter control sequences out of 15000+600000
+ 25452 strings out of 475189
+ 486401 string characters out of 5763832
+ 1940254 words of memory out of 5000000
+ 46087 multiletter control sequences out of 15000+600000
  566579 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,16n,114p,758b,1019s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2076,10 +2077,10 @@ e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 /2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
 023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
 Output written on /Users/pietervds/Homework/Bach3Sem1/Nat2/Samenvatting/out/mai
-n.pdf (44 pages, 4218412 bytes).
+n.pdf (45 pages, 4218936 bytes).
 PDF statistics:
- 571 PDF objects out of 1000 (max. 8388607)
- 421 compressed objects within 5 object streams
- 171 named destinations out of 1000 (max. 500000)
- 321 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 580 PDF objects out of 1000 (max. 8388607)
+ 429 compressed objects within 5 object streams
+ 173 named destinations out of 1000 (max. 500000)
+ 329 words of extra memory for PDF output out of 10000 (max. 10000000)
 
