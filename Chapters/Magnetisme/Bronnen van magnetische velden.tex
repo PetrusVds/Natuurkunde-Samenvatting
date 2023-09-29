@@ -41,9 +41,60 @@
 \end{app}
 
 \begin{lem}[Ampère]{Ampère}
-    De lijnintegraal van het magneetveld langs een gesloten pad is gelijk aan $\mu_{0}I_{\text{in}}$, waarbij $I_{\text{in}}$ de totale stroom is, die vloeit door een oppervlak dat omsloten is door het pad, in formulevorm:
-    \begin{equation*}
-        \oint \Vec{B} \cdot d\Vec{\ell} = \mu_{0}I_{\text{in}}
-    \end{equation*}
-
+    \vspace{-0.75cm}\begin{minipage}{0.79\textwidth}
+        De lijnintegraal van het magneetveld langs een gesloten pad is gelijk aan $\mu_{0}I_{\text{in}}$, waarbij $I_{\text{in}}$ de totale stroom is, die vloeit door een oppervlak dat omsloten is door het pad, in formulevorm:
+        \begin{equation*}
+            \oint \Vec{B} \cdot d\Vec{\ell} = \mu_{0}I_{\text{in}}
+        \end{equation*}
+    \end{minipage}
+    \begin{minipage}{.17\textwidth}
+        \includegraphics[scale=0.3]{Images/Magnetisme/WetVanAmpere}
+    \end{minipage}
 \end{lem}
+
+\newpage
+
+\begin{theo}[Het magnetisch veld van een spoel]{Het magnetisch veld van een spoel}
+    Een lange draad met meerdere windingen noemen we een \textbf{spoel}, zie de figuren hieronder.
+
+%    \vspace{0.5cm}
+
+%    \begin{minipage}{.48\textwidth}
+        \begin{center}
+%            Spoel: \\
+            \includegraphics[scale = 0.4]{Images/Magnetisme/Spoel}
+        \end{center}
+%    \end{minipage}
+%    \begin{minipage}{.48\textwidth}
+%        \begin{center}
+%            \vspace{0.75cm}
+%            Dicht gepakte spoel: \\
+%            \includegraphics[scale = 0.25]{Images/Magnetisme/SpoelDicht}
+%        \end{center}
+%    \end{minipage}
+
+%    \vspace{0.5cm}
+
+    \noindent Elke winding genereert een magnetisch veld. Nabij elke draad zijn de veldlijnen quasi cirkels,
+    net zoals bij een rechte draad. In het centrum van de spoel is het netto magnetisch veld een redelijk
+    groot en redelijk uniform veld, we nemen aan dat een spoel dicht gebonden is en dus dat het veld praltisch uniform is.
+    We kunnen de wet van Ampère toepassen op de zijden van de rechthoek (zie figuur onderaan)
+    \begin{align*}
+%        \hspace{1cm}
+        \oint \Vec{B} \cdot d\Vec{\ell} &= \int_{a}^{b} \Vec{B} \cdot d\Vec{\ell} + \int_{b}^{c} \Vec{B} \cdot d\Vec{\ell}
+        +  \int_{c}^{d} \Vec{B} \cdot d\Vec{\ell} +  \int_{d}^{a} \Vec{B} \cdot d\Vec{\ell} \\
+                                        &= \int_{b}^{c} \Vec{B} \cdot d\Vec{\ell}  \\
+                                        &= B\ell
+    \end{align*}
+    waarbij de integralen op de paden $a \to b$, $b \to c$ en $d \to a$ nul zijn, want het veld is praktisch nul tussen in en buiten de spoel.
+    We berkenen nu de formule van het magnetisch veld van een spoel:
+    \begin{align*}
+        \oint \Vec{B} \cdot d\Vec{\ell} &= \mu_{0}NI \\
+        B\ell &=  \mu_{0}NI \\
+        B &=  \mu_{9}nI
+    \end{align*}
+    met $n= \tfrac{N}{\ell}$ het aantal windingen per lengte.
+    \begin{center}
+        \includegraphics[scale = 0.3]{Images/Magnetisme/SpoelMagnetischVeld}
+    \end{center}
+\end{theo}
