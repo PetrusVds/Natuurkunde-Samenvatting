@@ -87,6 +87,9 @@
                                         &= B\ell
     \end{align*}
     waarbij de integralen op de paden $a \to b$, $b \to c$ en $d \to a$ nul zijn, want het veld is praktisch nul tussen in en buiten de spoel.
+    \begin{center}
+        \includegraphics[scale = 0.3]{Images/Magnetisme/SpoelMagnetischVeld}
+    \end{center}
     We berkenen nu de formule van het magnetisch veld van een spoel:
     \begin{align*}
         \oint \Vec{B} \cdot d\Vec{\ell} &= \mu_{0}NI \\
@@ -94,7 +97,25 @@
         B &=  \mu_{9}nI
     \end{align*}
     met $n= \tfrac{N}{\ell}$ het aantal windingen per lengte.
-    \begin{center}
-        \includegraphics[scale = 0.3]{Images/Magnetisme/SpoelMagnetischVeld}
-    \end{center}
 \end{theo}
+
+\newpage
+
+\begin{lem}[Biot-savart]{Biot-savart}
+    Een stroom die vloeit door een bepaald pad kan bekeken worden door vele, infinitesimale
+    stroomelementen, in formulevorm:
+    \begin{equation*}
+        I = \int I d\Vec{\ell}.
+    \end{equation*}
+    Als $d\Vec{\ell}$ een infinitesimale lengte voorstelt waardoor stroom
+    vloeit, dan is het magnetisch veld $d\Vec{B}$, op eenderwelk punt $P$ in de ruimte, door
+    dit stroomelement gegeven door
+    \begin{equation*}
+        d\Vec{B} = \dfrac{\mu_{0}I}{4\pi}\dfrac{d\Vec{\ell} \times \hat{r}}{r^2}
+    \end{equation*}
+    waarbij $\Vec{r}$ de verplaatsingsvector is van het element $d\Vec{\ell}$ tot het punt $P$.
+    Het totale magnetisch veld in punt P vinden we dan met
+    \begin{equation*}
+        \Vec{B} = \int d\Vec{B} = \dfrac{\mu_{0}I}{4\pi} \int \dfrac{d\Vec{s} \times \hat{r}}{r}
+    \end{equation*}
+\end{lem}

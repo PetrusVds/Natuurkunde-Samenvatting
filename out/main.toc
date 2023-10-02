@@ -1,18 +1,18 @@
 \babel@toc {dutch}{}\relax 
-\contentsline {section}{\numberline {1}Vectoren}{4}{section.1}%
-\contentsline {section}{\numberline {2}Vectoriële kinematica}{7}{section.2}%
-\contentsline {section}{\numberline {3}Newton's bewegingswetten}{9}{section.3}%
-\contentsline {section}{\numberline {4}De wetten van Newton: wrijving, cirkelbeweging, weerstandskrachten}{11}{section.4}%
-\contentsline {section}{\numberline {5}De zwaartekracht en de synthese van Newton}{13}{section.5}%
-\contentsline {section}{\numberline {6}Arbeid en energie}{14}{section.6}%
-\contentsline {section}{\numberline {7}Behoud van energie}{16}{section.7}%
-\contentsline {section}{\numberline {8}Impuls}{18}{section.8}%
-\contentsline {section}{\numberline {9}Rotatie - Krachtmoment - Impulsmoment}{20}{section.9}%
-\contentsline {section}{\numberline {10}Elektrische velden}{23}{section.10}%
-\contentsline {section}{\numberline {11}De wet van Gauss}{26}{section.11}%
-\contentsline {section}{\numberline {12}Elektrische potentiaal}{27}{section.12}%
-\contentsline {section}{\numberline {13}Condensatoren en diëlektrica}{30}{section.13}%
-\contentsline {section}{\numberline {14}Elektrische stroom en weerstand}{34}{section.14}%
-\contentsline {section}{\numberline {15}Gelijkstroomschakelingen}{37}{section.15}%
-\contentsline {section}{\numberline {16}Magnetisme}{40}{section.16}%
-\contentsline {section}{\numberline {17}Bronnen van magnetische velden}{44}{section.17}%
+\contentsline {section}{\numberline {1}Vectoren}{3}{section.1}%
+\contentsline {section}{\numberline {2}Vectoriële kinematica}{6}{section.2}%
+\contentsline {section}{\numberline {3}Newton's bewegingswetten}{8}{section.3}%
+\contentsline {section}{\numberline {4}De wetten van Newton: wrijving, cirkelbeweging, weerstandskrachten}{10}{section.4}%
+\contentsline {section}{\numberline {5}De zwaartekracht en de synthese van Newton}{12}{section.5}%
+\contentsline {section}{\numberline {6}Arbeid en energie}{13}{section.6}%
+\contentsline {section}{\numberline {7}Behoud van energie}{15}{section.7}%
+\contentsline {section}{\numberline {8}Impuls}{17}{section.8}%
+\contentsline {section}{\numberline {9}Rotatie - Krachtmoment - Impulsmoment}{19}{section.9}%
+\contentsline {section}{\numberline {10}Elektrische velden}{22}{section.10}%
+\contentsline {section}{\numberline {11}De wet van Gauss}{25}{section.11}%
+\contentsline {section}{\numberline {12}Elektrische potentiaal}{26}{section.12}%
+\contentsline {section}{\numberline {13}Condensatoren en diëlektrica}{29}{section.13}%
+\contentsline {section}{\numberline {14}Elektrische stroom en weerstand}{33}{section.14}%
+\contentsline {section}{\numberline {15}Gelijkstroomschakelingen}{36}{section.15}%
+\contentsline {section}{\numberline {16}Magnetisme}{39}{section.16}%
+\contentsline {section}{\numberline {17}Bronnen van magnetische velden}{43}{section.17}%
