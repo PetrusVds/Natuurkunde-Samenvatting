@@ -1,0 +1,23 @@
+\newcounter{pro}[section]\setcounter{pro}{0}
+\renewcommand{\thepro}{\arabic{section}.\arabic{pro}}
+\newenvironment{pro}[2][]{%
+\refstepcounter{pro}%
+\ifstrempty{#1}%
+{\mdfsetup{%
+frametitle={%
+\tikz[baseline=(current bounding box.east),outer sep=0pt]
+\node[anchor=east,rectangle,fill=lime!20]
+{\strut Eigenschap~\thepro};}}
+}%
+{\mdfsetup{%
+frametitle={%
+\tikz[baseline=(current bounding box.east),outer sep=0pt]
+\node[anchor=east,rectangle,fill=lime!20]
+{\strut Eigenschap~\thepro:~#1};}}%
+}%
+\mdfsetup{innertopmargin=10pt,linecolor=lime!20,%
+linewidth=2pt,topline=true,%
+frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+}
+\begin{mdframed}[]\relax%
+\label{#2}}{\vspace{0.25cm}\end{mdframed}}

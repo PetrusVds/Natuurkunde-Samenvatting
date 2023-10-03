@@ -1,0 +1,121 @@
+\begin{theo}[Magnetisch veld ten gevolge van een rechte draad]{Magnetisch veld ten gevolge van een rechte draad}
+    \begin{minipage}{0.87\textwidth}
+        Het magnetische veld ten gevolge van de elektrische stroom in een lange rechte draad is zodanig dat de
+        veldlijnen cirkels zijn met de draad in het midden (zie figuur). De veld sterkte is groter hoe dichter je bij de
+        draad bent en hoe groter de stroom, in formulevorm:
+        \begin{equation*}
+            B \propto \dfrac{I}{r}
+        \end{equation*}
+        met r de loodrechte afstand van de draad. Deze relatie blijft waar als we aanemen dat de draad lang is.
+        Het magnetisch veld nabij een lange, rechte draad is als volgt
+        \begin{equation*}
+            B = \dfrac{\mu_0}{2\pi}\dfrac{I}{r}
+        \end{equation*}
+        met $\mu_0$ de magnetische permeabiliteit in vacuum.
+    \end{minipage}
+    \begin{minipage}{.09\textwidth}
+        \includegraphics[scale=0.225]{Images/Magnetisme/MagnetischVeldTenGevolgeRechteDraad}
+    \end{minipage}
+\end{theo}
+
+\begin{app}[Magnetische kracht tussen twee parallelle draden]{Magnetische kracht tussen twee parallelle draden}
+    \begin{minipage}{0.77\textwidth}
+        Neem twee lange evenwijdige draden gescheiden door een afstand d, zoals in de figuur. Ze voeren respectievelijk stromen $I_1$ en $I_2$.
+        Elke stroom produceert een magnetisch veld dat door de ander wordt ‘gevoeld’, dus oefenen ze een kracht uit op mekander. We weten dat
+        \begin{equation*}
+            F_{\text{max}} = I\ell B
+        \end{equation*}
+        en dus krijgen we:
+        \begin{equation*}
+            F = I_{2}B_{1}\ell_{2} = \dfrac{\mu_0}{2\pi}\dfrac{I_{1}I_{2}}{d}\ell_{2}
+        \end{equation*}
+    \end{minipage}
+    \begin{minipage}{.19\textwidth}
+        \includegraphics[scale=0.225]{Images/Magnetisme/MagnetischeKrachtTussenTweeParallelleDraden}
+    \end{minipage} \vspace{0.2cm}\\
+    Hieruit kunnen we afleiden dat evenwijdige stroomvoerende geleiders elkaar
+    \begin{itemize}
+        \item aantrekken indien de stroom in dezelfde richting vloeit,
+        \item afstoten indien de stroom in tegengestelde richting vloeit.
+    \end{itemize}
+\end{app}
+
+\begin{lem}[Ampère]{Ampère}
+    \vspace{-0.75cm}\begin{minipage}{0.79\textwidth}
+        De lijnintegraal van het magneetveld langs een gesloten pad is gelijk aan $\mu_{0}I_{\text{in}}$, waarbij $I_{\text{in}}$ de totale stroom is, die vloeit door een oppervlak dat omsloten is door het pad, in formulevorm:
+        \begin{equation*}
+            \oint \Vec{B} \cdot d\Vec{\ell} = \mu_{0}I_{\text{in}}
+        \end{equation*}
+    \end{minipage}
+    \begin{minipage}{.17\textwidth}
+        \includegraphics[scale=0.3]{Images/Magnetisme/WetVanAmpere}
+    \end{minipage}
+\end{lem}
+
+\newpage
+
+\begin{theo}[Magnetisch veld van een spoel]{Magnetisch veld van een spoel}
+    Een lange draad met meerdere windingen noemen we een \textbf{spoel}, zie de figuren hieronder.
+
+%    \vspace{0.5cm}
+
+%    \begin{minipage}{.48\textwidth}
+        \begin{center}
+%            Spoel: \\
+            \includegraphics[scale = 0.4]{Images/Magnetisme/Spoel}
+        \end{center}
+%    \end{minipage}
+%    \begin{minipage}{.48\textwidth}
+%        \begin{center}
+%            \vspace{0.75cm}
+%            Dicht gepakte spoel: \\
+%            \includegraphics[scale = 0.25]{Images/Magnetisme/SpoelDicht}
+%        \end{center}
+%    \end{minipage}
+
+%    \vspace{0.5cm}
+
+    \noindent Elke winding genereert een magnetisch veld. Nabij elke draad zijn de veldlijnen quasi cirkels,
+    net zoals bij een rechte draad. In het centrum van de spoel is het netto magnetisch veld een redelijk
+    groot en redelijk uniform veld, we nemen aan dat een spoel dicht gebonden is en dus dat het veld praltisch uniform is.
+    We kunnen de wet van Ampère toepassen op de zijden van de rechthoek (zie figuur onderaan)
+    \begin{align*}
+%        \hspace{1cm}
+        \oint \Vec{B} \cdot d\Vec{\ell} &= \int_{a}^{b} \Vec{B} \cdot d\Vec{\ell} + \int_{b}^{c} \Vec{B} \cdot d\Vec{\ell}
+        +  \int_{c}^{d} \Vec{B} \cdot d\Vec{\ell} +  \int_{d}^{a} \Vec{B} \cdot d\Vec{\ell} \\
+                                        &= \int_{b}^{c} \Vec{B} \cdot d\Vec{\ell}  \\
+                                        &= B\ell
+    \end{align*}
+    waarbij de integralen op de paden $a \to b$, $b \to c$ en $d \to a$ nul zijn, want het veld is praktisch nul tussen in en buiten de spoel.
+    \begin{center}
+        \includegraphics[scale = 0.3]{Images/Magnetisme/SpoelMagnetischVeld}
+    \end{center}
+    We berkenen nu de formule van het magnetisch veld van een spoel:
+    \begin{align*}
+        \oint \Vec{B} \cdot d\Vec{\ell} &= \mu_{0}NI \\
+        B\ell &=  \mu_{0}NI \\
+        B &=  \mu_{9}nI
+    \end{align*}
+    met $n= \tfrac{N}{\ell}$ het aantal windingen per lengte.
+\end{theo}
+
+\newpage
+
+\begin{lem}[Biot-savart]{Biot-savart}
+    Een stroom die vloeit door een bepaald pad kan bekeken worden door vele, infinitesimale
+    stroomelementen, in formulevorm:
+    \begin{equation*}
+        I = \int I d\Vec{\ell}.
+    \end{equation*}
+    Als $d\Vec{\ell}$ een infinitesimale lengte voorstelt waardoor stroom
+    vloeit, dan is het magnetisch veld $d\Vec{B}$, op eenderwelk punt $P$ in de ruimte, door
+    dit stroomelement gegeven door
+    \begin{equation*}
+        d\Vec{B} = \dfrac{\mu_{0}I}{4\pi}\dfrac{d\Vec{\ell} \times \hat{r}}{r^2}
+    \end{equation*}
+    waarbij $\Vec{r}$ de verplaatsingsvector is van het element $d\Vec{\ell}$ tot het punt $P$.
+    Het totale magnetisch veld in punt P vinden we dan met
+    \begin{equation*}
+        \Vec{B} = \int d\Vec{B} = \dfrac{\mu_{0}I}{4\pi} \int \dfrac{d\Vec{s} \times \hat{r}}{r}
+    \end{equation*}
+\end{lem}
