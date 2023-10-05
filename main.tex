@@ -23,7 +23,16 @@
 \counterwithin*{equation}{section}% Reset equation at \section
 \counterwithin*{equation}{subsection}% Reset equation at \subsection
 \counterwithin*{equation}{subsubsection}% Reset equation at \subsubsection
+\newcommand{\introPage}[1]{
 
+    \vspace*{\fill}
+    \begin{center}
+        
+    \section*{#1}
+    \end{center}
+
+    \vspace*{\fill}
+}
 \input{Commands/Setup}
 
 \title{Natuurkunde voor Informatici}
@@ -56,13 +65,7 @@
 
 \newpage
 
-\vspace*{\fill}
-\begin{center}
-    
-\section*{Inleiding}
-\end{center}
-
-\vspace*{\fill}
+\introPage{Inleiding}
 
 \newpage
 
@@ -74,13 +77,7 @@
 
 \newpage
 
-\vspace*{\fill}
-\begin{center}
-    
-\section*{Kinematica}
-\end{center}
-
-\vspace*{\fill}
+\introPage{Kinematica}
 
 \newpage
 
@@ -92,13 +89,7 @@
 
 \newpage
 
-\vspace*{\fill}
-\begin{center}
-    
-\section*{Dynamica}
-\end{center}
-
-\vspace*{\fill}
+\introPage{Dynamica}
 
 \newpage
  d
@@ -106,21 +97,7 @@
 
 \newpage
 
-% \section{Impulsmoment}
-
-% \vspace{0.5cm}
-
-% \input{Chapters/Dynamica/Impulsmoment.tex}
-
-% \newpage
-
-\vspace*{\fill}
-\begin{center}
-    
-\section*{Elektriciteit}
-\end{center}
-
-\vspace*{\fill}
+\introPage{Elektriciteit}
 
 \newpage
 
@@ -128,13 +105,7 @@
 
 \newpage
 
-\vspace*{\fill}
-\begin{center}
-    
-\section*{Magnetisme}
-\end{center}
-
-\vspace*{\fill}
+\introPage{Magnetisme}
 
 \newpage
 
