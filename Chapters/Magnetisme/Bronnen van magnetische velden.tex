@@ -134,10 +134,11 @@
 
 \begin{lem}[Biot-savart]{Biot-savart}
     Een stroom die vloeit door een bepaald pad kan bekeken worden door vele, infinitesimale
-    stroomelementen, in formulevorm:
-    \begin{equation*}
-        I = \int I d\Vec{\ell}.
-    \end{equation*}
+    stroomelementen
+    % , in formulevorm:
+    % \begin{equation*}
+    %     I = \int I d\Vec{\ell}.
+    % \end{equation*}
     Als $d\Vec{\ell}$ een infinitesimale lengte voorstelt waardoor stroom
     vloeit, dan is het magnetisch veld $d\Vec{B}$, op eenderwelk punt $P$ in de ruimte, door
     dit stroomelement gegeven door
@@ -147,9 +148,19 @@
     waarbij $\Vec{r}$ de verplaatsingsvector is van het element $d\Vec{\ell}$ tot het punt $P$.
     Het totale magnetisch veld in punt P vinden we dan met
     \begin{equation*}
-        \Vec{B} = \int d\Vec{B} = \dfrac{\mu_{0}I}{4\pi} \int \dfrac{d\Vec{s} \times \hat{r}}{r}
+        \Vec{B} = \int d\Vec{B} = \dfrac{\mu_{0}I}{4\pi} \int \dfrac{d\Vec{l} \times \hat{r}}{r}
     \end{equation*}
+    % Een belangrijk onderscheid tussen de wet van Biot-Savart en de wet van Ampère is dat bij de wet van Ampère
+    % het magnetisch veld $\Vec{B}$ niet noodzakelijk enkel door de stroom is bij het integratiepad. Maar bij de wet
+    % van Biot-Savart is het magnetisch veld $d\Vec{B}$ enkel en volledig bepaald door het stroomelement $Id\Vec{\ell}$.
+    % Om het totale magnetisch veld $\Vec{B}$ te vinden is het noodzakelijk om de alle stroom te includeren.
 \end{lem}
 
-\newpage
+\begin{vrg}[Verschil tussen de wet van Ampère en de wet van Biot-Savart]{Verschil tussen de wet van Ampère en de wet van Biot-Savart}
+    Een belangrijk onderscheid tussen de wet van Biot-Savart en de wet van Ampère is dat bij de wet van Ampère
+    het magnetisch veld $\Vec{B}$ niet noodzakelijk enkel door de stroom is bij het integratiepad. Maar bij de wet
+    van Biot-Savart is het magnetisch veld $d\Vec{B}$ enkel en volledig bepaald door het stroomelement.
+    Om het totale magnetisch veld $\Vec{B}$ te vinden is het noodzakelijk om de alle stroom te includeren.
+\end{vrg}
 
+\newpage
