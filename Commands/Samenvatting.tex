@@ -1,0 +1,23 @@
+\newcounter{summ}[section]\setcounter{summ}{0}
+\renewcommand{\thesumm}{\arabic{section}.\arabic{summ}}
+\newenvironment{summ}[2][]{%
+\refstepcounter{summ}%
+\ifstrempty{#1}%
+{\mdfsetup{%
+    frametitle={%
+    \tikz[baseline=(current bounding box.east),outer sep=0pt]
+    \node[anchor=east,rectangle,fill=violet!20]
+    {\strut Samenvatting~\thesumm};}}
+}%
+{\mdfsetup{%
+    frametitle={%
+    \tikz[baseline=(current bounding box.east),outer sep=0pt]
+    \node[anchor=east,rectangle,fill=violet!20]
+    {\strut Samenvatting~\thesumm:~#1};}}%
+}
+\mdfsetup{innertopmargin=10pt,linecolor=violet!20,%
+    linewidth=2pt,topline=true,%
+    frametitleaboveskip=\dimexpr-\ht\strutbox\relax
+}
+\begin{mdframed}[]\relax%
+\label{#2}}{\vspace{0.25cm}\end{mdframed}}

@@ -1,0 +1,115 @@
+\documentclass{exam}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{titling}
+\usepackage{caption}
+\usepackage{dsfont}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage[dutch]{babel}
+\usepackage[shortlabels]{enumitem}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\renewcommand\maketitlehooka{\null\mbox{}\vfill}
+\renewcommand\maketitlehookd{\vfill\null}
+\newcommand{\RomanNumeralCaps}[1]{\MakeUppercase{\romannumeral #1}}
+\counterwithin*{equation}{section}% Reset equation at \section
+\counterwithin*{equation}{subsection}% Reset equation at \subsection
+\counterwithin*{equation}{subsubsection}% Reset equation at \subsubsection
+\newcommand{\introPage}[1]{
+
+    \vspace*{\fill}
+    \begin{center}
+        
+    \section*{#1}
+    \end{center}
+
+    \vspace*{\fill}
+}
+\input{Commands/Setup}
+
+\title{Natuurkunde voor Informatici}
+\author{Pieter Vanderschueren}
+\date{Academiejaar 2022-2023}
+
+\begin{document}
+
+\begin{titlingpage}
+\maketitle
+\end{titlingpage}
+
+
+\newpage
+
+%\vspace*{\fill}
+%\begin{center}
+%
+%\section*{Introductie}
+%\end{center}
+%
+%\noindent Deze samenvatting is gemaakt voor het vak 'Natuurkunde voor Informatici \RomanNumeralCaps{1}: mechanica en elektriciteit' en 'Natuurkunde  voor Informatici \RomanNumeralCaps{2}: magnetisme' gedoceerd door André Vantomme. Ik volg zo veel mogelijk de volgorde van de slides om het makkelijk te maken te volgen, maar ik gebruik de Giancoli voor praktisch alle informatie. Ook, deze samenvatting is eerder theoretisch. Voor voorbeelden, zie de slides of Giancoli.
+%
+%
+%\vspace*{\fill}
+%
+%\newpage
+
+\tableofcontents
+
+\newpage
+
+\introPage{Inleiding}
+
+\newpage
+
+\section{Vectoren}
+
+\vspace{0.5cm}
+
+\input{Chapters/Inleiding/Vectoren.tex}
+
+\newpage
+
+\introPage{Kinematica}
+
+\newpage
+
+\section{Vectoriële kinematica}
+
+\vspace{0.5cm}
+
+\input{Chapters/Kinematica/Vectorieel.tex}
+
+\newpage
+
+\introPage{Dynamica}
+
+\newpage
+
+\input{Chapters/Dynamica/inpDynamica.tex}
+
+\newpage
+
+\introPage{Elektriciteit}
+
+\newpage
+
+\input{Chapters/Elektriciteit/inpElektriciteit.tex}
+
+\newpage
+
+\introPage{Magnetisme}
+
+\newpage
+
+\input{Chapters/Magnetisme/inpMagnetisme.tex}
+
+\end{document}
