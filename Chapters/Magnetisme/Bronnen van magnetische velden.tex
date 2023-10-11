@@ -21,11 +21,12 @@
 \begin{app}[Magnetische kracht tussen twee parallelle draden]{Magnetische kracht tussen twee parallelle draden}
     \begin{minipage}{0.77\textwidth}
         Neem twee lange evenwijdige draden gescheiden door een afstand d, zoals in de figuur. Ze voeren respectievelijk stromen $I_1$ en $I_2$.
-        Elke stroom produceert een magnetisch veld dat door de ander wordt ‘gevoeld’, dus oefenen ze een kracht uit op mekander. We weten dat
+        Elke stroom produceert een magnetisch veld dat door de ander wordt ‘gevoeld’, dus oefenen ze een kracht uit op mekander.
+        We weten dat
         \begin{equation*}
-            F_{\text{max}} = I\ell B
+            F_{\parallel} = I\ell B
         \end{equation*}
-        en dus krijgen we:
+        en dus krijgen we
         \begin{equation*}
             F = I_{2}B_{1}\ell_{2} = \dfrac{\mu_0}{2\pi}\dfrac{I_{1}I_{2}}{d}\ell_{2}
         \end{equation*}
@@ -33,7 +34,7 @@
     \begin{minipage}{.19\textwidth}
         \includegraphics[scale=0.225]{Images/Magnetisme/MagnetischeKrachtTussenTweeParallelleDraden}
     \end{minipage} \vspace{0.2cm}\\
-    Hieruit kunnen we afleiden dat evenwijdige stroomvoerende geleiders elkaar
+    waarbij we bovenstaande definitie toepassen. Hieruit kunnen we afleiden dat evenwijdige stroomvoerende geleiders elkaar
     \begin{itemize}
         \item aantrekken indien de stroom in dezelfde richting vloeit,
         \item afstoten indien de stroom in tegengestelde richting vloeit.
@@ -55,14 +56,14 @@
 \newpage
 
 \begin{theo}[Magnetisch veld van een spoel]{Magnetisch veld van een spoel}
-    Een lange draad met meerdere windingen noemen we een \textbf{spoel}, zie de figuren hieronder.
+    Een lange draad met meerdere windingen noemen we een \textbf{spoel}, zie de figuur hieronder.
 
 %    \vspace{0.5cm}
 
 %    \begin{minipage}{.48\textwidth}
         \begin{center}
 %            Spoel: \\
-            \includegraphics[scale = 0.4]{Images/Magnetisme/Spoel}
+            \includegraphics[scale = 0.45]{Images/Magnetisme/Spoel}
         \end{center}
 %    \end{minipage}
 %    \begin{minipage}{.48\textwidth}
@@ -79,16 +80,23 @@
     In het centrum van de spoel is het netto magnetisch veld een redelijkgroot en redelijk uniform veld, we nemen aan dat een spoel dicht gebonden is en dus dat het veld praltisch uniform is.
     We kunnen de wet van Ampère toepassen op de zijden van de rechthoek (zie figuur onderaan)
     \begin{align*}
-%        \hspace{1cm}
+       \hspace{1cm}
         \oint \Vec{B} \cdot d\Vec{\ell} &= \int_{a}^{b} \Vec{B} \cdot d\Vec{\ell} + \int_{b}^{c} \Vec{B} \cdot d\Vec{\ell}
         +  \int_{c}^{d} \Vec{B} \cdot d\Vec{\ell} +  \int_{d}^{a} \Vec{B} \cdot d\Vec{\ell} \\
-                                        &= \int_{b}^{c} \Vec{B} \cdot d\Vec{\ell}  \\
+                                        &= \int_{c}^{d} \Vec{B} \cdot d\Vec{\ell}  \\
                                         &= B\ell
     \end{align*}
+    % \begin{equation*}
+    %     \oint \Vec{B} \cdot d\Vec{\ell} = \int_{a}^{b} \Vec{B} \cdot d\Vec{\ell} + \int_{b}^{c} \Vec{B} \cdot d\Vec{\ell} +  \int_{c}^{d} \Vec{B} \cdot d\Vec{\ell} +  \int_{d}^{a} \Vec{B} \cdot d\Vec{\ell} 
+    %                                     = \int_{b}^{c} \Vec{B} \cdot d\Vec{\ell}  
+    %                                     = B\ell
+    % \end{equation*}
     waarbij de integralen op de paden $a \to b$, $b \to c$ en $d \to a$ nul zijn, want het veld is praktisch nul tussen in en buiten de spoel.
+
     \begin{center}
-        \includegraphics[scale = 0.3]{Images/Magnetisme/SpoelMagnetischVeld}
+        \hspace*{1cm}\includegraphics[scale = 0.3]{Images/Magnetisme/SpoelMagnetischVeld}
     \end{center}
+
     We berkenen nu de formule van het magnetisch veld van een spoel:
     \begin{align*}
         \oint \Vec{B} \cdot d\Vec{\ell} &= \mu_{0}NI \\
@@ -142,26 +150,33 @@
     Als $d\Vec{\ell}$ een infinitesimale lengte voorstelt waardoor stroom
     vloeit, dan is het magnetisch veld $d\Vec{B}$, op eenderwelk punt $P$ in de ruimte, door
     dit stroomelement gegeven door
-    \begin{equation*}
-        d\Vec{B} = \dfrac{\mu_{0}I}{4\pi}\dfrac{d\Vec{\ell} \times \hat{r}}{r^2}
-    \end{equation*}
+    \begin{align*}
+        d\Vec{B} &= \dfrac{\mu_{0}I}{4\pi}\dfrac{d\Vec{\ell} \times \hat{r}}{r^2} \\
+              dB &= \dfrac{\mu_{0}I}{4\pi}\dfrac{d\ell}{r^2}\sin{(\theta)}
+    \end{align*}
     waarbij $\Vec{r}$ de verplaatsingsvector is van het element $d\Vec{\ell}$ tot het punt $P$.
-    Het totale magnetisch veld in punt P vinden we dan met
+    We zien dus nu dat 
+    \begin{itemize}
+        \item de veldsterkte minimaal is, als $\forall k \in \mathbb{N}^{+}: \ \theta = 0^{\circ} + k(180^{\circ})$
+        \item de veldsterkte maximaal is, als $\forall k \in \mathbb{N}^{+}: \theta = 90^{\circ} + k(180^{\circ})$
+    \end{itemize} 
+    Het totale magnetische veld in punt P vinden we dan door de integraal te nemen over alle stroomelementen
     \begin{equation*}
-        \Vec{B} = \int d\Vec{B} = \dfrac{\mu_{0}I}{4\pi} \int \dfrac{d\Vec{l} \times \hat{r}}{r}
+        \Vec{B} = \int d\Vec{B} = \dfrac{\mu_{0}I}{4\pi} \int \dfrac{d\Vec{l} \times \hat{r}}{r^{2}}
     \end{equation*}
     % Een belangrijk onderscheid tussen de wet van Biot-Savart en de wet van Ampère is dat bij de wet van Ampère
     % het magnetisch veld $\Vec{B}$ niet noodzakelijk enkel door de stroom is bij het integratiepad. Maar bij de wet
     % van Biot-Savart is het magnetisch veld $d\Vec{B}$ enkel en volledig bepaald door het stroomelement $Id\Vec{\ell}$.
     % Om het totale magnetisch veld $\Vec{B}$ te vinden is het noodzakelijk om de alle stroom te includeren.
+    Deze wet is vooral nuttig als we geen symmetrie kunnen gebruiken, en dus niet de wet van Ampère kunnen gebruiken.
 \end{lem}
 
-\begin{vrg}[Verschil tussen de wet van Ampère en de wet van Biot-Savart]{Verschil tussen de wet van Ampère en de wet van Biot-Savart}
-    Een belangrijk onderscheid tussen de wet van Biot-Savart en de wet van Ampère is dat bij de wet van Ampère
-    het magnetisch veld $\Vec{B}$ niet noodzakelijk enkel door de stroom is bij het integratiepad. Maar bij de wet
-    van Biot-Savart is het magnetisch veld $d\Vec{B}$ enkel en volledig bepaald door het stroomelement.
-    Om het totale magnetisch veld $\Vec{B}$ te vinden is het noodzakelijk om de alle stroom te includeren.
-\end{vrg}
+% \begin{vrg}[Verschil tussen de wet van Ampère en de wet van Biot-Savart]{Verschil tussen de wet van Ampère en de wet van Biot-Savart}
+%     Een belangrijk onderscheid tussen de wet van Biot-Savart en de wet van Ampère is dat bij de wet van Ampère
+%     het magnetisch veld $\Vec{B}$ niet noodzakelijk enkel door de stroom is bij het integratiepad. Maar bij de wet
+%     van Biot-Savart is het magnetisch veld $d\Vec{B}$ enkel en volledig bepaald door het stroomelement.
+%     Om het totale magnetisch veld $\Vec{B}$ te vinden is het noodzakelijk om de alle stroom te includeren.
+% \end{vrg}
 
 \newpage
 

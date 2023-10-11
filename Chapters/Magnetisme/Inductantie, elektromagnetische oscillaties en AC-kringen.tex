@@ -64,13 +64,26 @@
     Net zoals de energie in een condensator zich bevindt in het elektrisch veld tussen de platen,bevindt de energie in een inductor zich in het magnetisch veld binnenin de spoel.
 \end{theo}
 
-\newpage
-
 \begin{app}[RL-kringen]{RL-kringen}
+    \vspace{-0.5cm}
     \begin{minipage}{.66\textwidth}
-        
+        We sluiten de schakelaar en we passen de tweede wet van Kirchhoff toe op de kring. We krijgen
+        \begin{equation*}
+            V_{0} - IR - \mathcal{E} = V_{0} - IR - L\dfrac{dI}{dt} = 0
+        \end{equation*}
+        We kunnen dit herwerken tot een differentiaalvergelijking
+        \begin{equation*}
+            L\dfrac{dI}{dt} + RI = V_{0}
+        \end{equation*}
+        wat we oplossen tot 
+        \begin{equation*}
+            I(t) = \dfrac{V_{0}}{R}\left(1 - e^{\tfrac{-t}{\tau}}\right)
+        \end{equation*}
     \end{minipage}
     \begin{minipage}{.3\textwidth}
-        \includegraphics[scale = 0.4]{Images/Magnetisme/RLKring}
+        \hspace{0.5cm}\includegraphics[scale = 0.35]{Images/Magnetisme/RLKring}
+        \includegraphics[scale = 0.35]{Images/Magnetisme/RLKringGraph.png}
     \end{minipage}
+
+    \noindent met $\tau = \tfrac{L}{R}$. We zien dat de stroom initieel snel stijgt en dan afvlakt geleidelijk nabij $\tfrac{\mathcal{E}}{R}$.
 \end{app}
