@@ -162,13 +162,36 @@
         \end{align*}
         \hspace{-0.6cm} en voor de stroom
         \begin{align*}
-            I(t) &= -\tfrac{dQ(t)}{dt} \\
-                 &= \tfrac{Q_{0}}{\sqrt{LC}}\sin(\tfrac{t}{\sqrt{LC}})
+            I(t) &= -\dfrac{dQ(t)}{dt} \\
+                 &= \dfrac{Q_{0}}{\sqrt{LC}}\sin(\tfrac{t}{\sqrt{LC}})
         \end{align*}
     \end{minipage}
     \begin{minipage}{.25\textwidth}
         \vspace{0.3cm}\hspace{-0.45cm}\includegraphics[scale = 0.45]{Images/Magnetisme/LCKringGrafiek}
     \end{minipage}
-    waarbij $\omega = 2 \pi f = \sqrt{\tfrac{1}{LC}}$.
+    We zien dat de lading en de stroom sinusvormige functies zijn van de tijd. De stroom is $90^{\circ}$ uit fase met de lading en de frequentie van de oscillaties is
+    \begin{equation*}
+        f = \dfrac{1}{2\pi\sqrt{LC}}
+    \end{equation*}
+    waaruit we $\omega = 2\pi f = \tfrac{1}{\sqrt{LC}}$ kunnen afleiden. De energie in het elektrisch veld van de condensator is
+
+    \begin{minipage}{.70\textwidth}
+        \begin{equation*}
+            U_{E} = \dfrac{Q^{2}}{2C} = \dfrac{Q_{0}^2}{2C}\cos^2(\omega t)
+        \end{equation*}
+        \hspace{-0.6cm} en de energie in het magnetische veld van de inductor is 
+        \begin{equation*}
+            U_{B} = \dfrac{LI^{2}}{2} = \dfrac{LQ_{0}^2}{2C}\sin^2(\omega t)
+        \end{equation*}
+    \end{minipage}
+    \begin{minipage}{.26\textwidth}
+        \vspace{0cm}\hspace{-1.4cm}\includegraphics[scale = 0.4]{Images/Magnetisme/LCKringOscillatie.png} 
+    \end{minipage}
+    De totale energie in de kring is dus
+    \begin{align*}
+        U &= U_{E} + U_{B} \\
+          &= \dfrac{Q_{0}^2}{2C}\left(\cos^2(\omega t) +\sin^2(\omega t)\right) \\ 
+          &= \dfrac{Q_{0}^2}{2C}
+    \end{align*}
 \end{theo}
 
