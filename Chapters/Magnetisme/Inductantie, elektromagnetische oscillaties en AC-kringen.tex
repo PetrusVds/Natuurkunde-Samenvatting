@@ -19,18 +19,51 @@
     $M = M_{12} = M_{21}$.
 \end{theo}
 
+% \begin{theo}[Wederzijdse inductie]{Wederzijdse inductie}
+%     \begin{minipage}{.78\textwidth}
+%         Als twee spoelen dicht bij elkaar worden geplaatst, zoals in de figuur, zal een veranderende stroom in de ene spoel een elektromotorische kracht (emf) induceren in de andere spoel. Met andere woorden, de geïnduceerde emf in een spoel is evenredig met de snelheid van de stroomverandering in de andere spoel. Dit staat bekend als \textbf{wederzijdse inductie} $M$, waarbij we noteren:
+%         \begin{equation*}
+%             M_{21} = \dfrac{N_{2}\Phi_{21}}{I_{1}} 
+%         \end{equation*}
+%         Hierbij staat $M_{21}$ voor de wederzijdse inductiecoëfficiënt en $\Phi_{21}$ voor de magnetische flux door spoel 2 als gevolg van de stroom in spoel 1.
+%         Dit kan worden gecombineerd met de wet van Faraday.
+%     \end{minipage}
+%     \begin{minipage}{.18\textwidth}
+%         \includegraphics[scale=0.3]{Images/Magnetisme/WederzijdseInductie}
+%     \end{minipage}
+%     \begin{equation*}
+%         \mathcal{E}_{2} = - N_{2}\dfrac{d\Phi_{21}}{dt} = - M_{21}\dfrac{dI_{1}}{dt}
+%     \end{equation*}
+%     Hiermee verbinden we de verandering in stroom in spoel 1 met de emf die het induceert in spoel 2. In de algemene situatie is $M = M_{12} = M_{21}$.
+% \end{theo}
+
+
+% \begin{app}[Wederzijdse inductie van een solenoïde en een spoel]{Wederzijdse inductie van een solenoïde en een spoel}
+%     De solenoïde is opeengepakt, dus kunnen we veronderstellen dat alle magnetische flux in de solenoïde blijft in de tweede spoel.
+%     We weten dam wat de flux door deze spoel is, namelijk
+%     \begin{equation*}
+%         \Phi_{21} = BA = \mu_{0}\dfrac{N_{1}}{\ell}I_{1}A
+%     \end{equation*}
+%     en de wederzijdse inductiecoëfficient
+%     \begin{equation*}
+%         M = \dfrac{N_{2}\Phi_{21}}{I_{1}} = \mu_{0}\dfrac{N_{1}N_{2}}{\ell}A
+%     \end{equation*}
+%     waarbij we zien dat deze enkel afhangt van de geometrie van het systeem.
+% \end{app}
+
 \begin{app}[Wederzijdse inductie van een solenoïde en een spoel]{Wederzijdse inductie van een solenoïde en een spoel}
-    De solenoïde is opeengepakt, dus kunnen we veronderstellen dat alle magnetische flux in de solenoïde blijft in de tweede spoel.
-    We weten dam wat de flux door deze spoel is, namelijk
+    De solenoïde is compact, dus kunnen we aannemen dat alle magnetische flux in de solenoïde blijft en door de tweede spoel gaat.
+    We weten dan wat de flux door deze spoel is, namelijk
     \begin{equation*}
         \Phi_{21} = BA = \mu_{0}\dfrac{N_{1}}{\ell}I_{1}A
     \end{equation*}
-    en de wederzijdse inductiecoëfficient
+    en de wederzijdse inductiecoëfficiënt is
     \begin{equation*}
         M = \dfrac{N_{2}\Phi_{21}}{I_{1}} = \mu_{0}\dfrac{N_{1}N_{2}}{\ell}A
     \end{equation*}
-    waarbij we zien dat deze enkel afhangt van de geometrie van het systeem.
+    waaruit blijkt dat deze alleen afhankelijk is van de geometrie van het systeem.
 \end{app}
+
 
 \begin{theo}[Zelfinductie]{Zelfinductie}
     De magnetische flux $\Phi_{B}$ door een spoel met $N$ windingen (of eenderwelke kring) is evenredig met de stroom $I$ die erdoor vloeit, dus we definiëren de \textbf{zelfinductie} $L$ als
@@ -64,7 +97,18 @@
     Net zoals de energie in een condensator zich bevindt in het elektrisch veld tussen de platen,bevindt de energie in een inductor zich in het magnetisch veld binnenin de spoel.
 \end{theo}
 
-\begin{app}[RL-kringen]{RL-kringen}
+\begin{vrg}[Energiedichtheid]{Energiedichtheid}   
+    \vspace{-0.3cm}
+    \def\arraystretch{2}
+    \centering
+    \begin{tabular}{c|c}
+        Energiedichtheid van een elektrisch veld & Energiedichtheid van een magnetisch veld \\[-0.35cm]
+        van een spoel met zelfinductie $L$ en stroom $I$ & van een condensator met capaciteit $C$ en spanning $V$ \\ \hline
+        $U_{E} = \dfrac{1}{2}\epsilon_{0}E^{2}$ & $U_{B} = \dfrac{1}{2}\mu_{0}B^{2}$ \\
+    \end{tabular}
+\end{vrg}
+
+\begin{theo}[RL-kringen]{RL-kringen}
     \vspace{-0.5cm}
     \begin{minipage}{.66\textwidth}
         We sluiten de schakelaar en we passen de tweede wet van Kirchhoff toe op de kring. We krijgen
@@ -78,7 +122,7 @@
         wat we oplossen tot 
         \begin{equation*}
             I(t) = \dfrac{V_{0}}{R}\left(1 - e^{\tfrac{-t}{\tau}}\right)
-        \end{equation*}
+        \end{equation*} 
     \end{minipage}
     \begin{minipage}{.3\textwidth}
         \hspace{0.5cm}\includegraphics[scale = 0.35]{Images/Magnetisme/RLKring}
@@ -86,4 +130,45 @@
     \end{minipage}
 
     \noindent met $\tau = \tfrac{L}{R}$. We zien dat de stroom initieel snel stijgt en dan afvlakt geleidelijk nabij $\tfrac{\mathcal{E}}{R}$.
-\end{app}
+\end{theo}
+
+\newpage
+
+\begin{theo}[Elektromagnetische oscillaties in LC-kringen]{Elektromagnetische oscillaties in RL-kringen}
+    \vspace{-0.2cm}
+    \begin{minipage}{.73\textwidth}
+        We bekijken nu een kring met een inductor met inductantie $L$ en een condensator met capaciteit $C$; dit is dus een ideale kring zonder weerstand. 
+        We gaan ervan uit dat er initieel lading is in de condensator en er dus een potentiaal verschil $\Delta V = \tfrac{Q}{C}$ op is. Stel dat we de schakelaar sluiten, 
+        dan zal de condensator beginnen te ontladen en zal de stroom door de inductor beginnen te stijgen. Hierop passen we de tweede wet van Kirchhoff toe
+    \end{minipage}
+    \begin{minipage}{.23\textwidth}
+        \vspace{0.3cm}\includegraphics[scale = 0.35]{Images/Magnetisme/LCKring}
+    \end{minipage}
+    \vspace{-0.3cm}
+    \begin{equation*}
+        -L\dfrac{dI}{dt} + \dfrac{Q}{C} = 0
+    \end{equation*}
+    De lading op de positieve plaat, die voor de stroom zorgt, zal verminderen en dus ook de stroom. We hebben nu $I = -\tfrac{dQ}{dt}$ en we kunnen nu de bovenstaande vergelijking herwerken tot
+    een differentiaalvergelijking
+    \begin{equation*}
+        \dfrac{d^{2}Q}{dt^{2}} + \dfrac{Q}{LC} = 0
+    \end{equation*}
+    wat dezelfde vorm heeft als de vergelijking van de harmonische beweging. De oplossing is dus
+
+    \begin{minipage}{.71\textwidth}
+        \begin{align*}
+            Q(t) &= Q_{0}\cos(\omega t) \\
+                 &= Q_{0}\cos(\tfrac{t}{\sqrt{LC}})
+        \end{align*}
+        \hspace{-0.6cm} en voor de stroom
+        \begin{align*}
+            I(t) &= -\tfrac{dQ(t)}{dt} \\
+                 &= \tfrac{Q_{0}}{\sqrt{LC}}\sin(\tfrac{t}{\sqrt{LC}})
+        \end{align*}
+    \end{minipage}
+    \begin{minipage}{.25\textwidth}
+        \vspace{0.3cm}\hspace{-0.45cm}\includegraphics[scale = 0.45]{Images/Magnetisme/LCKringGrafiek}
+    \end{minipage}
+    waarbij $\omega = 2 \pi f = \sqrt{\tfrac{1}{LC}}$.
+\end{theo}
+

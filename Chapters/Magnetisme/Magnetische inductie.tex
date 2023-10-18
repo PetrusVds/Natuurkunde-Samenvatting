@@ -29,10 +29,10 @@
 \begin{theo}[Magnetische flux]{Magnetische flux}
     \vspace{-0.65cm}
     \begin{minipage}{0.75\textwidth}
-        Magnetische flux, net zoals elektrische flux, wordt gedefinieerd als de hoeveelheid magnetisch veld door een oppervlakte vloeit.
+        Magnetische flux, net zoals elektrische flux, wordt gedefinieerd als de hoeveelheid magnetisch veld dat door een oppervlakte vloeit.
         Dit komt dan overeen met de formule 
         \begin{equation*}
-            \Phi_{B} = \int \Vec{B} \cdot d\Vec{A}
+            \Phi_{B} = \oint \Vec{B} \cdot d\Vec{A}
         \end{equation*}
     \end{minipage}
     \begin{minipage}{0.21\textwidth}
@@ -42,9 +42,10 @@
 \end{theo}
     
 \begin{lem}[Faraday]{Faraday}
-    De geïnduceerde emf in een gesloten circuit is gelijk aan minus de tijdsverandering van de magnetische flux doorheen de kring, in formulevorm:
+    De geïnduceerde emf in een gesloten circuit is gelijk aan minus de tijdsverandering van de magnetische flux doorheen de kring met $N$ windingen,
+    waardoor dezelfde magnetische flux gaat, in formulevorm:
     \begin{equation*}
-        \mathcal{E_{\text{ind}}} = \oint \Vec{E}_{\text{ind}} \cdot d\Vec{\ell} = - \dfrac{d\Phi_{B}}{dt}
+        \mathcal{E_{\text{ind}}} = -N\dfrac{d\Phi_{B}}{dt}
     \end{equation*}
     % Als een circuit N windingen heeft die dicht bij elkaar zijn zodat dezelfde flux door elke winding gaat, dan kan je de geïnduceerde spanningen
     % optellen. We krijgen
@@ -58,11 +59,11 @@
     De stroom geproduceerd door een geïnduceerde emf beweegt in een richting zodat het magnetisch veld geproduceerd 
     door die stroom de verandering in magnetische flux doorheen het oppervlak tegenwerkt. We spreken nu over twee distincte velden, namelijk
     \begin{enumerate}
-        \item het veranderd magnetisch veld of flux die de stroom induceert
+        \item het veranderend magnetisch veld of flux die de stroom induceert
         \item het magnetisch veld geproduceerd door de geïnduceerde stroom
     \end{enumerate}
-    waarbij het tweede veld het eerste tegenstelt. Anders verwoord: een geïnduceerde emf is altijd in de richting
-    die de verantwoordelijke, originele lading in flux tegenstelt.
+    waarbij het tweede veld het eerste tegenstelt. Als dit niet zo zou zijn, dan zou er een kettingreactie zijn van
+    geïnduceerde emf's en stromen. Dit is in tegenspraak met de wet van behoud van energie.
 \end{lem}
 
 \begin{app}[Geïnduceerde emf in een bewegende geleider]{Geïnduceerde emf in een bewegende geleider}
@@ -78,7 +79,7 @@
         \begin{equation*}
             \mathcal{E} = \dfrac{d\Phi_{B}}{dt} = \dfrac{BdA}{dt} = \dfrac{B\ell v dt}{dt} = B \ell v
         \end{equation*}
-    waarbij we annemen dat $B$, $\ell$ en $v$ onderling loodrecht zijn. Als dit niet zo is, dan gebruiken we de loodrechte componenten.
+    waarbij we aannemen dat $B$, $\ell$ en $v$ onderling loodrecht zijn. Als dit niet zo is, dan gebruiken we de loodrechte componenten.
 \end{app}
 
 \newpage
