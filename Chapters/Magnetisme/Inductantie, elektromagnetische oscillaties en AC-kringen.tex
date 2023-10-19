@@ -134,7 +134,7 @@
 
 \newpage
 
-\begin{app}[Elektromagnetische oscillaties in LC-kringen]{Elektromagnetische oscillaties in RL-kringen}
+\begin{app}[LC-kringen]{in RL-kringen}
     \vspace{-0.2cm}
     \begin{minipage}{.73\textwidth}
         We bekijken nu een kring met een inductor met inductantie $L$ en een condensator met capaciteit $C$; dit is dus een ideale kring zonder weerstand. 
@@ -195,3 +195,152 @@
     \end{align*}
 \end{app}
 
+\newpage
+
+\begin{app}[RLC-kringen]{RLC-kringen}
+    \vspace{-0.5cm}
+    \begin{minipage}{.73\textwidth}
+        \vspace{0.2cm}
+        We bekijken een kring met twee schakelaars, een weerstand $R$, een condensator met capaciteit $C$ en een inductor
+        met inductantie $L$. We sluiten schakelaar 1 (zoals op de figuur) opdat er lading zou zijn op de condensator. 
+        Vervolgens openen we deze weer en sluiten we de tweede schakelaar. Er is nu een LC-oscillatie waarbij er energie verloren gaat aan de weerstand.
+        We passen de tweede wet van Kirchhoff toe op de kring
+    \end{minipage}
+    \begin{minipage}{.23\textwidth}
+        \vspace{0.3cm}\includegraphics[scale = 0.45]{Images/Magnetisme/RLCKring}
+    \end{minipage}
+    \vspace{-0.25cm}
+    \begin{equation*}
+        LI\dfrac{dI}{dt} + \dfrac{Q}{C}\dfrac{dQ}{dt} = -I^2R
+    \end{equation*}
+    wat we kunnen omvormen tot
+    \begin{equation*}
+        L\dfrac{d^2Q}{dt^2} + R\dfrac{dQ}{dt} + \dfrac{Q}{C} = 0
+    \end{equation*}
+    wat hetzelfde is als de gedempte harmonische beweging. De oplossing is dus
+    \begin{equation*}
+        Q(t) = Q_{0}e^{\tfrac{-Rt}{2L}}\cos(\omega t)
+    \end{equation*}
+    met $\omega = \left[\tfrac{1}{LC} - (\tfrac{R}{2L}^2)\right]$. We zien dus duidelijk als R groot is,
+    dat we kunnen spreken van \textbf{overdemping}.
+\end{app}
+
+\begin{theo}[Wisselstroomkringen]{Wisselstroomkringen}
+    Wisselstroomkringen zijn kringen waarbij de stroom varieert in de tijd. De stroom kan worden beschreven door
+    \begin{equation*}
+        I(t) = I_{0}\cos(\omega t)
+    \end{equation*}
+    en het potentiaalverschil van de bron als
+    \begin{equation*}
+        \Delta V = \Delta V_{0}\sin(\omega t)
+    \end{equation*}
+    waarbij $\Delta V_0$ de amplitude is van het potentiaalverschil. De stroom en het potentiaalverschil zijn in fase met elkaar.
+\end{theo}
+
+\begin{pro}[Weerstand in een wisselstroomkring]{Weerstand in een wisselstroomkring}
+    Stel je een circuit voor met een AC-bron en een weerstand $R$. De tweede wet van Kirchhoff geeft
+    \begin{equation*}
+        \Delta V - \Delta V_{R} = 0
+    \end{equation*}
+    de spanningsgroottes zijn dus gelijk en volgt dus dat
+    \begin{equation*}
+        \Delta V_{R} = \Delta V_{0}\sin(\omega t) = I_{0}R\sin(\omega t)
+    \end{equation*}
+    waarmee we de stroom door de weerstand kunnen bepalen in functie van de tijd
+    \begin{equation*}
+        I = \dfrac{\Delta V_{R}}{R} = \dfrac{\Delta V_{0}}{R}\sin(\omega t) = I_{0}\sin(\omega t) 
+    \end{equation*}
+    \vspace{-0.5cm}
+\end{pro}
+
+\newpage
+
+\begin{pro}[Zelfinductie in een wisselstroomkring]{Zelfinductie in een wisselstroomkring}
+    Stel je een circuit voor met een AC-bron en een inductor met zelfinductie $L$. De tweede wet van Kirchhoff geeft
+    \begin{equation*}
+        \Delta V - \mathcal{E}_{L} = \Delta V_{0}\sin(\omega t) - L\dfrac{dI}{dt} = 0
+    \end{equation*}
+    waaruit we een formule kunnen halen voor de stroom door de inductor
+    \begin{equation*}
+        I(t) = \dfrac{\Delta V_{0}}{L}\int\sin(\omega t)dt = -\dfrac{\Delta V_{0}}{\omega L}\cos(\omega t)
+    \end{equation*}
+    wat we herleiden tot 
+    \begin{equation*}
+        I(t) = \dfrac{\Delta V_{0}}{\omega L}\sin(\omega t - \tfrac{\pi}{2}) = I_{0}\sin(\omega t - \tfrac{\pi}{2})
+    \end{equation*}
+    door gebruik te maken van de goniometrisch identiteiten 
+    \begin{equation*}
+        \cos(\theta - \tfrac{\pi}{2}) = \sin(\theta) \quad \text{en} \quad \sin(-\theta) = -\sin(\theta) 
+    \end{equation*}
+    We zien dat er een faseverschil is tussen de stroom en het potentiaalverschil van $90^{\circ}$, waarbij de stroom achter loopt.
+\end{pro}
+
+\begin{pro}[Capaciteit in een wisselstroomkring]{Capaciteit in een wisselstroomkring}
+    Stel je een circuit voor met een AC-bron en een condensator met capaciteit $C$. De tweede wet van Kirchhoff geeft
+    \begin{equation*}
+        \Delta V - \Delta V_{C} = \Delta V_{0}\sin(\omega t) - \dfrac{Q}{C} = 0
+    \end{equation*}
+    waaruit we een formule kunnen halen voor de lading op de condensator
+    \begin{equation*}
+        Q(t) = C\Delta V_{0}\sin(\omega t)
+    \end{equation*}
+    wat we herleiden tot een formule voor de stroom door de condensator
+    \begin{equation*}
+        I(t) = \dfrac{dQ}{dt} = \omega C\Delta V_{0}\cos(\omega t) = I_{0}\cos(\omega t)
+    \end{equation*}
+    wat we herleiden tot
+    \begin{equation*}
+        I(t) = \omega C\Delta V_{0}\sin(\omega t + \tfrac{\pi}{2}) = I_{0}\sin(\omega t + \tfrac{\pi}{2})
+    \end{equation*}
+    door gebruik te maken van de goniometrische identiteiten
+    \begin{equation*}
+        \cos(\theta + \tfrac{\pi}{2}) = \sin(-\theta) \quad \text{en} \quad \cos(-\theta) = \cos(\theta)
+    \end{equation*}
+    We zien dat er een faseverschil is tussen de stroom en het potentiaalverschil van $90^{\circ}$, waarbij de stroom voor loopt.
+\end{pro}
+
+\newpage
+
+\begin{theo}[Inductieve en capacitieve reactantie]{Inductieve en capacitieve reactantie}
+    \begin{itemize}
+        \item   De \textbf{inductieve reactantie} $X_{L}$ van een spoel met zelfinductie $L$ is gedefinieerd als
+                    \begin{equation*}
+                        X_{L} = \omega L
+                    \end{equation*}
+                waarbij $\omega$ de hoekfrequentie is van de wisselstroom. We zien 
+                \begin{itemize}
+                    \item $ \omega \to 0: X_{L} \to 0 \quad \text{(kortsluiting)} $
+                    \item $ \omega \to \infty: X_{L} \to \infty \quad \text{(open circuit)} $
+                \end{itemize}
+                We kunnen nu ook Toepassing \ref{Zelfinductie in een wisselstroomkring} herwerken tot
+                \begin{equation*}
+                    \Delta V_{L} = -I_{0}X_{L}\sin(\omega t)
+                \end{equation*}
+        \item    De \textbf{capacitieve reactantie} $X_{C}$ van een condensator met capaciteit $C$ is gedefinieerd als
+                    \begin{equation*}
+                        X_{C} = \dfrac{1}{\omega C}
+                    \end{equation*}
+                waarbij $\omega$ de hoekfrequentie is van de wisselstroom. We zien
+                \begin{itemize}
+                    \item $ \omega \to 0: X_{C} \to \infty \quad \text{(open circuit)} $
+                    \item $ \omega \to \infty: X_{C} \to 0 \quad \text{(kortsluiting)}$
+                \end{itemize}
+                We kunnen nu ook Toepassing \ref{Capaciteit in een wisselstroomkring} herwerken tot
+                \begin{equation*}
+                    \Delta V_{C} = I_{0}X_{C}\sin(\omega t)
+                \end{equation*}
+    \end{itemize}
+    \vspace{0.3cm}
+    \noindent \textbf{Opmerking:} Reactantie is een maat van weerstand tegen de ladingstroom, de reactantie van een weerstand $X_{R}$ is gewoon de weerstand $R$ zelf.
+\end{theo}
+
+\begin{summ}[Toepassingen in wisselstroomkringen]{Toepassingen in wisselstroomkringen}
+    \def\arraystretch{2}
+    \centering
+    \begin{tabular}{c|c|c|c}
+        & $\Delta V$ & $I$ & $\tfrac{\Delta V_{0}}{I_{0}}$ \\ \hline
+        $R$ & $\Delta V_{0}\sin(\omega t)$ & $I_{0}\sin(\omega t)$ & $X_{R} = R$ \\ \hline
+        $L$ & $\Delta V_{0}\sin(\omega t)$ & $I_{0}\sin(\omega t - \tfrac{\pi}{2})$ & $X_{L} = \omega L$ \\ \hline
+        $C$ & $\Delta V_{0}\sin(\omega t)$ & $I_{0}\sin(\omega t + \tfrac{\pi}{2})$ & $X_{C} = \tfrac{1}{\omega C}$ \\ 
+    \end{tabular}
+\end{summ}
