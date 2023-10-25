@@ -49,7 +49,7 @@
         \includegraphics[scale = 0.45]{Images/Magnetisme/MagnetischeKracht}
     \end{center}
     \begin{minipage}{.75\textwidth}
-        Als het veld homogeen is, dan zal elk infinitesimaal deeltje $d\Vec{\ell}$ dezelfde hoek maken met het magnetische veld $\Vec{B}$.
+        Als het veld homogeen is, dan zal elk infinitesimaal deeltje $d\Vec{\ell}$ van de rechte draad dezelfde hoek maken met het magnetische veld $\Vec{B}$.
         Hieruit volgt dan de formule:
         \begin{equation*}
             \Vec{F} = I\Vec{\ell} \times \Vec{B}
@@ -92,7 +92,7 @@
 \newpage
 
 \begin{theo}[Magnetische kracht op een bewegende lading]{Magnetische kracht op een bewegende lading}
-    Elektrische stroom is een verzameling van N bewegende ladingen, we kunnen de definitie van magnetische kracht dus ook anders schrijven:
+    Elektrische stroom is een verzameling van N bewegende ladingen, we kunnen de definitie van magnetische kracht dus ook anders schrijven
     \begin{equation*}
         \Vec{F} = I\Vec{\ell} \times \Vec{B} = Nq\Vec{v} \times \Vec{B}
     \end{equation*}
@@ -137,59 +137,50 @@
 
 \begin{theo}[Magnetisch dipool moment]{Magnetisch dipool moment}
     Wanneer een lading stroomt door een gesloten kring in een extern magnetisch veld, dan kan de magnetische kracht torsie veroorzaken.
-    Stroom vloeit door de rechthoekige kring (zie figuur a), waarvan we aannemen dat het parrallel is met het veld $\Vec{B}$.
-    Het veld oefent noch een kracht, noch een krachtmoment uit op de horizontale delen; hier is $\sin(\theta) = 0$. Het veld oefent wel een kracht uit op de verticale delen
-    (zie figuur b), we noemen deze krachten $\Vec{F_1}$ en $\Vec{F_2}$. Deze krachten zorgen voor een netto krachtmoment:
+    Stroom vloeit door de rechthoekige kring (zie figuur a), waarvan we aannemen dat hij parrallel is met het veld $\Vec{B}$.
+    Het veld oefent noch een kracht, noch een krachtmoment 
 
+    \vspace{-0.3cm}
 %    \newpage
-
+    % \Vec{\tau} = \Vec{r} \times \Vec{F} = \Vec{r} \times \Vec{F_1} + \Vec{r} \times \Vec{F_2}
     \hspace{-0.5cm}\begin{minipage}{0.79\textwidth}
+        uit op de horizontale delen; hier is $\sin(\theta) = 0$. Het veld oefent wel een kracht uit op de verticale delen
+        (zie figuur b), we noemen deze krachten $\Vec{F_1}$ en $\Vec{F_2}$. Deze krachten zorgen voor een krachtmoment:
         % \vspace{-0.2cm}
+        % \begin{equation*}
+        %     \tau = IaB\dfrac{b}{2} + IaB\dfrac{b}{2} = IabB = IAB
+        % \end{equation*}
         \begin{equation*}
-            \tau = IaB\dfrac{b}{2} + IaB\dfrac{b}{2} = IabB = IAB
+            \Vec{\tau} = NI(\Vec{a} \times \Vec{b}) \times \Vec{B} = NI\Vec{A} \times \Vec{B}
         \end{equation*}
-        waarbij $A = ab$ de oppervlakte van de spoel.
-        Als de spoel $N$ kringen heeft en een hoek $\theta$ maakt met het magnetisch veld (zie figuur c),
-        dan is de stroom $NI$ en volgt:
-        \begin{equation*}
-            \tau = NIAB\sin(\theta)
-        \end{equation*}
-        want de krachten blijven gelijk, maar de krachtarmen verkleint.
+        waarbij $\Vec{A} = \Vec{a} \times \Vec{b}$ de oppervlakte van de spoel en $I = NI$ in een spoel met $N$ kringen.
+        % Als de spoel $N$ kringen heeft en een hoek $\theta$ maakt met het magnetisch veld (zie figuur c),
+        % dan is de stroom $NI$ en volgt:
+        % \begin{equation*}
+        %     \Vec{\tau} = NI\Vec{A} \times \Vec{B}
+        % \end{equation*}
+        % want de krachten blijven gelijk, maar de krachtarmen verkleint.
         Het \textbf{magnetisch dipool moment} $\Vec{\mu}$ wordt als volgt gedefinieerd:
         \begin{equation*}
             \Vec{\mu} = NI\Vec{A}
         \end{equation*}
-        waarbij de ricthing van $\Vec{A}$ loodrecht is op het vlak van de spoel. Hiermee kunnen we de formule vectorieel schrijven:
+        waarbij de ricthing van $\Vec{A}$ loodrecht is op het vlak van de spoel. Hiermee kunnen we de krachtmoment formule herschrijven:
         \begin{equation*}
-            \Vec{\tau} = NI\Vec{A} \times \Vec{B} = \Vec{\mu} \times \Vec{B}
+            \Vec{\tau} = \Vec{\mu} \times \Vec{B}
         \end{equation*}
         De potentiële energie U kunnen we dan als volgt berekenen
         \begin{equation*}
-            U = \int_0^{\tfrac{\pi}{2}} \tau d\theta = \int_0^{\tfrac{\pi}{2}} NIAB\sin(\theta) d\theta = -\mu B\cos(\theta) = -\Vec{\mu} \cdot \Vec{B}
+            U = \int_0^{\tfrac{\pi}{2}} \tau d\theta = \mu B \int_0^{\tfrac{\pi}{2}} \sin(\theta) d\theta = -\mu B\cos(\theta) = -\Vec{\mu} \cdot \Vec{B}
         \end{equation*}
+        
     \end{minipage}
     \begin{minipage}{.17\textwidth}
-        \includegraphics[scale = 0.33]{Images/Magnetisme/MagnetischDipoolMoment}
+        \vspace{0.5cm}\includegraphics[scale = 0.32]{Images/Magnetisme/MagnetischDipoolMoment}
     \end{minipage}
-    \vspace{0.2cm} \\
+    % \vspace{0.2cm} \\
+    \vspace{-0.1cm}\\
     wat ook logisch is sinds we dit kunnen vergelijkigen met het elektrisch dipool moment.
 \end{theo}
-
-\begin{app}[Magnetisch moment van een atoom]{Magnetisch moment van een atoom}
-    Bij een atoom cirkelt een elektron rond de kern: er is dus een stroom.
-    \begin{equation*}
-        I = \dfrac{e}{T} = \dfrac{e\omega}{2\pi} = \dfrac{ev}{2\pi r}
-    \end{equation*}
-    We kunnen ook het \textbf{orbitaal magnetisch moment} berekenen, namelijk: 
-    \begin{equation*}
-        \Vec{\mu} = I\Vec{A} = \dfrac{ev}{2\pi r} \pi r^{2} \hat{k} = -\dfrac{e}{2m_{e}}(-m_{e}rv\hat{k}) = -\dfrac{e}{2m_{e}}\Vec{L}
-    \end{equation*}
-    Hierbij hebben we dus het magnetisch moment van een atoom uitgedrukt in termen van het impulsmoment.
-    Het feit dat de zin tegengesteld is, is logisch, want de zin van het impulsmoment wordt bepaald door de zin van de snelheidsvector.
-    De conventionele stroomzin is, daarentegen, tegengesteld aan de beweging van een elektron.
-\end{app}
-
-\newpage
 
 \begin{vrg}[Verschillen tussen het magnetisch en elektrisch dipoolmoment]{Verschillen tussen het magnetisch en elektrisch dipoolmoment}
     \vspace{-0.3cm}
@@ -200,30 +191,59 @@
         $\Vec{\tau} = \Vec{\mu} \times \Vec{B}$ & $\Vec{\tau} = \Vec{p} \times \Vec{E}$ \\ 
         $U = -\Vec{\mu} \cdot \Vec{B}$ & $U = -\Vec{p} \cdot \Vec{E}$ \\
     \end{tabular}
+    \vspace{-0.2cm}
 \end{vrg}
 
+\begin{app}[Magnetisch moment van een atoom]{Magnetisch moment van een atoom}
+    Bij een atoom cirkelt een elektron rond de kern: er is dus een stroom. We vinden hiervoor:
+    \begin{equation*}
+        I = \dfrac{e}{T} = \dfrac{e\omega}{2\pi} = \dfrac{ev}{2\pi r}
+    \end{equation*}
+    We kunnen ook het \textbf{orbitaal magnetisch moment} berekenen, namelijk: 
+    \begin{equation*}
+        \Vec{\mu} = I\Vec{A} = \dfrac{ev}{2\pi r} \pi r^{2} \hat{k} = -\dfrac{e}{2m_{e}}(-m_{e}rv\hat{k}) = -\dfrac{e}{2m_{e}}\Vec{L}
+    \end{equation*}
+    Hierbij hebben we dus het magnetisch moment van een atoom uitgedrukt in termen van het impulsmoment. 
+    % Het feit dat de zin tegengesteld is, is logisch, want de zin van het impulsmoment wordt bepaald door de zin van de snelheidsvector.
+    % De conventionele stroomzin is, daarentegen, tegengesteld aan de beweging van een elektron.
+    \vspace{0cm}
+\end{app}
+
+\newpage
+
+
 \begin{theo}[Hall-Effect]{Hall-Effect}
-    \begin{minipage}{0.78\textwidth}
-        Wanneer een stroomvoerende geleider in een magnetisch veld wordt vastgehouden,
-        oefent het veld een zijwaartse kracht uit op de ladingen die in de geleider bewegen.
-        De lading zal kaatsen en er zal een potentiaalverschil ontstaan. Dit potentiaalverschil zal
-        stijgen totdat het gecreërde elektrisch veld $\Vec{E}_H$ een kracht $e\Vec{E}_H$
-        op de ladingen uitoefent dat gelijk en tegengesteld is aan de magnetische kracht, ofwel:
+    Wanneer een stroomvoerende geleider in een magnetisch veld wordt vastgehouden,
+    oefent het veld een zijwaartse kracht uit op de ladingen die in de geleider bewegen.
+    De lading zal kaatsen en er zal een potentiaalverschil ontstaan. Dit potentiaalverschil zal
+    stijgen totdat het gecreërde elektrisch veld $\Vec{E}_H$ een kracht $e\Vec{E}_H$ op de ladingen uitoefent dat gelijk en tegengesteld is aan de magnetische kracht, ofwel:
+    \begin{minipage}{0.76\textwidth}
+        % Wanneer een stroomvoerende geleider in een magnetisch veld wordt vastgehouden,
+        % oefent het veld een zijwaartse kracht uit op de ladingen die in de geleider bewegen.
+        % De lading zal kaatsen en er zal een potentiaalverschil ontstaan. Dit potentiaalverschil zal
+        % stijgen totdat het gecreërde elektrisch veld $\Vec{E}_H$ een kracht $e\Vec{E}_H$
+        % op de ladingen uitoefent dat gelijk en tegengesteld is aan de magnetische kracht, ofwel:
+
+        \vspace{0.1cm}
+
         \begin{equation*}
             eE_H = ev_{d}B \Rightarrow E_H = v_{d}B
         \end{equation*}
         Dit noemen we het \textbf{Hall-effect}. Het potentiaalverschil wordt ook wel de \textbf{Hallsspanning}
-        en wordt bij een uniform Hall veld in een lange, dunne geleider:
+        en wordt bij een uniform Hall veld in een lange, dunne geleider gegeven door
         \begin{equation*}
             \mathcal{E}_H = E_{H}d = v_{d}Bd = R_H\dfrac{IBd}{A}
         \end{equation*}
-        met $R_H = \tfrac{1}{ne}$ de \textbf{Hall-coëfficiënt}.
+        met $R_H = \tfrac{1}{ne}$ de \textbf{Hall-coëfficiënt}. Hieruit zien we ook dat er een snelheid
+        nodig is om rechtlijnig door de geleider te gaan, namelijk
+        \begin{equation*}
+            v = \dfrac{E_H}{B} = R_H\dfrac{I}{A}
+        \end{equation*}
+        dit zal in volgende toepassing van groot belang zijn.    
     \end{minipage}
-    \begin{minipage}{.18\textwidth}
+    \begin{minipage}{.20\textwidth}
         \includegraphics[scale = 0.3]{Images/Magnetisme/HallEffect}
-    \end{minipage}
-    \vspace{0.2cm}
-
+    \end{minipage} 
 \end{theo}
 
 % \begin{summ}[Rechterhandregels]{Rechterhandregels}
@@ -232,13 +252,12 @@
 % \end{summ}
 
 \begin{app}[Massaspectrometer]{Massaspectrometer}
-    \vspace{-0.15cm}
     \begin{minipage}{.7\textwidth}
         De massaspectrometer is een toestel dat gebruikt wordt om de massas van atomen te meten.
         Ionen worden geproduceerd door warmte of door een stroom in de bron $S$.  De partikels, met massa $m$ en elektrische lading $q$, 
         gaan door de gleuf $S_{1}$ en gaan door het gebied waar elektrisch veld en magnetisch veld elkaar kruisen. We weten dat 
         het Halleffect nu op het partikel een effect zal hebben en dus weten we ook de snelheid die nodig is om door de gleuf $S_{2}$ 
-        te geraken, namelijk: $v = \tfrac{E}{B_{1}}$. Dit is dus eigenlijk wat men noemt een \textbf{snelheidsfilter}. 
+        te geraken. Dit is dus eigenlijk wat men noemt een \textbf{snelheidsfilter}. 
         In het halfcirkelvormig gebied is er enkel een magnetisch veld $B_{2}$ en zal dus het magnetisch veld voor een cirkelvormige beweging veroorzaken voor het partikel. 
         De straal $r$ van dit cirkelvormig pad kunnen we vinden door te plaats te meten waar het partikel aankomt. Volgens de tweede wet van Newton krijgen we nu 
     \end{minipage}
@@ -252,4 +271,7 @@
         m = \dfrac{qB_{2}r}{v} = \dfrac{qB_{1}B_{2}r}{E}
     \end{equation*}
     en kunnen we $m$ nu dus bepalen.
+    \vspace{0.3cm} \\
+    \noindent \textbf{Opmerking:} de tekening gebruikt een andere notatie als mijn uitleg, maar het principe blijft hetzelfde.
+    \vspace{-0.2cm}
 \end{app}
