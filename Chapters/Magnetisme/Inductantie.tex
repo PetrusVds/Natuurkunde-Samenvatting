@@ -80,18 +80,17 @@
 \newpage
 
 \begin{app}[Energie opgeslagen in een magnetisch veld]{Energie opgeslagen in een magnetisch veld}
-    Wanneer een inductor met zelfinductie $L$ een stroom $I$ heeft, die verandert met een snelheid $dI/dt$, dan is de energie die 
-    gelever wordt aan de inductor gelijk aan 
+    Wanneer een inductor met zelfinductie $L$ een stroom $I$ heeft, die verandert met een snelheid $dI/dt$, dan is de energie die geleverd wordt aan de inductor gelijk aan 
     \begin{equation*}
-        P = \mathcal{E}I = -LI\dfrac{dI}{dt}
+        P_L = LI\dfrac{dI}{dt}
     \end{equation*}
     De hoeveelheid arbeid $dW$ geleverd aan de inductor in een tijd $dt$ is gelijk aan
     \begin{equation*}
-        dW = Pdt = -LIdI
+        dW_L = P_Ldt = LIdI
     \end{equation*}
     De energie die opgeslagen is in het magnetisch veld van de inductor is gelijk aan de energie die geleverd is aan de inductor
     \begin{equation*}
-        U = \int dW = \int Pdt = \int_{0}^{I} -LIdI = \dfrac{1}{2}LI^{2}
+        U_L = \int dW_L = \int P_Ldt = \int_{0}^{I} -LIdI = \dfrac{1}{2}LI^{2}
     \end{equation*}
     wat heel vergelijkbaar is aan de formule voor de energie opgeslagen in een condensator, namelijk: $U_{C} = \frac{1}{2}C(\Delta V)^{2}$. 
     Net zoals de energie in een condensator zich bevindt in het elektrisch veld tussen de platen,bevindt de energie in een inductor zich in het magnetisch veld binnenin de spoel.
@@ -155,21 +154,24 @@
 
     \begin{minipage}{.71\textwidth}
         \begin{align*}
-            Q(t) &= Q_{0}\cos(\omega t) \\
-                 &= Q_{0}\cos(\tfrac{t}{\sqrt{LC}})
+            Q(t) &= Q_{\max}\cos(\omega t + \phi) \\
+                 &= Q_{\max}\cos(\tfrac{t}{\sqrt{LC}} + \phi)
         \end{align*}
         \hspace{-0.6cm} en voor de stroom
         \begin{align*}
             I(t) &= -\dfrac{dQ(t)}{dt} \\
-                 &= \dfrac{Q_{0}}{\sqrt{LC}}\sin(\tfrac{t}{\sqrt{LC}})
+                 &= \dfrac{Q_{\max}}{\sqrt{LC}}\sin(\tfrac{t}{\sqrt{LC}} + \phi) \\
+                 &= I_{\max}\sin(\tfrac{t}{\sqrt{LC}} + \phi)
         \end{align*}
         \vspace{0.1cm}
     \end{minipage}
     \begin{minipage}{.25\textwidth}
-        \hspace{-0.45cm}\includegraphics[scale = 0.45]{Images/Magnetisme/LCKringGrafiek}
+        \vspace{-0.3cm}\hspace{-0.45cm}\includegraphics[scale = 0.45]{Images/Magnetisme/LCKringGrafiek}
     \end{minipage}
-    % \vspace{-0.15cm}
-    We zien dat de lading en de stroom sinusvormige functies zijn van de tijd. De stroom is $90^{\circ}$ uit fase met de lading en de frequentie van de oscillaties is
+
+    \vspace{-0.4cm}
+
+    \noindent met $\phi$ de faseconstante. We zien dat de lading en de stroom sinusvormige functies zijn van de tijd. De stroom is $90^{\circ}$ uit fase met de lading en de frequentie van de oscillaties is
     \begin{equation*}
         f = \dfrac{1}{2\pi\sqrt{LC}}
     \end{equation*}
@@ -177,11 +179,11 @@
 
     \begin{minipage}{.70\textwidth}
         \begin{equation*}
-            U_{E} = \dfrac{Q^{2}}{2C} = \dfrac{Q_{0}^2}{2C}\cos^2(\omega t)
+            U_{E} = \dfrac{Q^{2}}{2C} = \dfrac{Q_{\max}^2}{2C}\cos^2(\omega t + \phi)
         \end{equation*}
         \hspace{-0.6cm} en de energie in het magnetische veld van de inductor is 
         \begin{equation*}
-            U_{B} = \dfrac{LI^{2}}{2} = \dfrac{LQ_{0}^2}{2C}\sin^2(\omega t)
+            U_{B} = \dfrac{LI^{2}}{2} = \dfrac{LQ_{\max}^2}{2C}\sin^2(\omega t + \phi)
         \end{equation*}
     \end{minipage}
     \begin{minipage}{.26\textwidth}
@@ -190,9 +192,10 @@
     De totale energie in de kring is dus
     \begin{align*}
         U &= U_{E} + U_{B} \\
-          &= \dfrac{Q_{0}^2}{2C}\left(\cos^2(\omega t) +\sin^2(\omega t)\right) \\ 
-          &= \dfrac{Q_{0}^2}{2C}
+          &= \dfrac{Q_{\max}^2}{2C}\left(\cos^2(\omega t + \phi) +\sin^2(\omega t + \phi)\right) \\ 
+          &= \dfrac{Q_{\max}^2}{2C}
     \end{align*}
+    \vspace{-0.3cm}
 \end{app}
 
 \newpage
@@ -211,44 +214,44 @@
     \end{minipage}
     \vspace{-0.25cm}
     \begin{equation*}
-        LI\dfrac{dI}{dt} + \dfrac{Q}{C}\dfrac{dQ}{dt} = -I^2R
+        LI\frac{dI}{dt} + \dfrac{Q}{C}\dfrac{dQ}{dt} = -I^2R
     \end{equation*}
     wat we kunnen omvormen tot
     \begin{equation*}
-        L\dfrac{d^2Q}{dt^2} + R\dfrac{dQ}{dt} + \dfrac{Q}{C} = 0
+        L\frac{d^2Q}{dt^2} + R\dfrac{dQ}{dt} + \dfrac{Q}{C} = 0
     \end{equation*}
     wat hetzelfde is als de gedempte harmonische beweging. De oplossing is dus
     \begin{equation*}
-        Q(t) = Q_{0}e^{\tfrac{-Rt}{2L}}\cos(\omega t)
+        Q(t) = Q_{\max}e^{\frac{-R}{2L}t}\cos(\omega t + \phi)
     \end{equation*}
-    met $\omega = \left[\tfrac{1}{LC} - (\tfrac{R}{2L}^2)\right]$. We zien dus duidelijk als R groot is,
+    met $\omega = \left[\tfrac{1}{LC} - (\tfrac{R}{2L}^2)\right]$ en $\phi$ de faseconstante. We zien dus duidelijk als R groot is,
     dat we kunnen spreken van \textbf{overdemping}.
 \end{app}
 
 \begin{theo}[Wisselstroomkringen]{Wisselstroomkringen}
     Wisselstroomkringen zijn kringen waarbij de stroom varieert in de tijd. De stroom kan worden beschreven door
     \begin{equation*}
-        I(t) = I_{0}\cos(\omega t)
+        I(t) = I_{\max}\cos(\omega t)
     \end{equation*}
     en het potentiaalverschil van de bron als
     \begin{equation*}
-        \Delta V = \Delta V_{0}\sin(\omega t)
+        \Delta V = \Delta V_{\max}\sin(\omega t)
     \end{equation*}
-    waarbij $\Delta V_0$ de amplitude is van het potentiaalverschil. De stroom en het potentiaalverschil zijn in fase met elkaar.
+    waarbij $\Delta V_{\max}$ de amplitude is van het potentiaalverschil. De stroom en het potentiaalverschil zijn in fase met elkaar.
 \end{theo}
 
 \begin{pro}[Weerstand in een wisselstroomkring]{Weerstand in een wisselstroomkring}
     Stel je een circuit voor met een AC-bron en een weerstand $R$. De tweede wet van Kirchhoff geeft
     \begin{equation*}
-        \Delta V - \Delta V_{R} = 0
+        \Delta v - \Delta v_{R} = \Delta v - i_R R = 0
     \end{equation*}
     de spanningsgroottes zijn dus gelijk en volgt dus dat
     \begin{equation*}
-        \Delta V_{R} = \Delta V_{0}\sin(\omega t) = I_{0}R\sin(\omega t)
+        \Delta v_{R} = \Delta V_{\max}\sin(\omega t) = I_{\max}R\sin(\omega t)
     \end{equation*}
     waarmee we de stroom door de weerstand kunnen bepalen in functie van de tijd
     \begin{equation*}
-        I = \dfrac{\Delta V_{R}}{R} = \dfrac{\Delta V_{0}}{R}\sin(\omega t) = I_{0}\sin(\omega t) 
+        i_R = \dfrac{\Delta v_{R}}{R} = \dfrac{\Delta V_{\max}}{R}\sin(\omega t) = I_{\max}\sin(\omega t) 
     \end{equation*}
     \vspace{-0.5cm}
 \end{pro}
@@ -258,15 +261,15 @@
 \begin{pro}[Zelfinductie in een wisselstroomkring]{Zelfinductie in een wisselstroomkring}
     Stel je een circuit voor met een AC-bron en een inductor met zelfinductie $L$. De tweede wet van Kirchhoff geeft
     \begin{equation*}
-        \Delta V - \mathcal{E}_{L} = \Delta V_{0}\sin(\omega t) - L\dfrac{dI}{dt} = 0
+        \Delta v + \Delta v_L = \Delta v - \mathcal{E}_{L} = \Delta V_{0}\sin(\omega t) - L\dfrac{di}{dt} = 0
     \end{equation*}
     waaruit we een formule kunnen halen voor de stroom door de inductor
     \begin{equation*}
-        I(t) = \dfrac{\Delta V_{0}}{L}\int\sin(\omega t)dt = -\dfrac{\Delta V_{0}}{\omega L}\cos(\omega t)
+        i_L = \dfrac{\Delta V_{\max}}{L}\int\sin(\omega t)dt = -\dfrac{\Delta V_{\max}}{\omega L}\cos(\omega t)
     \end{equation*}
     wat we herleiden tot 
     \begin{equation*}
-        I(t) = \dfrac{\Delta V_{0}}{\omega L}\sin(\omega t - \tfrac{\pi}{2}) = I_{0}\sin(\omega t - \tfrac{\pi}{2})
+        i_L = \dfrac{\Delta V_{\max}}{\omega L}\sin(\omega t - \tfrac{\pi}{2}) = I_{\max}\sin(\omega t - \tfrac{\pi}{2})
     \end{equation*}
     door gebruik te maken van de goniometrisch identiteiten 
     \begin{equation*}
@@ -278,19 +281,19 @@
 \begin{pro}[Capaciteit in een wisselstroomkring]{Capaciteit in een wisselstroomkring}
     Stel je een circuit voor met een AC-bron en een condensator met capaciteit $C$. De tweede wet van Kirchhoff geeft
     \begin{equation*}
-        \Delta V - \Delta V_{C} = \Delta V_{0}\sin(\omega t) - \dfrac{Q}{C} = 0
+        \Delta v - \Delta v_{C} = \Delta V_{\max}\sin(\omega t) - \dfrac{q}{C} = 0
     \end{equation*}
     waaruit we een formule kunnen halen voor de lading op de condensator
     \begin{equation*}
-        Q(t) = C\Delta V_{0}\sin(\omega t)
+        q = C\Delta V_{\max}\sin(\omega t)
     \end{equation*}
     wat we herleiden tot een formule voor de stroom door de condensator
     \begin{equation*}
-        I(t) = \dfrac{dQ}{dt} = \omega C\Delta V_{0}\cos(\omega t) = I_{0}\cos(\omega t)
+        i_C = \dfrac{dq}{dt} = \omega C\Delta V_{\max}\cos(\omega t) = I_{\max}\cos(\omega t)
     \end{equation*}
     wat we herleiden tot
     \begin{equation*}
-        I(t) = \omega C\Delta V_{0}\sin(\omega t + \tfrac{\pi}{2}) = I_{0}\sin(\omega t + \tfrac{\pi}{2})
+        i_C = \omega C\Delta V_{\max}\sin(\omega t + \tfrac{\pi}{2}) = I_{\max}\sin(\omega t + \tfrac{\pi}{2})
     \end{equation*}
     door gebruik te maken van de goniometrische identiteiten
     \begin{equation*}
@@ -301,46 +304,136 @@
 
 \newpage
 
+% \begin{summ}[Toepassingen in wisselstroomkringen]{Toepassingen in wisselstroomkringen}
+%     \def\arraystretch{2}
+%     \centering
+%     \begin{tabular}{c|c|c|c}
+%         & $\Delta v$ & $i$ & $ X = \frac{\Delta V_{\max}}{I_{\max}}$ \\ \hline
+%         $R$ & $\Delta V_{\max}\sin(\omega t)$ & $I_{\max}\sin(\omega t)$ & $X_{R} = R$ \\ [-0.35cm]
+%         & $I_{\max}R\sin(\omega t)$ & $i$ in fase met $\Delta v$ & \\ \hline
+%         $L$ & $\Delta V_{\max}\sin(\omega t)$ & $I_{\max}\sin(\omega t - \tfrac{\pi}{2})$ & $X_{L} = \omega L$ \\ [-0.35cm]
+%         & $I_{\max}R\sin(\omega t)$ & $i$ loopt $90^\circ$ achter $\Delta v$ & \\ \hline
+%         $C$ & $\Delta V_{\max}\sin(\omega t)$ & $I_{\max}\sin(\omega t +\tfrac{\pi}{2})$ & $X_{C} = \tfrac{1}{\omega C}$ \\ [-0.35cm]
+%         & $I_{\max}R\sin(\omega t)$ & $i$ loopt $90^\circ$ voor $\Delta v$ & \\ 
+%     \end{tabular}
+% \end{summ}
+
+\begin{pro}[Vermogen in een wisseltroomkring]{Vermogen in een wisseltroomkring}
+    We kunnen het ogenblikkelijke vermogen $p$ geleverd door een AC-bron berekenen met
+    \begin{align*}
+        p &= i \Delta v \\
+          &= I_{\max}\Delta V_{\max}\sin(\omega t)\sin(\omega t - \phi) \\
+          &= I_{\max}\Delta V_{\max}\left( \sin^2(\omega t)\cos(\phi) - \sin(\omega t)\cos(\omega t)\sin(\phi)\right)
+    \end{align*} 
+    waarbij we de goniometrische identiteit $\sin(\omega t - \phi) = \sin(\omega t)\cos(\phi) - \cos(\omega t)\sin(\phi)$ gebruiken. Als we naar het gemiddelde kijken, dan zien we dat
+    \begin{equation*}
+        \sin^2(\omega t) = \tfrac{1}{2} \text{ en } \sin(\omega t)\cos(\omega t) = 0 
+    \end{equation*} 
+    waaruit we het gemiddelde vermogen kunnen afleiden
+    \begin{equation*}
+        P_{\text{gem}} = \frac{1}{2}I_{\max}\Delta V_{\max}\cos(\phi)
+    \end{equation*}
+\end{pro}
+
 \begin{theo}[Inductieve en capacitieve reactantie]{Inductieve en capacitieve reactantie}
     \begin{itemize}
-        \item   De \textbf{inductieve reactantie} $X_{L}$ van een spoel met zelfinductie $L$ is gedefinieerd als
-                    \begin{equation*}
-                        X_{L} = \omega L
-                    \end{equation*}
-                waarbij $\omega$ de hoekfrequentie is van de wisselstroom. We zien 
-                \begin{itemize}
-                    \item $ \omega \to 0: X_{L} \to 0 \quad \text{(kortsluiting)} $
-                    \item $ \omega \to \infty: X_{L} \to \infty \quad \text{(open circuit)} $
-                \end{itemize}
-                We kunnen nu ook de formule herwerken tot
-                \begin{equation*}
-                    \Delta V_{L} = -I_{0}X_{L}\sin(\omega t)
-                \end{equation*}
-        \item    De \textbf{capacitieve reactantie} $X_{C}$ van een condensator met capaciteit $C$ is gedefinieerd als
-                    \begin{equation*}
-                        X_{C} = \dfrac{1}{\omega C}
-                    \end{equation*}
-                waarbij $\omega$ de hoekfrequentie is van de wisselstroom. We zien
-                \begin{itemize}
-                    \item $ \omega \to 0: X_{C} \to \infty \quad \text{(open circuit)} $
-                    \item $ \omega \to \infty: X_{C} \to 0 \quad \text{(kortsluiting)}$
-                \end{itemize}
-                We kunnen nu ook de formule herwerken tot
-                \begin{equation*}
-                    \Delta V_{C} = I_{0}X_{C}\sin(\omega t)
-                \end{equation*}
+        \item   
+        De \textbf{inductieve reactantie} $X_{L}$ van een spoel met zelfinductie $L$ is gedefinieerd als
+        \begin{equation*}
+            X_{L} = \omega L
+        \end{equation*}
+        waarbij $\omega$ de hoekfrequentie is van de wisselstroom. We zien 
+        \begin{itemize}
+            \item $ \omega \to 0: X_{L} \to 0 \quad \text{(kortsluiting)} $
+            \item $ \omega \to \infty: X_{L} \to \infty \quad \text{(open circuit)} $
+        \end{itemize}
+        We kunnen nu ook de formule herwerken tot
+        \begin{equation*}
+            \Delta v_{L} = -I_{\max}X_{L}\sin(\omega t)
+        \end{equation*}
+
+        \item    
+        De \textbf{capacitieve reactantie} $X_{C}$ van een condensator met capaciteit $C$ is gedefinieerd als
+        \begin{equation*}
+            X_{C} = \dfrac{1}{\omega C}
+        \end{equation*}
+        waarbij $\omega$ de hoekfrequentie is van de wisselstroom. We zien
+        \begin{itemize}
+            \item $ \omega \to 0: X_{C} \to \infty \quad \text{(open circuit)} $
+            \item $ \omega \to \infty: X_{C} \to 0 \quad \text{(kortsluiting)}$
+        \end{itemize}
+            We kunnen nu ook de formule herwerken tot
+        \begin{equation*}
+            \Delta v_{C} = I_{\max}X_{C}\sin(\omega t)
+        \end{equation*}
+        
     \end{itemize}
     \vspace{0.3cm}
     \noindent \textbf{Opmerking:} Reactantie is een maat van weerstand tegen de ladingstroom, de reactantie van een weerstand $X_{R}$ is gewoon de weerstand $R$ zelf.
 \end{theo}
 
-\begin{summ}[Toepassingen in wisselstroomkringen]{Toepassingen in wisselstroomkringen}
-    \def\arraystretch{2}
-    \centering
-    \begin{tabular}{c|c|c|c}
-        & $\Delta V$ & $I$ & $\tfrac{\Delta V_{0}}{I_{0}}$ \\ \hline
-        $R$ & $\Delta V_{0}\sin(\omega t)$ & $I_{0}\sin(\omega t)$ & $X_{R} = R$ \\ \hline
-        $L$ & $\Delta V_{0}\sin(\omega t)$ & $I_{0}\sin(\omega t - \tfrac{\pi}{2})$ & $X_{L} = \omega L$ \\ \hline
-        $C$ & $\Delta V_{0}\sin(\omega t)$ & $I_{0}\sin(\omega t + \tfrac{\pi}{2})$ & $X_{C} = \tfrac{1}{\omega C}$ \\ 
-    \end{tabular}
-\end{summ}
+\newpage
+
+\begin{theo}[Impedantie van een RLC-kring]{Impedantie van een RLC-kring}
+    \begin{minipage}{.68\textwidth}
+        In de een serieschakeling is de stroom gelijk in alle componenten, bij een RLC-kring is dat
+        \begin{equation*}
+            i = I_{\max}\sin(\omega t - \phi)
+        \end{equation*}
+        waarbij $\phi$ de fasehoek is. De spanning, daarentegen, niet gelijk in alle component. We kunnen de spanningen op de componenten berekenen met behulp van de wet van Ohm
+        \begin{equation*}
+            \Delta v = \Delta v_{R} + \Delta v_{L} + \Delta v_{C} = 0
+        \end{equation*}
+    \end{minipage}
+    \hspace{0.1cm}\vspace{-0.1cm}
+    \begin{minipage}{.28\textwidth}
+        \includegraphics[scale = 0.2]{Images/Magnetisme/RLCWisselstroomkring}
+    \end{minipage}
+
+    \vspace{0.3cm}
+    \noindent waarbij we de spanningen kunnen berekenen met behulp van de formules voor de reactanties. We weten dat
+    \begin{equation*}
+        \forall i \in \{R,L,C\}: \ \Delta V_i = I_{\text{max}}X_i
+    \end{equation*}
+    wat de grootte bepaald in de fasediagrammen, we zullen nu deze diagrammen analyseren
+
+    \begin{minipage}{.69\textwidth}
+        \vspace{0.4cm}
+        \hspace{-0,75cm}\includegraphics[scale = 0.48]{Images/Magnetisme/PotentialenFasoren.png}
+    \end{minipage}
+    \hspace{-0.3cm}$\longrightarrow$
+    \begin{minipage}{.31\textwidth}
+        \vspace{0.1cm}
+        \includegraphics[scale = 0.3]{Images/Magnetisme/PotentiaalFasoren.png}
+    \end{minipage}
+
+    \vspace{0.5cm}
+    \noindent hieruit kunnen we een formule afleiden voor $\Delta V_{\max}$ met behulp van de stelling van pythagoras, namelijk
+    \begin{align*}
+        \Delta V_{\max} &= \sqrt{(\Delta V_{R})^2 + (\Delta V_{L} - \Delta V_{C})^2} \\
+                        &= I_{\max}\sqrt{R^2 + (X_{L} - X_{C})^2}.
+    \end{align*}
+    % wat we kunnen omvormen tot 
+    % \begin{equation*}
+    %     \Delta V_{\max} = I_{\max}\sqrt{R^2 + (X_{L} - X_{C})^2}.
+    % \end{equation*}
+    De \textbf{impedantie} $Z$ van de kring is gedefinieerd als
+    \begin{equation*}
+        Z = \dfrac{\Delta V_{\max}}{I_{\max}} = \sqrt{R^2 + (X_{L} - X_{C})^2}
+    \end{equation*}
+    wat de weerstand is van de kring tegen de wisselstroom. De fasehoek kunnen we ook berekenen met
+    \begin{equation*}
+        \phi = \tan^{-1}\left(\frac{X_L - X_C}{R}\right)
+    \end{equation*} 
+    wat triviaal te zien is. We kunnen bepaalde gevallen onderscheiden
+    \begin{itemize}
+        \item $X_{L} < X_{C}$: meer capacitief dan inductief 
+        \item $X_{L} = X_{C}$: zuiver resisitief
+        \item $X_{L} > X_{C}$: meer inductief dan capacitief
+    \end{itemize}
+\end{theo}
+
+\newpage
+
+
+
