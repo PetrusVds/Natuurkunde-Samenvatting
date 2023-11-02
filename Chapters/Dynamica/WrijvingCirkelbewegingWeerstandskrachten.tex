@@ -9,10 +9,11 @@
     
     \noindent Er geldt dat het moeilijker is om een voorwerp te laten starten dan om een beweging verder te laten verlopen, of in formule vorm: 
     
+    \vspace{-0.2cm}
     \begin{equation*}
         \mu_s > \mu_k
     \end{equation*} 
-
+    \vspace{-0.4cm}
 \end{theo}
 
 % \begin{ex}[Voorbeeld: Wrijvingskracht]{Voorbeeld: Wrijvingskracht1}
@@ -24,57 +25,44 @@
 % \end{ex}
 
 \begin{theo}[Kinematica van de eenparige cirkelbeweging]{Kinematica van de eenparige cirkelbeweging}
-    Een voorwerp dat met een constante snelheid in een cirkel beweegt voert een \textbf{eenparig cirkelvormige beweging} uit. In dit soort beweging blijft de grootte van de snelheidsvector constant, maar verandert de richting continu, m.a.w. $ a \neq 0 $.
-
-    \begin{minipage}{.55\textwidth}
-
-        We berekenen de versnelling door te vertrekken van de formule:
-        \begin{equation}
-            \Vec{a} = \lim_{\Delta t \to 0} \dfrac{\Delta \Vec{v}}{\Delta t} = \dfrac{d\Vec{v}}{dt}
-        \end{equation}
+    \vspace{-0.4cm}
+    \begin{minipage}{.71\textwidth}
+        % We berekenen de versnelling door te vertrekken van de formule:
+        % \begin{equation}
+        %     \Vec{a} = \lim_{\Delta t \to 0} \dfrac{\Delta \Vec{v}}{\Delta t} = \dfrac{d\Vec{v}}{dt}
+        % \end{equation}
+        Een voorwerp dat met een constante snelheid in een cirkel beweegt voert een \textbf{eenparig cirkelvormige beweging} uit. In dit soort beweging blijft de grootte van de snelheidsvector constant, maar verandert de richting continu, m.a.w. $ a \neq 0 $. Uit gelijkvormige driehoeken volgt: 
     
-        Uit gelijkvormige driehoeken volgt: 
-    
-        \begin{equation}
+        \begin{equation*}
             \dfrac{\Delta v}{v} \approx \dfrac{\Delta \ell}{r} \to \Delta v \approx \dfrac{v}{r}\Delta \ell
-        \end{equation}
+        \end{equation*}
 
         % \begin{center}
         %     \includegraphics[scale = 0.25]{Images/Dynamica/Gelijkvormige driehoeken stap.png}
         % \end{center}
         
-        Uit (1) en (2) volgt: 
-    
+        \noindent en hiermuit kunnen we de middelpuntzoekende versnelling berekenen
         \begin{equation*}
-            a_R = \lim_{\Delta t \to 0} \dfrac{\Delta v}{\Delta t} = \lim_{\Delta t \to 0} \dfrac{v}{r}\dfrac{\Delta \ell}{\Delta t}
+            a_R = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} = \lim_{\Delta t \to 0} \frac{v}{r}\frac{\Delta \ell}{\Delta t} = \frac{v^2}{r}
         \end{equation*}
-    
-        
     \end{minipage} 
-    \begin{minipage}{.41\textwidth}
-            \centering
-            \includegraphics[scale = 0.35]{Images/Dynamica/Kinematica van de Cirkelbeweging.png}
-            
+    \begin{minipage}{.25\textwidth}
+        \includegraphics[scale = 0.3]{Images/Dynamica/Kinematica van de Cirkelbeweging.png}      
     \end{minipage}
-    
-    \noindent Deze versnelling wordt de \textbf{centripetale versnelling genoemd} en is gericht naar het middelpunt van de cirkel. Deze wordt gegeven door de volgende formule: 
-    
-        \begin{equation*}
-            a_R = \dfrac{v^2}{r}
-        \end{equation*}
-        
-    \noindent De snelheid van een ECB wordt gegeven door de volgende formule: 
-    
+    \vspace{0.3cm}
+
+    \noindent Deze versnelling wordt de \textbf{centripetale versnelling} genoemd en is gericht naar het middelpunt van de cirkel. De snelheid van een ECB wordt gegeven door de volgende formule: 
     \begin{equation*}
         v = \dfrac{2\pi r}{T}
     \end{equation*}
-    
-    \noindent Hierbij is T de periode, m.a.w. tijd nodig voor een complete omwenteling (Dimensie: s). De frequentie van de ECB, m.a.w het aantal omwentelingen per seconde (Dimensie: $ s^{-1} = Hz $), wordt gegeven door de volgende formule:
-    
+    \noindent Hierbij is T de periode, m.a.w. tijd nodig voor een complete omwenteling. De frequentie van de ECB, m.a.w het aantal omwentelingen per seconde, wordt gegeven door de volgende formule
     \begin{equation*}
         f = \dfrac{1}{T} = \dfrac{v}{2\pi r} = \dfrac{\omega}{2\pi}
     \end{equation*}
+    waarbij de dimensie Hz is.
 \end{theo}
+
+\newpage
 
 \begin{theo}[Dynamica van de eenparige cirkelbeweging]{Dyamica van de eenparige cirkelbeweging}
     De cirkelbeweging is een versnelde beweging, dus er is een resulterende kracht nodig om het voorwerp op de cirkelbaan te houden, namelijk de \textbf{centripetale kracht}:
