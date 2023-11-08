@@ -1,5 +1,43 @@
-\begin{lem}[Ampère-Maxwell]{Ampère-Maxwell}
+\begin{theo}[Verplaatsingsstroom]{Verplaatsingsstroom}
+    De verplaatsingsstroom is een `stroom' die ontstaat door een veranderend elektrisch veld, bv in een condensator. De verplaatsingsstroom is gegeven door
     \begin{equation*}
-        \oint \Vec{B} \cdot d\Vec{\ell} = \mu_0 ( I + I_d ) = \mu_0 \left( I + \epsilon_0 \frac{d\Phi_E}{dt} \right)
+        I_d = \epsilon_0 \frac{d\Phi_E}{dt} = \epsilon_0 \frac{d}{dt} \oint \Vec{E} \cdot d\Vec{A}
     \end{equation*}
+    waarbij $ \Phi_E $ de elektrische flux is.
+    De totale verplaatsingsstroom is gelijk aan de geleidingstroom, bv de stroom geleverd aan de condensator.
+
+    \vspace{0.3cm}
+    \noindent \textbf{Opmerking:} de naam is een verwijzing naar een oude, verworpen theorie; noch is de verplaatsingsstroom een echte stroom van ladingen, noch is er een verplaatsing
+\end{theo}
+
+\begin{lem}[Ampère-Maxwell]{Ampère-Maxwell}
+    De wet Ampère-Maxwell beweert dat bewegende elektrische ladingen en veranderende elektrische velden magnetische velden opwekken, in formulevorm:
+    \begin{equation*}
+        \oint \Vec{B} \cdot d\Vec{\ell}
+        = \mu_0 ( I_C + I_d ) 
+        % &= \mu_0 \left( I + \epsilon_0 \frac{d\Phi_E}{dt} \right) 
+        = \mu_0 I_C + \mu_0 \epsilon_0 \frac{d\Phi_E}{dt} 
+        % = \mu_0 I + \mu_0 \epsilon_0 \frac{d}{dt} \oint \Vec{E} \cdot d\Vec{A}
+    \end{equation*}
+    waarbij $ I_C $ de \textbf{geleidingstroom} en $ I_d $ de \textbf{verplaatsingsstroom} is. Deze stelt de stroom voor die ontstaat door een veranderend elektrisch veld. 
 \end{lem}
+
+\begin{lem}[Gauss voor Magnetisme]{Gauss voor Magnetisme}
+    Het is algemeen aanvaard dat magnetische monopolen niet bestaan. Dit betekent dat de magnetische flux door een gesloten oppervlak altijd nul is, in formulevorm
+    \begin{equation*}
+        \oint \Vec{B} \cdot d\Vec{A} = 0
+    \end{equation*}
+    \vspace{-0.5cm}
+\end{lem}
+
+\begin{vrg}[Gauss]{Gauss}
+    \vspace{-0.3cm}
+    \def\arraystretch{2}
+    \hspace{1.5cm}
+    \begin{tabular}{c|c}
+        Elektrische velden & Magnetische velden \\ \hline
+        $\oint \Vec{E} \cdot d\Vec{A} = \frac{q_{\text{in}}}{\epsilon_0}$ &  $\oint \Vec{B} \cdot d\Vec{A} = 0$ \\
+        Bron: elektrische ladingen & Bron: bewegende elektrishe ladingen \\
+        elektrische veldlijnen kunnen open zijn & magnetische veldlijnen zijn gesloten \\
+    \end{tabular}
+\end{vrg}
