@@ -136,16 +136,16 @@
 \newpage
 
 \begin{theo}[Magnetisch dipool moment]{Magnetisch dipool moment}
-    Wanneer een lading stroomt door een gesloten kring in een extern magnetisch veld, dan kan de magnetische kracht torsie veroorzaken.
-    Stroom vloeit door de rechthoekige kring (zie figuur a), waarvan we aannemen dat hij parallel is met het veld $\Vec{B}$.
-    Het veld oefent noch een kracht, noch een krachtmoment 
+    % Wanneer een lading stroomt door een gesloten kring in een extern magnetisch veld, dan kan de magnetische kracht torsie veroorzaken.
+    % Stroom vloeit door de rechthoekige kring (zie figuur a), waarvan we aannemen dat hij parallel is met het veld $\Vec{B}$.
+    % Het veld oefent noch een kracht, noch een krachtmoment 
 
-    \vspace{-0.3cm}
-%    \newpage
-    % \Vec{\tau} = \Vec{r} \times \Vec{F} = \Vec{r} \times \Vec{F_1} + \Vec{r} \times \Vec{F_2}
-    \hspace{-0.5cm}\begin{minipage}{0.79\textwidth}
-        uit op de horizontale delen; hier is $\sin(\theta) = 0$. Het veld oefent wel een kracht uit op de verticale delen
-        (zie figuur b), we noemen deze krachten $\Vec{F_1}$ en $\Vec{F_2}$. Deze krachten zorgen voor een krachtmoment:
+    \vspace{-0.45cm}
+    \begin{minipage}{0.81\textwidth}
+        Wanneer een lading stroomt door een gesloten kring in een extern magnetisch veld, dan kan de magnetische kracht torsie veroorzaken.
+        Stroom vloeit door de rechthoekige kring (zie figuur a), waarvan we aannemen dat hij parallel is met het veld $\Vec{B}$.
+        Het veld oefent noch een kracht, noch een krachtmoment uit op de horizontale delen; hier is $\sin(\theta) = 0$. Het veld oefent wel een kracht uit op de verticale delen
+        (zie figuur b), we noemen deze krachten $\Vec{F_1}$ en $\Vec{F_2}$. Deze krachten zorgen voor een krachtmoment
         % \vspace{-0.2cm}
         % \begin{equation*}
         %     \tau = IaB\dfrac{b}{2} + IaB\dfrac{b}{2} = IabB = IAB
@@ -153,37 +153,37 @@
         \begin{equation*}
             \Vec{\tau} = NI(\Vec{a} \times \Vec{b}) \times \Vec{B} = NI\Vec{A} \times \Vec{B}
         \end{equation*}
-        waarbij $\Vec{A} = \Vec{a} \times \Vec{b}$ de oppervlakte van de spoel en $I = NI$ in een spoel met $N$ kringen.
+        waarbij de oppervlaktevector van de spoel $\Vec{A} = \Vec{a} \times \Vec{b}$ en $I = NI$ in een spoel met $N$ kringen.
         % Als de spoel $N$ kringen heeft en een hoek $\theta$ maakt met het magnetisch veld (zie figuur c),
         % dan is de stroom $NI$ en volgt:
         % \begin{equation*}
         %     \Vec{\tau} = NI\Vec{A} \times \Vec{B}
         % \end{equation*}
         % want de krachten blijven gelijk, maar de krachtarmen verkleint.
-        Het \textbf{magnetisch dipool moment} $\Vec{\mu}$ wordt als volgt gedefinieerd:
+        Het \textbf{magnetisch dipool moment} $\Vec{\mu}$ wordt als volgt gedefinieerd
         \begin{equation*}
             \Vec{\mu} = NI\Vec{A}
         \end{equation*}
-        waarbij de richting van $\Vec{A}$ loodrecht is op het vlak van de spoel. Hiermee kunnen we de krachtmoment formule herschrijven:
+        waarbij de richting van $\Vec{A}$ loodrecht is op het vlak van de spoel. Zie figuur c voor een illustratie hiervan. Hiermee kunnen we de krachtmoment formule herschrijven:
         \begin{equation*}
             \Vec{\tau} = \Vec{\mu} \times \Vec{B}
         \end{equation*}
-        De potentiële energie U kunnen we dan als volgt berekenen
-        \begin{equation*}
-            U = \int_0^{\tfrac{\pi}{2}} \tau d\theta = \mu B \int_0^{\tfrac{\pi}{2}} \sin(\theta) d\theta = -\mu B\cos(\theta) = -\Vec{\mu} \cdot \Vec{B}
-        \end{equation*}
-        
     \end{minipage}
-    \begin{minipage}{.17\textwidth}
-        \vspace{0.5cm}\includegraphics[scale = 0.32]{Images/Magnetisme/MagnetischDipoolMoment}
+    \hspace{0.05cm}\begin{minipage}{.13\textwidth}
+        \includegraphics[scale = 0.3]{Images/Magnetisme/MagnetischDipoolMoment}
     \end{minipage}
-    % \vspace{0.2cm} \\
-    \vspace{-0.1cm}\\
+    
+    % \vspace{-0.2cm}
+
+    \noindent De potentiële energie U kunnen we dan als volgt berekenen
+    \begin{equation*}
+        U = \int_0^{\tfrac{\pi}{2}} \tau d\theta = \mu B \int_0^{\tfrac{\pi}{2}} \sin(\theta) d\theta = -\mu B\cos(\theta) = -\Vec{\mu} \cdot \Vec{B}
+    \end{equation*}
     wat ook logisch is sinds we dit kunnen vergelijkingen met het elektrisch dipool moment.
 \end{theo}
 
 \begin{vrg}[Verschillen tussen het magnetisch en elektrisch dipoolmoment]{Verschillen tussen het magnetisch en elektrisch dipoolmoment}
-    \vspace{-0.3cm}
+    \vspace{-0.4cm}
     \def\arraystretch{2}
     \centering
     \begin{tabular}{c|c}
@@ -195,6 +195,7 @@
 \end{vrg}
 
 \begin{app}[Magnetisch moment van een atoom]{Magnetisch moment van een atoom}
+    \vspace{-0.1cm}
     Bij een atoom cirkelt een elektron rond de kern: er is dus een stroom. We vinden hiervoor:
     \begin{equation*}
         I = \dfrac{e}{T} = \dfrac{e\omega}{2\pi} = \dfrac{ev}{2\pi r}
