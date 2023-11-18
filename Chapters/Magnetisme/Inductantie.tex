@@ -251,7 +251,7 @@
     \end{equation*}
     waarmee we de stroom door de weerstand kunnen bepalen in functie van de tijd
     \begin{equation*}
-        i_R = \dfrac{\Delta v_{R}}{R} = \dfrac{\Delta V_{\max}}{R}\sin(\omega t) = I_{\max}\sin(\omega t) 
+        i_R = \dfrac{\Delta v_{R}}{R} = \dfrac{\Delta V_{\max}}{R}\sin(\omega t) = I_{\max}\sin(\omega t).
     \end{equation*}
     \vspace{-0.5cm}
 \end{pro}
@@ -273,7 +273,7 @@
     \end{equation*}
     door gebruik te maken van de goniometrisch identiteiten 
     \begin{equation*}
-        \cos(\theta - \tfrac{\pi}{2}) = \sin(\theta) \quad \text{en} \quad \sin(-\theta) = -\sin(\theta) 
+        \cos(\theta - \tfrac{\pi}{2}) = \sin(\theta) \quad \text{en} \quad \sin(-\theta) = -\sin(\theta).
     \end{equation*}
     We zien dat er een faseverschil is tussen de stroom en het potentiaalverschil van $90^{\circ}$, waarbij de stroom achter loopt.
 \end{pro}
@@ -297,7 +297,7 @@
     \end{equation*}
     door gebruik te maken van de goniometrische identiteiten
     \begin{equation*}
-        \cos(\theta + \tfrac{\pi}{2}) = \sin(-\theta) \quad \text{en} \quad \cos(-\theta) = \cos(\theta)
+        \cos(\theta + \tfrac{\pi}{2}) = \sin(-\theta) \quad \text{en} \quad \cos(-\theta) = \cos(\theta).
     \end{equation*}
     We zien dat er een faseverschil is tussen de stroom en het potentiaalverschil van $90^{\circ}$, waarbij de stroom voor loopt.
 \end{pro}
@@ -320,19 +320,22 @@
 
 \begin{pro}[Vermogen in een wisseltroomkring]{Vermogen in een wisseltroomkring}
     We kunnen het ogenblikkelijke vermogen $p$ geleverd door een AC-bron berekenen met
-    \begin{align*}
-        p &= i \Delta v \\
-          &= I_{\max}\Delta V_{\max}\sin(\omega t)\sin(\omega t - \phi) \\
-          &= I_{\max}\Delta V_{\max}\left( \sin^2(\omega t)\cos(\phi) - \sin(\omega t)\cos(\omega t)\sin(\phi)\right)
-    \end{align*} 
-    waarbij we de goniometrische identiteit $\sin(\omega t - \phi) = \sin(\omega t)\cos(\phi) - \cos(\omega t)\sin(\phi)$ gebruiken. Als we naar het gemiddelde kijken, dan zien we dat
+    \begin{equation*}
+        p = i \Delta v = I_{\max}\Delta V_{\max}\sin(\omega t)\sin(\omega t - \phi) 
+    \end{equation*} 
+    waarop we de goniometrische identiteit $\sin(\omega t - \phi) = \sin(\omega t)\cos(\phi) - \cos(\omega t)\sin(\phi)$ kunnen toepassen 
+    \begin{equation*}
+        p = I_{\max}\Delta V_{\max}\left( \sin^2(\omega t)\cos(\phi) - \sin(\omega t)\cos(\omega t)\sin(\phi)\right).
+    \end{equation*}
+    Als we naar het gemiddelde kijken, dan zien we dat
     \begin{equation*}
         \sin^2(\omega t) = \tfrac{1}{2} \text{ en } \sin(\omega t)\cos(\omega t) = 0 
     \end{equation*} 
     waaruit we het gemiddelde vermogen kunnen afleiden
     \begin{equation*}
-        P_{\text{gem}} = \frac{1}{2}I_{\max}\Delta V_{\max}\cos(\phi)
+        P_{\text{gem}} = \frac{1}{2}I_{\max}\Delta V_{\max}\cos(\phi).
     \end{equation*}
+    \vspace{-0.5cm}
 \end{pro}
 
 \begin{theo}[Inductieve en capacitieve reactantie]{Inductieve en capacitieve reactantie}

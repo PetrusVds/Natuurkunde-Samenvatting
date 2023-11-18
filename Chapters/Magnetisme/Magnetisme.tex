@@ -9,8 +9,8 @@
         \end{itemize}
 
     \end{minipage}
-    \begin{minipage}{.24\textwidth}
-        \includegraphics[scale = 0.52]{Images/Magnetisme/HomogeenMagnetischVeld}
+    \hspace{0.5cm}\begin{minipage}{.26\textwidth}
+        \includegraphics[scale = 0.45]{Images/Magnetisme/HomogeenMagnetischVeld}
     \end{minipage}
 
     \noindent Elektrische stroom \textbf{produceert} een magnetisch veld. Een niet-magnetische, geleidende draad is dus magnetisch als we er stroom op zetten.
@@ -40,9 +40,9 @@
 %\end{app}
 
 \begin{theo}[Magnetische kracht]{Magnetische kracht}
-    De relatie tussen de magnetische kracht $\Vec{F}$ van een draad met stroom $I$ en het magnetisch veld $\Vec{B}$ kan geschreven worden als een vector product
+    De relatie tussen de magnetische kracht $\Vec{F}_b$ van een draad met stroom $I$ en het magnetisch veld $\Vec{B}$ kan geschreven worden als een vector product
     \begin{equation*}
-        d\Vec{F}= Id\Vec{\ell} \times \Vec{B}
+        d\Vec{F}_b = Id\Vec{\ell} \times \Vec{B}
     \end{equation*}
     waarbij $d\Vec{F}$ een infinitesimale kracht op een infinitesimale lengte $d\Vec{\ell}$ van de draad in het magnetische veld.
     \begin{center}
@@ -52,7 +52,7 @@
         Als het veld homogeen is, dan zal elk infinitesimaal deeltje $d\Vec{\ell}$ van de rechte draad dezelfde hoek maken met het magnetische veld $\Vec{B}$.
         Hieruit volgt dan de formule:
         \begin{equation*}
-            \Vec{F} = I\Vec{\ell} \times \Vec{B}
+            \Vec{F}_b = I\Vec{\ell} \times \Vec{B}
         \end{equation*}
     \end{minipage}
     \begin{minipage}{.21\textwidth}
@@ -91,15 +91,27 @@
 
 \newpage
 
-\begin{theo}[Magnetische kracht op een bewegende lading]{Magnetische kracht op een bewegende lading}
-    Elektrische stroom is een verzameling van N bewegende ladingen, we kunnen de definitie van magnetische kracht dus ook anders schrijven
+\begin{theo}[Lorentzkracht]{Lorentzkracht}
+    De \textbf{Lorentzkracht} is de kracht die een lading ondervindt in een elektromagnetische, in formulevorm:
     \begin{equation*}
-        \Vec{F} = I\Vec{\ell} \times \Vec{B} = Nq\Vec{v} \times \Vec{B}
+        \Vec{F}_L = \Vec{F}_e + \Vec{F}_b = q(\Vec{E} + \Vec{v} \times \Vec{B})
     \end{equation*}
-    sinds $I = \tfrac{Nq}{t}$ en $\Vec{\ell} = \Vec{v}t$. De bijlage hieronder toont de magnetische kracht op bewegende ladingen:
-    \begin{center}
-        \includegraphics[scale=0.25]{Images/Magnetisme/MagnetischeKrachtOpBewgendeLading}
-    \end{center}
+    \vspace{-0.5cm}
+\end{theo}
+
+\begin{theo}[Magnetische kracht op een bewegende lading]{Magnetische kracht op een bewegende lading}
+    \vspace{-0.5cm}
+    \begin{minipage}{0.67\textwidth}
+        Elektrische stroom is een verzameling van N bewegende ladingen, we kunnen de definitie van magnetische kracht dus ook anders schrijven
+        \begin{equation*}
+            \Vec{F}_b = I\Vec{\ell} \times \Vec{B} = Nq\Vec{v} \times \Vec{B}
+        \end{equation*}
+        sinds $I = \tfrac{Nq}{t}$ en $\Vec{\ell} = \Vec{v}t$. 
+    \end{minipage}
+    \hspace{0.2cm}\begin{minipage}{.26\textwidth}
+        \vspace{-0.2cm}\includegraphics[scale=0.23]{Images/Magnetisme/MagnetischeKrachtOpBewgendeLading}
+    \end{minipage}
+    \vspace{-0.3cm}
 \end{theo}
 
 \begin{vrg}[Verschillen tussen elektrische en magnetische kracht]{Verschillen tussen elektrische en magnetische kracht}
@@ -107,7 +119,7 @@
     \def\arraystretch{2}
     \hspace{-0.35cm}
     \begin{tabular}{c|c}
-        Elektrische kracht: $\Vec{F} = q\Vec{E}$ & Magnetische kracht: $\Vec{F} = q\Vec{v} \times \Vec{B}$ \\ \hline
+        Elektrische kracht: $\Vec{F}_e = q\Vec{E}$ & Magnetische kracht: $\Vec{F}_b = q\Vec{v} \times \Vec{B}$ \\ \hline
         in de \textbf{richting} van het elektrisch veld & \textbf{loodrecht} op het magnetische veld \\
         werkt op een \textbf{lading} & werkt op een \textbf{bewegende lading} \\
         levert \textbf{arbeid} bij de verplaatsing van de lading & levert \textbf{geen arbeid} bij de verplaatsing van de lading \\
@@ -115,7 +127,7 @@
 \end{vrg}
 
 \begin{app}[Bewegende lading in een vlak loodrecht op magnetisch veld]{Bewegende lading in een vlak loodrecht op magnetisch veld}
-    \begin{minipage}{.67\textwidth}
+    \begin{minipage}{.72\textwidth}
         Het pad van een bewegende lading in een vlak loodrecht op het magnetisch veld is cirkelvormig.
         De kracht zal altijd loodrecht zijn op de snelheid, dus de lading zal cirkelvormig bewegen met
         centripetale versnelling:
@@ -126,10 +138,10 @@
         \begin{equation*}
             T = \dfrac{2\pi r}{v} = \dfrac{2\pi m}{qB} = \dfrac{1}{f}
         \end{equation*}
-        sinds $r = \tfrac{mv}{qB}$.
+        sinds $r = \frac{mv}{qB}$.
     \end{minipage}
-    \begin{minipage}{.29\textwidth}
-        \includegraphics[scale = 0.35]{Images/Magnetisme/CirkelvormigeBewegingMagentischVeld}
+    \begin{minipage}{.25\textwidth}
+        \vspace{-0.3cm}\includegraphics[scale = 0.35]{Images/Magnetisme/CirkelvormigeBewegingMagentischVeld}
     \end{minipage}
 \end{app}
 
