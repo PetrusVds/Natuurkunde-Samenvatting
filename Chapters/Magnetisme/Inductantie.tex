@@ -136,14 +136,14 @@
     \begin{minipage}{.73\textwidth}
         We bekijken nu een kring met een inductor met inductantie $L$ en een condensator met capaciteit $C$; dit is dus een ideale kring zonder weerstand. 
         We gaan ervan uit dat er initieel lading is in de condensator en er dus een potentiaal verschil $\Delta V = \tfrac{Q}{C}$ op is. Stel dat we de schakelaar sluiten, 
-        dan zal de condensator beginnen te ontladen en zal de stroom door de inductor beginnen te stijgen. Hierop passen we de tweede wet van Kirchhoff toe
+        dan zal de condensator beginnen te ontladen en zal de stroom door de inductor beginnen te stijgen. Hierop passen we de tweede wet van Kirchhoff toe:
     \end{minipage}
     \begin{minipage}{.23\textwidth}
         \vspace{0.3cm}\includegraphics[scale = 0.35]{Images/Magnetisme/LCKring}
     \end{minipage}
     \vspace{-0.3cm}
     \begin{equation*}
-        -L\dfrac{dI}{dt} + \dfrac{Q}{C} = 0
+        -L\dfrac{dI}{dt} + \dfrac{Q}{C} = 0.
     \end{equation*}
     De lading op de positieve plaat, die voor de stroom zorgt, zal verminderen en dus ook de stroom. We hebben nu $I = -\tfrac{dQ}{dt}$ en we kunnen nu de bovenstaande vergelijking herwerken tot
     een differentiaalvergelijking
@@ -183,7 +183,7 @@
         \end{equation*}
         \hspace{-0.6cm} en de energie in het magnetische veld van de inductor is 
         \begin{equation*}
-            U_{B} = \dfrac{LI^{2}}{2} = \dfrac{LQ_{\max}^2}{2C}\sin^2(\omega t + \phi)
+            U_{B} = \dfrac{LI^{2}}{2} = \dfrac{Q_{\max}^2}{2C}\sin^2(\omega t + \phi).
         \end{equation*}
     \end{minipage}
     \begin{minipage}{.26\textwidth}
@@ -214,17 +214,17 @@
     \end{minipage}
     \vspace{-0.25cm}
     \begin{equation*}
-        LI\frac{dI}{dt} + \dfrac{Q}{C}\dfrac{dQ}{dt} = -I^2R
+        - LI\frac{dI}{dt} - IR + Q/C = 0
     \end{equation*}
     wat we kunnen omvormen tot
     \begin{equation*}
         L\frac{d^2Q}{dt^2} + R\dfrac{dQ}{dt} + \dfrac{Q}{C} = 0
     \end{equation*}
-    wat hetzelfde is als de gedempte harmonische beweging. De oplossing is dus
+    sinds $I = -\frac{dQ}{dt}$. De oplossing van deze differentiaalvergelijking is
     \begin{equation*}
         Q(t) = Q_{\max}e^{\frac{-R}{2L}t}\cos(\omega t + \phi)
     \end{equation*}
-    met $\omega = \left[\tfrac{1}{LC} - (\tfrac{R}{2L}^2)\right]$ en $\phi$ de faseconstante. We zien dus duidelijk als R groot is,
+    met $\omega = \sqrt{\frac{1}{LC} - \left(\frac{R}{2L}^2\right)}$ en $\phi$ de faseconstante. We zien dus duidelijk als R groot is,
     dat we kunnen spreken van \textbf{overdemping}.
 \end{app}
 
