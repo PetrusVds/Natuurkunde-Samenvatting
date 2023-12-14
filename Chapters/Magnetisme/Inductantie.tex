@@ -231,11 +231,11 @@
 \begin{theo}[Wisselstroomkringen]{Wisselstroomkringen}
     Wisselstroomkringen zijn kringen waarbij de stroom varieert in de tijd. De stroom kan worden beschreven door
     \begin{equation*}
-        I(t) = I_{\max}\cos(\omega t)
+        i = I_{\max}\sin(\omega t + \phi)
     \end{equation*}
-    en het potentiaalverschil van de bron als
+    met $\phi$ de fasehoek en amplitude $I_\text{max}$, het potentiaalverschil van de bron kan beschreven worden door
     \begin{equation*}
-        \Delta V = \Delta V_{\max}\sin(\omega t)
+        \Delta v = \Delta V_{\max}\sin(\omega t)
     \end{equation*}
     waarbij $\Delta V_{\max}$ de amplitude is van het potentiaalverschil. De stroom en het potentiaalverschil zijn in fase met elkaar.
 \end{theo}
@@ -261,7 +261,7 @@
 \begin{pro}[Zelfinductie in een wisselstroomkring]{Zelfinductie in een wisselstroomkring}
     Stel je een circuit voor met een AC-bron en een inductor met zelfinductie $L$. De tweede wet van Kirchhoff geeft
     \begin{equation*}
-        \Delta v + \Delta v_L = \Delta v - \mathcal{E}_{L} = \Delta V_{0}\sin(\omega t) - L\dfrac{di}{dt} = 0
+        \Delta v + \Delta v_L = \Delta V_{\text{max}}\sin(\omega t) - L\dfrac{di}{dt} = 0
     \end{equation*}
     waaruit we een formule kunnen halen voor de stroom door de inductor
     \begin{equation*}
@@ -383,7 +383,7 @@
         \begin{equation*}
             i = I_{\max}\sin(\omega t - \phi)
         \end{equation*}
-        waarbij $\phi$ de fasehoek is. De spanning, daarentegen, niet gelijk in alle component. We kunnen de spanningen op de componenten berekenen met behulp van de wet van Ohm
+        waarbij $\phi$ de fasehoek is. De spanning, daarentegen, is niet gelijk in alle component. We kunnen de spanningen op de componenten berekenen met behulp van de wet van Ohm
         \begin{equation*}
             \Delta v = \Delta v_{R} + \Delta v_{L} + \Delta v_{C} = 0
         \end{equation*}
