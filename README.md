@@ -5,6 +5,7 @@ Welkom bij de Natuurkunde voor Informatici samenvatting. De samenvatting is gema
 - [Natuurkunde voor Informatici I: mechanica en elektriciteit](https://onderwijsaanbod.kuleuven.be/syllabi/n/G0U25BN.htm#activetab=doelstellingen_idp3497008)
 - [Natuurkunde voor Informatici II: magnetisme](https://onderwijsaanbod.kuleuven.be/syllabi/n/G0W67AN.htm#activetab=doelstellingen_idp8969488) 
 
-De pdf van de laatste versie bevindt zich in de out/ map. Gelieve deze file niet onderling te verdelen, maar de repo te clonen naar je machine. 
+Gelieve deze file **niet** onderling te verdelen. Zelf compileren is niet nodig, sinds ik altijd een .pdf voorzie in de out-map.
 
 **Note:** ECTS kan outdated zijn wanneer je deze repo bekijkt, feel free to let me know
+
