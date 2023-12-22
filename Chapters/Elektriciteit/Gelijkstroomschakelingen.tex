@@ -67,42 +67,47 @@
 \newpage
 
 \begin{app}[RC-kringen]{RC-kringen}
-    Als de schakelaar dicht is, dan laadt de condensator op tot het het potentiaalverschil heeft van de batterij.
-    We kunnen hierop de tweede regel van Kirchhoff toepassen, namelijk $\mathcal{E} - \dfrac{q}{C} - IR = 0$:
-    \begin{align*}
-        t &= 0: \mathcal{E} - I_0R = 0 \\ 
-        t &= \infty: \mathcal{E} - \dfrac{Q}{C} = 0
-    \end{align*}
-    \begin{center}
-        \includegraphics[scale = 0.3]{Images/Elektriciteit/RC-kring.png}
-    \end{center}
-    We weten dat stroom lading per tijdseenheid is dus we kunnen hieruit de volgende tijdsafhankelijke oplossingen halen:
-    % \begin{align*}
-    %     q &= C\mathcal{E}(1-e^{-\tfrac{t}{RC}})= Q(1-e^{-\tfrac{t}{RC}}) \\
-    %     I &= \dfrac{dq}{dt} = \dfrac{\mathcal{E}}{R}e^{-\tfrac{t}{RC}}
-    % \end{align*}
-
+    \vspace{-0.3cm}
+    \begin{minipage}{.73\textwidth}
+        Als de schakelaar dicht is, dan laadt de condensator op tot het het potentiaalverschil heeft van de batterij.
+        We kunnen hierop de tweede regel van Kirchhoff toepassen
+        \begin{equation*}
+            \mathcal{E} - \dfrac{q}{C} - IR = 0
+        \end{equation*}
+        waaruit volgt:
+    \end{minipage}
+    \begin{minipage}{.25\textwidth}
+       \includegraphics[scale = 0.15]{Images/Elektriciteit/RC-kring.png}
+    \end{minipage}
+    \vspace{-0.5cm}
     \begin{equation*}
-         I = \dfrac{dq}{dt} = \dfrac{d}{dt} C\mathcal{E}(1-e^{-\tfrac{t}{RC}}) = \dfrac{\mathcal{E}}{R}e^{-\tfrac{t}{RC}}
+        \mathcal{E} - \dfrac{q}{C} - \frac{dq}{dt}R = 0
     \end{equation*}
+    % \begin{align*}
+    %     t &= 0: \mathcal{E} - I_0R = 0 \\ 
+    %     t &= \infty: \mathcal{E} - \dfrac{Q}{C} = 0.
+    % \end{align*}
+    \noindent Uit deze vergelijking leiden we de volgende formules voor de stroom en de ogenblikkelijke lading op de condensator af
+    \begin{equation*}
+        q = C\mathcal{E}(1-e^{-\tfrac{t}{\tau}})= Q(1-e^{-\tfrac{t}{\tau}}) \ \Rightarrow \ I = \dfrac{dq}{dt} = \dfrac{\mathcal{E}}{R}e^{-\tfrac{t}{\tau}}
+    \end{equation*}
+
+    % \begin{equation*}
+    %      I = \dfrac{dq}{dt} = \dfrac{d}{dt} C\mathcal{E}(1-e^{-\tfrac{t}{RC}}) = \dfrac{\mathcal{E}}{R}e^{-\tfrac{t}{RC}}
+    % \end{equation*}
     % \newpage
     
-    \noindent We kunnen nu een nieuwe constante bepalen, namelijk de \textbf{tijdsconstante} $\tau = RC 
-    % = \dfrac{\Delta V }{I}\dfrac{Q}{\Delta V}
-    $    
-    % \\
-    % \begin{minipage}{0.48\textwidth}
-    %     \centering
-    %     \includegraphics[scale = 0.2]{Images/Elektriciteit/Tijdsconstante1.png}
-    % \end{minipage}
-    % \begin{minipage}{0.48\textwidth}
-    %     \centering
-    %     \includegraphics[scale = 0.23]{Images/Elektriciteit/Tijdsconstante2.png}
-    % \end{minipage}
-    % \\
-    die de tijd voorstelt nodig voor een condensator om tot $ 63\%$ van zijn lading en voltage te bekomen: $RC$ is een maateenheid voor de snelheid van het opladen van de condensator. \\
+    \noindent waarbij $\tau = RC$ de \textbf{tijdsconstante} die de tijd voorstelt nodig voor een condensator om tot $ 63\%$ van zijn lading en voltage te bekomen: $RC$ is een maateenheid voor de snelheid van het opladen van de condensator. \\
+    \vspace{-0.2cm}
+
+    \begin{minipage}{0.48\textwidth}
+        \vspace{0.21cm}\hspace{1.4cm}\includegraphics[scale = 0.195]{Images/Elektriciteit/Tijdsconstante1.png}
+    \end{minipage}
+    \begin{minipage}{0.48\textwidth}
+        \includegraphics[scale = 0.23]{Images/Elektriciteit/Tijdsconstante2.png}
+    \end{minipage}
     
-    \noindent We kunnen ook wat praten over de energiebalans van de RC-kring: 
+    \noindent We kunnen nu de volgende formules opstellen voor de energie in de RC-kring:
     \begin{itemize}
         \item Hoeveel energie heeft de emf geleverd? 
         \begin{equation*}
@@ -122,3 +127,4 @@
         U_{\text{emf}} = U_{C} + U_{R}
     \end{equation*}
 \end{app}
+
