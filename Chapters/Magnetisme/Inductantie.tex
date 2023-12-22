@@ -210,15 +210,11 @@
         We passen de tweede wet van Kirchhoff toe op de kring
     \end{minipage}
     \begin{minipage}{.23\textwidth}
-        \vspace{0.3cm}\includegraphics[scale = 0.45]{Images/Magnetisme/RLCKring}
+        \includegraphics[scale = 0.45]{Images/Magnetisme/RLCKring}
     \end{minipage}
     \vspace{-0.25cm}
     \begin{equation*}
-        - LI\frac{dI}{dt} - IR + Q/C = 0
-    \end{equation*}
-    wat we kunnen omvormen tot
-    \begin{equation*}
-        L\frac{d^2Q}{dt^2} + R\dfrac{dQ}{dt} + \dfrac{Q}{C} = 0
+        - LI\frac{dI}{dt} - IR + Q/C = 0 \ \Rightarrow \ L\frac{d^2Q}{dt^2} + R\dfrac{dQ}{dt} + \dfrac{Q}{C} = 0
     \end{equation*}
     sinds $I = -\frac{dQ}{dt}$. De oplossing van deze differentiaalvergelijking is
     \begin{equation*}
@@ -229,15 +225,30 @@
 \end{app}
 
 \begin{theo}[Wisselstroomkringen]{Wisselstroomkringen}
-    Wisselstroomkringen zijn kringen waarbij de stroom varieert in de tijd. De stroom kan worden beschreven door
+    Wisselstroomkringen (AC-kringen) zijn kringen waarbij de stroom varieert in de tijd. De stroom en het potentiaalverschil van de bron zijn sinusvormige functies
     \begin{equation*}
-        i = I_{\max}\sin(\omega t + \phi)
+        i = I_{\max}\sin(\omega t + \phi) \ \Rightarrow \ \Delta v = \Delta V_{\max}\sin(\omega t + \phi)
     \end{equation*}
-    met $\phi$ de fasehoek en amplitude $I_\text{max}$, het potentiaalverschil van de bron kan beschreven worden door
+    met amplitude $I_\text{max}$ voor de stroom, $\Delta V_{\max}$ voor het potentiaalverschil. De rms-waarden van een sinusvormige wisselstroom zijn gedefinieerd als
     \begin{equation*}
-        \Delta v = \Delta V_{\max}\sin(\omega t)
+        I_{\text{rms}} = \dfrac{I_{\max}}{\sqrt{2}} \ \Rightarrow \ \Delta V_{\text{rms}} = \dfrac{\Delta V_{\max}}{\sqrt{2}}
     \end{equation*}
-    waarbij $\Delta V_{\max}$ de amplitude is van het potentiaalverschil. De stroom en het potentiaalverschil zijn in fase met elkaar.
+    wat neerkomt op de DC-output van de AC-bron.
+    
+    % \noindent \textbf{Opmerking:} de rms-waarden van een sinusvormige wisselstroom zijn gedefinieerd als
+    % \begin{equation*}
+    %     I_{\text{rms}} = \dfrac{I_{\max}}{\sqrt{2}} \ \Rightarrow \ \Delta V_{\text{rms}} = \dfrac{\Delta V_{\max}}{\sqrt{2}}
+    % \end{equation*}
+    % wat neerkomt op de DC-output van de AC-bron.
+    % De stroom kan worden beschreven door
+    % \begin{equation*}
+    %     i = I_{\max}\sin(\omega t)
+    % \end{equation*}
+    % met $I_\text{max}$, het potentiaalverschil van de bron kan beschreven worden door
+    % \begin{equation*}
+    %     \Delta v = \Delta V_{\max}\sin(\omega t)
+    % \end{equation*}
+    % waarbij $\Delta V_{\max}$ de amplitude is van het potentiaalverschil. De stroom en het potentiaalverschil zijn in fase met elkaar.
 \end{theo}
 
 \begin{pro}[Weerstand in een wisselstroomkring]{Weerstand in een wisselstroomkring}
@@ -333,9 +344,13 @@
     \end{equation*} 
     waaruit we het gemiddelde vermogen kunnen afleiden
     \begin{equation*}
-        P_{\text{gem}} = \frac{1}{2}I_{\max}\Delta V_{\max}\cos(\phi).
+        P_{\text{gem}} = \frac{1}{2}I_{\max}\Delta V_{\max}\cos(\phi) = I_{\text{rms}} \Delta V_{\text{rms}} \cos(\phi).
     \end{equation*}
-    \vspace{-0.5cm}
+    % \noindent \textbf{Opmerking:} de rms-waarde van een sinusvormige wisselstroom is gedefinieerd als: 
+    % \begin{equation*}
+    %     I_{\text{rms}} = \dfrac{I_{\max}}{\sqrt{2}} \quad \text{en} \quad \Delta V_{\text{rms}} = \dfrac{\Delta V_{\max}}{\sqrt{2}}
+    % \end{equation*}
+    % \vspace{-0.3cm}
 \end{pro}
 
 \begin{theo}[Inductieve en capacitieve reactantie]{Inductieve en capacitieve reactantie}
