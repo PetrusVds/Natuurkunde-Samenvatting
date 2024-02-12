@@ -27,9 +27,8 @@
 % \end{app}
 
 \begin{pro}[Nuttige vergelijkingen bij constante versnelling]{Nuttige vergelijkingen bij constante versnelling}
-
-    De volgende vergelijkingen kunnen gebruikt worden wanneer de versnelling constant is: $a = \dfrac{dv}{dt} = cst$. 
-    
+    \vspace{-0.3cm}
+    De volgende vergelijkingen kunnen gebruikt worden wanneer de versnelling constant is: $a = \dfrac{dv}{dt} = \text{cst}$:
     \begin{enumerate}
         \item $ r = r_{0} + v_{0}t + \tfrac{a}{2}t^2 = r_{0} + \overline{v}t$
         \item $ v = v_0 + at $ 
@@ -39,48 +38,51 @@
         %     \item Dit kan je verkrijgen door (2) en (3) te substitueren in (1).
         % \end{itemize}
     \end{enumerate}
+    \vspace{-0.3cm}
 \end{pro}
 
 \begin{app}[Projectielbeweging]{Projectielbeweging}
+    Bij een projectielbeweging heeft het systeem horizontaal een constante snelheid (eenparige beweging) en verticaal een constante versnelling (eenparig versnelde beweging). In de volgende tabel zijn de formules samengevat: 
 
-    Bij een projectielbeweging (zie figuur voor een projectielbeweging met $ v_{y,0} = 0 $) heeft het systeem horizontaal een constante snelheid (eenparige beweging) en verticaal een constante versnelling (eenparig versnelde beweging). In de volgende tabel zijn de formules samengevat: 
-            
-    \begin{minipage}{.43\textwidth}
-    
-        \def\arraystretch{2.5}
-        \hspace{2cm}\begin{tabular}{c|c|c}
-             & $x$ & $y$ \\ \hline
-             $ r $ & $ x_0 + v_{x,0}t $ & $ y_0 + v_{y,0}t - \dfrac{gt^2}{2} $ \\ \hline
-             $ v $ & $ v_{x,0} $ & $ v_{y,0} - gt $  \\ \hline
-             $ a $ & $ 0 $ & $ -g $ 
-        \end{tabular}
-        
-    \end{minipage} 
-    \begin{minipage}{.43\textwidth}
-        \hspace{3cm}\includegraphics[scale = 0.25]{Images/Kinematica/Projectielbeweging.png}
+    \vspace{0.3cm}
+
+    \begin{minipage}{.66\textwidth}
+        \begin{center}
+            \def\arraystretch{2}
+            \begin{tabular}{c|c|c}
+                & $x$ & $y$ \\ \hline
+                $ r $ & $ x_0 + v_{x,0}t $ & $ y_0 + v_{y,0}t - \frac{gt^2}{2} $ \\ \hline
+                $ v $ & $ v_{x,0} $ & $ v_{y,0} - gt $  \\ \hline
+                $ a $ & $ 0 $ & $ -g $ 
+            \end{tabular}
+        \end{center}
+
+        \vspace{0.3cm}
+        % Ik ben ook niet trots op deze code, maar het werkt
+        \hspace{-0.5cm}\noindent Hieruit kunnen we volgende formules halen: 
+
+        \hspace{-0.5cm}\begin{minipage}{.43\textwidth}
+            \begin{align*}
+                x(t) &= v_{x,0}t \\
+                y(t) &= v_{y,0}t - \frac{gt^2}{2}
+            \end{align*}
+        \end{minipage} \hspace{-0.5cm}$\longrightarrow$
+        \begin{minipage}{.43\textwidth}
+            \vspace{-0.2cm}
+            \begin{equation*}
+                y(x) = \frac{v_{y,0}}{v_{x,0}}x - \frac{g}{2v_{x,0}^2}x^2
+            \end{equation*}
+        \end{minipage}
+        % \vspace{0.3cm}
     \end{minipage}
-        
-    \noindent Uit de voorgaande tabel kunnen we volgende formules halen: 
-    
-        \begin{equation*}
-            x(t) = v_{x,0}t \to t = \dfrac{x(t)}{v_{x,0}}
-        \end{equation*}
-        
-        \begin{equation*}
-            y(t) = v_{y,0}t - \dfrac{gt^2}{2}
-        \end{equation*}
+    \hspace{-1cm}\begin{minipage}{.4\textwidth}
+        \includegraphics[scale = 0.255]{Images/Kinematica/Projectielbeweging.png}
+    \end{minipage}
 
-    \vspace{0.25cm}
-    \noindent Hieruit kunnen we de volgende formule bereiken:
-    
-    \begin{equation*}
-        y(x) = \dfrac{v_{y,0}}{v_{x,0}}x - \dfrac{g}{2v_{x,0}^2}x^2
-    \end{equation*}
-    
-    % \vspace{0.25cm}
-    
-    % Deze formule bepaald de volgende parabole projectielbaan:
-    % \begin{center}
-    %     \includegraphics[scale = 0.325]{Images/Kinematica/Projectielbaan.png}
-    % \end{center}
+    \vspace{0.3cm}
+
+    \noindent Deze formule bepaald de volgende parabole projectielbaan:
+    \begin{center}
+        \includegraphics[scale = 0.28]{Images/Kinematica/Projectielbaan.png}
+    \end{center}
 \end{app}
