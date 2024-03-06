@@ -59,20 +59,20 @@ Om de wet van behoud van energie toe te mogen passen, moeten we nog \textbf{elek
     We hebben eerder besproken dat enkel het potentiaalverschil zinvol is. We kunnen dus een punt pakken waar het potentiaal 0 is en hiermee kunnen we het potentiaal van een singuliere puntlading berekenen. We weten ook dat het elektrisch veld door een singuliere puntlading de volgende formule heeft:
     
     \begin{equation*}
-        \Vec{E} = \dfrac{\Vec{F}_e}{q_0}= k_e\dfrac{q}{r^2}\hat{r}
+        \Vec{E} = \frac{\Vec{F}_e}{q_0}= k_e\frac{q}{r^2}\hat{r}
     \end{equation*}
     
     
     \noindent Stel nu dat $ V_b = 0 $ en $ r_b = \infty $ en we een recht pad volgen van $ a \to b $:
     
     \begin{equation*}
-        V_a = - \int_a^b \Vec{E} \cdot d\Vec{r} = - E \int_a^{b} dr = - \dfrac{1}{4\pi\epsilon_0}(\dfrac{q}{r_b} - \dfrac{q}{r_a})  = \dfrac{1}{4\pi\epsilon_0}\dfrac{q}{r_a}
+        V_a = - \int_a^b \Vec{E} \cdot d\Vec{r} = - E \int_a^{b} dr = - \frac{1}{4\pi\epsilon_0}\left(\frac{q}{r_b} - \frac{q}{r_a}\right)  = \frac{1}{4\pi\epsilon_0}\dfrac{q}{r_a}
     \end{equation*}
     
     \noindent Het elektrische potentiaal is een \textbf{scalar}, dus we kunnen meerdere potentialen gewoon optellen zonder rekening te moeten houden met richting.
     
     \begin{equation*}
-        V_{tot} = \sum_i V_{i}= k(\sum_i \dfrac{q_i}{r_{i}})
+        V_{tot} = \sum_i V_{i} = k\left(\sum_i \dfrac{q_i}{r_{i}}\right)
     \end{equation*}
     
     \noindent We kunnen het concept van meerdere puntladingen verbreden tot infinitesimale puntladingen als we spreken over een continue ladingsverdeling. Zoals vaker volgt nu de volgende formule:
@@ -90,19 +90,19 @@ Om de wet van behoud van energie toe te mogen passen, moeten we nog \textbf{elek
     \noindent \textbf{Opmerking:} het elektrisch veld in bijvoorbeeld de x-richting is dus gelijk aan $ E_x = -\dfrac{dV}{dx} $ Hieruit kunnen we de volgende formule afleiden:
     
     \begin{equation*}
-        \Vec{E} = (-\nabla V)\hat{r} = -\dfrac{dV}{dx}\hat{i} -\dfrac{dV}{dy}\hat{j} -\dfrac{dV}{dz}\hat{k}
+        \Vec{E} = \left(-\nabla V\right)\hat{r} = -\dfrac{dV}{dx}\hat{i} -\dfrac{dV}{dy}\hat{j} -\dfrac{dV}{dz}\hat{k}
     \end{equation*}
 
 \end{app}
 
 \begin{app}[Elektrische potentiaal bij een dipool]{Elektrische potentiaal bij een dipool}
-
+    \vspace{-0.2cm}
     \begin{minipage}{.68 \textwidth}
         \vspace{-0.4cm}
         Het elektrische potentiaal op een arbitrair punt P wordt gegeven door de volgende formule waarbij $ V = 0 \ op \ r = \infty $:
         
         \begin{equation*}
-            V = k\dfrac{q}{r} + k \dfrac{(-q)}{r + \Delta r} = kq(\dfrac{1}{r} - \dfrac{1}{r+ \Delta r}) = kq\dfrac{\Delta r}{r(r+\Delta r)}
+            V = k\dfrac{q}{r} + k \dfrac{-q}{r + \Delta r} = kq\left(\dfrac{1}{r} - \dfrac{1}{r+ \Delta r}\right) = kq\dfrac{\Delta r}{r(r+\Delta r)}
         \end{equation*}
         
         \noindent Deze vergelijking wordt vele malen eenvoudiger als we een punt P pakken veel verder weg dan de scheiding tussen de twee ladingen. We zien op de tekening dat: $ \Delta r \approx \ell\cos(\theta) $. Als we nu dus $ r \gg \ell $ pakken, dan is dus $ r \gg \Delta r $ en verandert onze formule:
